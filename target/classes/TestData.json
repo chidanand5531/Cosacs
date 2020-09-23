@@ -1,0 +1,44 @@
+{
+	"locationData": {
+		"Title": "Cosacs",
+		"ExpectedLabel": "Create Location",
+		"LocationId": "131019",
+		"SalesSystemId": "313",
+		"Name": "CAPETOWN",
+		"AddressLine1": "#233 st.Road jamaica",
+		"AddressLine2": "#233 st.Road jamaica",
+		"City": "jamaica",
+		"PostalCode": "568896",
+		"ContactSearch": "Ho",
+		"ContactSelect": "WorkPhone",
+		"ContactDeatils": "9966554232",
+		"UserInfoMessage": "Location saved successfully",
+		"Warehouse": "Yes",
+		"Active": "Yes",
+		"Virtual": "Yes"
+	},
+	"vendordata": {
+		"Title": "Cosacs",
+		"Expectedcreate_VendorLabel": "Create Vendor",
+		"vendorcode": "201602",
+		"vendorName": "CAPETOWN RICKY PONTING",
+		"eleText": "Local",
+		"AddressLine1": "#233 church steet BANGALORE",
+		"City": "BANGALORE ",
+		"State": "KARNATAKA",
+		"Postcode": "586828",
+		"IsoCode": "86",
+		"Currency": "USD",
+		"PaymentTerms": "30 days",
+		"Status": "Active",
+		"Contact_Email": "Kingston13345@vhj.com",
+		"Contact": "Co",
+		"ContactEmail": "Contact Email",
+		"Tag_Search": "s",
+		"TagText": "Supply Spares Only",
+		"VendorMessage": "Vendor saved successfully",
+		"AddTagMessage": "Vendor tag saved successfully",
+		"Vendorsearch_label": "Vendor Search"
+	}
+	
+}

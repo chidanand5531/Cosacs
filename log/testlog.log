@@ -1,0 +1,202 @@
+2020-09-23 12:23:51,487 - cosac -INFO - User Clicked on Merchandising
+2020-09-23 12:23:51,762 - cosac -INFO - User Clicked on Create
+2020-09-23 12:23:57,453 - cosac -INFO - User Clicked on Location
+2020-09-23 12:23:59,372 - cosac -INFO - User verified Create Location PageLabel Successfully
+2020-09-23 12:23:59,372 - cosac -INFO - User is in Create Location Page
+2020-09-23 12:24:00,539 - cosac -INFO - User entered Location ID successfully 
+2020-09-23 12:24:00,668 - cosac -INFO - User is able to enter text to 'Sales System ID'
+2020-09-23 12:24:01,088 - cosac -INFO - User selected 'Facia' 
+2020-09-23 12:24:01,368 - cosac -INFO - User is able to select 'Store Type'
+2020-09-23 12:24:01,464 - cosac -INFO - User selected 'Store Type' successfully
+2020-09-23 12:24:01,551 - cosac -INFO - User Clicked on 'Virtual checkBox' successfully
+2020-09-23 12:24:01,636 - cosac -INFO - User Clicked on 'Active checkBox' successfully
+2020-09-23 12:24:01,769 - cosac -INFO - User Entered the Address in addressLine1 successfully
+2020-09-23 12:24:01,895 - cosac -INFO - User Entered the Address in addressLine2 successfully
+2020-09-23 12:24:02,013 - cosac -INFO - User Entered the City successfully
+2020-09-23 12:24:02,120 - cosac -INFO - User Entered the Postal code successfully
+2020-09-23 12:24:04,514 - cosac -INFO - User Selected the Contact Type successfully
+2020-09-23 12:24:04,607 - cosac -INFO - User Entered the Contact Type successfully
+2020-09-23 12:24:04,697 - cosac -INFO - User has clicked on addBTN successfully
+2020-09-23 12:24:04,778 - cosac -INFO - User has clicked on SaveBTN successfully
+2020-09-23 12:24:05,883 - cosac -INFO - Toast Message is --->Location saved successfully
+2020-09-23 12:24:05,884 - cosac -INFO - Location Creation Message-->Location saved successfully
+2020-09-23 12:24:05,999 - cosac -INFO - LocationValue--->131021
+2020-09-23 12:24:06,002 - cosac -INFO - User validated Locationvalue successfully-->131021
+2020-09-23 12:24:06,002 - cosac -INFO - User is able to Create Location successfully
+2020-09-23 12:24:07,164 - cosac -INFO - User Clicked on Merchandising
+2020-09-23 12:24:07,428 - cosac -INFO - User Clicked on SearchMenu
+2020-09-23 12:24:07,532 - cosac -INFO - User Clicked on Locations
+2020-09-23 12:24:07,570 - cosac -INFO - Location_Pageheading-->131021
+2020-09-23 12:24:07,571 - cosac -INFO - User is in Location Search Page
+2020-09-23 12:24:09,403 - cosac -INFO - User entered text in search field successfully
+2020-09-23 12:24:10,966 - cosac -INFO - Location_ID-->131021
+2020-09-23 12:24:10,966 - cosac -INFO - User Validated LocationID successfully
+2020-09-23 12:24:11,012 - cosac -INFO - User Validated LocationName successfully-->SATELITETOWN
+2020-09-23 12:24:11,015 - cosac -INFO - Test Failed
+2020-09-23 12:28:26,755 - cosac -INFO - User Clicked on Merchandising
+2020-09-23 12:28:27,028 - cosac -INFO - User Clicked on Create
+2020-09-23 12:28:38,307 - cosac -INFO - User Clicked on Location
+2020-09-23 12:28:40,364 - cosac -INFO - User verified Create Location PageLabel Successfully
+2020-09-23 12:28:40,365 - cosac -INFO - User is in Create Location Page
+2020-09-23 12:28:41,533 - cosac -INFO - User entered Location ID successfully 
+2020-09-23 12:28:41,651 - cosac -INFO - User is able to enter text to 'Sales System ID'
+2020-09-23 12:28:42,049 - cosac -INFO - User selected 'Facia' 
+2020-09-23 12:28:42,344 - cosac -INFO - User is able to select 'Store Type'
+2020-09-23 12:28:42,435 - cosac -INFO - User selected 'Store Type' successfully
+2020-09-23 12:28:42,523 - cosac -INFO - User Clicked on 'Virtual checkBox' successfully
+2020-09-23 12:28:42,610 - cosac -INFO - User Clicked on 'Active checkBox' successfully
+2020-09-23 12:28:42,737 - cosac -INFO - User Entered the Address in addressLine1 successfully
+2020-09-23 12:28:42,833 - cosac -INFO - User Entered the Address in addressLine2 successfully
+2020-09-23 12:28:42,978 - cosac -INFO - User Entered the City successfully
+2020-09-23 12:28:43,105 - cosac -INFO - User Entered the Postal code successfully
+2020-09-23 12:28:45,518 - cosac -INFO - User Selected the Contact Type successfully
+2020-09-23 12:28:45,638 - cosac -INFO - User Entered the Contact Type successfully
+2020-09-23 12:28:45,740 - cosac -INFO - User has clicked on addBTN successfully
+2020-09-23 12:28:45,815 - cosac -INFO - User has clicked on SaveBTN successfully
+2020-09-23 12:28:46,921 - cosac -INFO - Toast Message is --->Cannot save location  Location Id must be unique
+2020-09-23 12:28:46,922 - cosac -INFO - Location Creation Message-->Cannot save location  Location Id must be unique
+2020-09-23 12:29:02,387 - cosac -INFO - User verified Logo successfully
+2020-09-23 12:29:02,392 - cosac -INFO - User verified HomePage Title successfully
+2020-09-23 12:29:03,949 - cosac -INFO - User Clicked on Merchandising
+2020-09-23 12:29:05,259 - cosac -INFO - User Clicked on Create
+2020-09-23 12:29:09,913 - cosac -INFO - User Clicked on Vendor
+2020-09-23 12:29:11,550 - cosac -INFO - User verified Create Location PageLabel Successfully
+2020-09-23 12:29:11,680 - cosac -INFO - User enetered the vendorcode 
+2020-09-23 12:29:11,781 - cosac -INFO - User enetered the vendorName
+2020-09-23 12:29:11,931 - cosac -INFO - User selected Local vendor
+2020-09-23 12:29:12,026 - cosac -INFO - User enetered the  addressline1
+2020-09-23 12:29:12,096 - cosac -INFO - User enetered the  City
+2020-09-23 12:29:12,201 - cosac -INFO - User enetered the State
+2020-09-23 12:29:12,267 - cosac -INFO - User enetered the Pincode
+2020-09-23 12:29:12,368 - cosac -INFO - User enetered the IsoCode
+2020-09-23 12:29:12,566 - cosac -INFO - User selected the Currency
+2020-09-23 12:29:12,774 - cosac -INFO - User  selected the  Status successfully
+2020-09-23 12:29:12,891 - cosac -INFO - User entered the  Payment Terms successfully
+2020-09-23 12:29:12,979 - cosac -INFO - User entered the order Email successfully
+2020-09-23 12:29:15,298 - cosac -INFO - User  selected the  Contact Email successfully
+2020-09-23 12:29:15,463 - cosac -INFO - User Entered the Email in contact field successfully
+2020-09-23 12:29:17,890 - cosac -INFO - User Filled the Local vendor creation form successfully 
+2020-09-23 12:29:18,046 - cosac -INFO - User Clicked on Save successfully
+2020-09-23 12:29:19,890 - cosac -INFO - Caught the Success Message successfully--->Vendor saved successfully
+2020-09-23 12:29:23,302 - cosac -INFO - User selected suggestions tag successfully
+2020-09-23 12:29:23,375 - cosac -INFO - User  Clicked on addBTN successfully
+2020-09-23 12:29:25,121 - cosac -INFO - Toast TagMessage is --->Vendor tag saved successfully
+2020-09-23 12:29:26,285 - cosac -INFO - Assrtion text-->HINDALCO MICO TRADERS
+2020-09-23 12:29:26,286 - cosac -INFO - User successfully validated vendorName
+2020-09-23 12:29:48,644 - cosac -INFO - merchandising element is displayed and Clicked on it
+2020-09-23 12:29:48,897 - cosac -INFO - Mouse hovered on Reports
+2020-09-23 12:29:56,653 - cosac -INFO - TopSku element is displayed and Clicked on it
+2020-09-23 12:29:57,194 - cosac -INFO - User is in Top SKU Reports Page
+2020-09-23 12:29:57,305 - cosac -INFO - Today's Date is : 23-9-2020
+2020-09-23 12:29:57,411 - cosac -INFO - User Selected from date and to date successfully
+2020-09-23 12:30:08,389 - cosac -INFO - User Selected Division,Department,Class and Location successfully
+2020-09-23 12:30:08,484 - cosac -INFO - Waiting for Results to be loaded
+2020-09-23 12:30:22,377 - cosac -INFO -  result is displayed successfully
+2020-09-23 12:30:22,423 - cosac -INFO - Results found are---->1 results found.
+2020-09-23 12:30:22,456 - cosac -INFO - Sku No in results found is-->BMT00005
+2020-09-23 12:30:22,493 - cosac -INFO - No of quantities available in results are -->360
+2020-09-23 12:30:22,534 - cosac -INFO - NetsaleValue in results is -->$ 5,993,629.00
+2020-09-23 12:30:24,743 - cosac -INFO - Sku No in printpage is-->BMT00005
+2020-09-23 12:30:24,782 - cosac -INFO - No of quantities available in printpage are -->360
+2020-09-23 12:30:24,826 - cosac -INFO - NetsaleValue in printpage is -->$ 5,993,629.00
+2020-09-23 12:30:24,826 - cosac -INFO - User successfully validated Quantity,SKU_No and NetSaleValue in TopSKuReport Page and Print Report page 
+2020-09-23 12:30:24,858 - cosac -INFO - User switched to parent window
+2020-09-23 12:30:24,992 - cosac -INFO - User Clicked on ExportBTN
+2020-09-23 12:30:25,113 - cosac -INFO - 
+2020-09-23 12:30:25,113 - cosac -INFO - User Clicked on ClearBTN and Data eneterd is cleared successfully
+2020-09-23 12:42:21,123 - cosac -INFO - User Clicked on Merchandising
+2020-09-23 12:42:21,406 - cosac -INFO - User Clicked on Create
+2020-09-23 12:42:26,878 - cosac -INFO - User Clicked on Location
+2020-09-23 12:42:28,916 - cosac -INFO - User verified Create Location PageLabel Successfully
+2020-09-23 12:42:28,916 - cosac -INFO - User is in Create Location Page
+2020-09-23 12:42:30,087 - cosac -INFO - User entered Location ID successfully 
+2020-09-23 12:42:30,215 - cosac -INFO - User is able to enter text to 'Sales System ID'
+2020-09-23 12:42:30,609 - cosac -INFO - User selected 'Facia' 
+2020-09-23 12:42:30,888 - cosac -INFO - User is able to select 'Store Type'
+2020-09-23 12:42:30,993 - cosac -INFO - User selected 'Store Type' successfully
+2020-09-23 12:42:31,052 - cosac -INFO - User Clicked on 'Virtual checkBox' successfully
+2020-09-23 12:42:31,157 - cosac -INFO - User Clicked on 'Active checkBox' successfully
+2020-09-23 12:42:31,276 - cosac -INFO - User Entered the Address in addressLine1 successfully
+2020-09-23 12:42:31,379 - cosac -INFO - User Entered the Address in addressLine2 successfully
+2020-09-23 12:42:31,444 - cosac -INFO - User Entered the City successfully
+2020-09-23 12:42:31,565 - cosac -INFO - User Entered the Postal code successfully
+2020-09-23 12:42:34,010 - cosac -INFO - User Selected the Contact Type successfully
+2020-09-23 12:42:34,132 - cosac -INFO - User Entered the Contact Type successfully
+2020-09-23 12:42:34,211 - cosac -INFO - User has clicked on addBTN successfully
+2020-09-23 12:42:34,291 - cosac -INFO - User has clicked on SaveBTN successfully
+2020-09-23 12:42:35,404 - cosac -INFO - Toast Message is --->Location saved successfully
+2020-09-23 12:42:35,405 - cosac -INFO - Location Creation Message-->Location saved successfully
+2020-09-23 12:42:35,544 - cosac -INFO - LocationValue--->131022
+2020-09-23 12:42:35,545 - cosac -INFO - User validated Locationvalue successfully-->131022
+2020-09-23 12:42:35,545 - cosac -INFO - User is able to Create Location successfully
+2020-09-23 12:42:36,689 - cosac -INFO - User Clicked on Merchandising
+2020-09-23 12:42:36,947 - cosac -INFO - User Clicked on SearchMenu
+2020-09-23 12:42:37,050 - cosac -INFO - User Clicked on Locations
+2020-09-23 12:42:37,089 - cosac -INFO - Location_Pageheading-->131022
+2020-09-23 12:42:37,091 - cosac -INFO - User is in Location Search Page
+2020-09-23 12:42:38,926 - cosac -INFO - User entered text in search field successfully
+2020-09-23 12:42:40,379 - cosac -INFO - Location_ID-->131022
+2020-09-23 12:42:40,379 - cosac -INFO - User Validated LocationID successfully
+2020-09-23 12:42:40,434 - cosac -INFO - User Validated LocationName successfully-->KORAMANGALA
+2020-09-23 12:42:40,434 - cosac -INFO - User Validated LocationName successfully
+2020-09-23 12:42:40,487 - cosac -INFO - User Validated Sales SystemId successfully-->317
+2020-09-23 12:42:40,537 - cosac -INFO - User Validated warehouse Status successfully-->Yes
+2020-09-23 12:42:40,587 - cosac -INFO - User Validated Active Status successfully-->Yes
+2020-09-23 12:42:40,639 - cosac -INFO - User  Validated Virtual Status successfully-->Yes
+2020-09-23 12:42:40,639 - cosac -INFO - User successfully Validated Location Search 
+2020-09-23 12:43:02,191 - cosac -INFO - User verified Logo successfully
+2020-09-23 12:43:02,196 - cosac -INFO - User verified HomePage Title successfully
+2020-09-23 12:43:03,312 - cosac -INFO - User Clicked on Merchandising
+2020-09-23 12:43:04,609 - cosac -INFO - User Clicked on Create
+2020-09-23 12:43:09,436 - cosac -INFO - User Clicked on Vendor
+2020-09-23 12:43:11,298 - cosac -INFO - User verified Create Location PageLabel Successfully
+2020-09-23 12:43:11,417 - cosac -INFO - User enetered the vendorcode 
+2020-09-23 12:43:11,535 - cosac -INFO - User enetered the vendorName
+2020-09-23 12:43:11,737 - cosac -INFO - User selected Local vendor
+2020-09-23 12:43:11,885 - cosac -INFO - User enetered the  addressline1
+2020-09-23 12:43:11,979 - cosac -INFO - User enetered the  City
+2020-09-23 12:43:12,079 - cosac -INFO - User enetered the State
+2020-09-23 12:43:12,201 - cosac -INFO - User enetered the Pincode
+2020-09-23 12:43:12,298 - cosac -INFO - User enetered the IsoCode
+2020-09-23 12:43:12,529 - cosac -INFO - User selected the Currency
+2020-09-23 12:43:12,726 - cosac -INFO - User  selected the  Status successfully
+2020-09-23 12:43:12,850 - cosac -INFO - User entered the  Payment Terms successfully
+2020-09-23 12:43:12,949 - cosac -INFO - User entered the order Email successfully
+2020-09-23 12:43:15,214 - cosac -INFO - User  selected the  Contact Email successfully
+2020-09-23 12:43:15,342 - cosac -INFO - User Entered the Email in contact field successfully
+2020-09-23 12:43:17,813 - cosac -INFO - User Filled the Local vendor creation form successfully 
+2020-09-23 12:43:17,953 - cosac -INFO - User Clicked on Save successfully
+2020-09-23 12:43:19,668 - cosac -INFO - Caught the Success Message successfully--->Vendor saved successfully
+2020-09-23 12:43:23,167 - cosac -INFO - User selected suggestions tag successfully
+2020-09-23 12:43:23,251 - cosac -INFO - User  Clicked on addBTN successfully
+2020-09-23 12:43:25,034 - cosac -INFO - Toast TagMessage is --->Vendor tag saved successfully
+2020-09-23 12:43:26,187 - cosac -INFO - Assrtion text-->HUL MICO TRADERS
+2020-09-23 12:43:26,187 - cosac -INFO - User successfully validated vendorName
+2020-09-23 12:43:29,050 - cosac -INFO - User is in Vendor searchPage 
+2020-09-23 12:43:30,281 - cosac -INFO - VendorCode-->201605
+2020-09-23 12:43:30,328 - cosac -INFO - VendorName-->HUL MICO TRADERS
+2020-09-23 12:43:30,377 - cosac -INFO - Vendortype-->Local
+2020-09-23 12:43:30,421 - cosac -INFO - VendorStatus-->Active
+2020-09-23 12:43:30,464 - cosac -INFO - VendorTag-->Supply Spares Only
+2020-09-23 12:43:30,465 - cosac -INFO - User successfully Validated Local_Vendor Search
+2020-09-23 12:43:48,306 - cosac -INFO - merchandising element is displayed and Clicked on it
+2020-09-23 12:43:48,561 - cosac -INFO - Mouse hovered on Reports
+2020-09-23 12:43:53,565 - cosac -INFO - TopSku element is displayed and Clicked on it
+2020-09-23 12:43:54,242 - cosac -INFO - User is in Top SKU Reports Page
+2020-09-23 12:43:54,350 - cosac -INFO - Today's Date is : 23-9-2020
+2020-09-23 12:43:54,462 - cosac -INFO - User Selected from date and to date successfully
+2020-09-23 12:44:04,975 - cosac -INFO - User Selected Division,Department,Class and Location successfully
+2020-09-23 12:44:05,073 - cosac -INFO - Waiting for Results to be loaded
+2020-09-23 12:44:18,568 - cosac -INFO -  result is displayed successfully
+2020-09-23 12:44:18,604 - cosac -INFO - Results found are---->1 results found.
+2020-09-23 12:44:18,645 - cosac -INFO - Sku No in results found is-->BMT00005
+2020-09-23 12:44:18,679 - cosac -INFO - No of quantities available in results are -->360
+2020-09-23 12:44:18,719 - cosac -INFO - NetsaleValue in results is -->$ 5,993,629.00
+2020-09-23 12:44:20,938 - cosac -INFO - Sku No in printpage is-->BMT00005
+2020-09-23 12:44:20,978 - cosac -INFO - No of quantities available in printpage are -->360
+2020-09-23 12:44:21,020 - cosac -INFO - NetsaleValue in printpage is -->$ 5,993,629.00
+2020-09-23 12:44:21,020 - cosac -INFO - User successfully validated Quantity,SKU_No and NetSaleValue in TopSKuReport Page and Print Report page 
+2020-09-23 12:44:21,048 - cosac -INFO - User switched to parent window
+2020-09-23 12:44:21,137 - cosac -INFO - User Clicked on ExportBTN
+2020-09-23 12:44:21,254 - cosac -INFO - 
+2020-09-23 12:44:21,255 - cosac -INFO - User Clicked on ClearBTN and Data eneterd is cleared successfully
