@@ -11,24 +11,14 @@ public class JsonParser {
 
 	  private static File jsonFile;
 
-	  public static String testData(String path) throws IOException   {	
-		  
+	  public static String testData(String path) throws IOException   {	  
 		try {
 	    jsonFile=new File(Constants.Testdata);
 		  }catch(Exception e){
 			  e.printStackTrace();
 		  }
-	    return JsonPath.read(jsonFile,"$."+path);
-	    
+	    return JsonPath.read(jsonFile,"$."+path); 
 	  }
-	  
-	  public static String getVendorData(String path) throws IOException   {	 
-		 try {
-	    jsonFile=new File(Constants.VendorData);
-		  }catch(Exception e){
-			  e.printStackTrace();
-		  }
-	    return JsonPath.read(jsonFile,"$."+path);  
-	  }
+
 }
 

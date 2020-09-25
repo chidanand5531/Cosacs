@@ -36,6 +36,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.cosacs.Locators.Xpath;
+
 public class Library extends BaseClass {
 
 	public static class Interaction {
@@ -100,6 +102,7 @@ public class Library extends BaseClass {
 				Thread.sleep(100);
 				act.moveToElement(ele).build().perform();
 			} catch (Exception e) {
+				e.printStackTrace();
 				captureScreen(driver, "moveToElement");
 				Assert.assertFalse(false);
 				log.info("User not able to navigate to element 'Test Failed'");
@@ -159,16 +162,15 @@ public class Library extends BaseClass {
 		}
 
 		// Select Element by select Last DropDown Value
-		public static void selectLastDropDown(String Name) throws IOException {
+		public static void selectLastDropDown(String element) throws IOException {
 			try {
-				Select selectBox = new Select(driver.findElement(By.name(Name)));
-				int TotalOptions = selectBox.getOptions().size();
-				selectBox.selectByIndex(TotalOptions - 1);
-
-			} catch (Exception e) {
-				captureScreen(driver, "selectLastDropDown");
-				Assert.assertFalse(false);
-				log.info("User not able to Select last element 'Test Failed'");
+			Select selectBox = new Select(driver.findElement(By.name(element)));
+			int list= selectBox.getOptions().size();
+			System.out.println("Total no of purchage orders" +list);
+			selectBox.selectByIndex(list-1);
+			Thread.sleep(1000);
+			}catch(Exception e){
+				e.printStackTrace();
 			}
 		}
 
@@ -228,7 +230,6 @@ public class Library extends BaseClass {
 			while (counter > maxWait) {
 				Thread.sleep(intervalWait * 20000);
 				counter += intervalWait;
-				// System.out.println("counter....... "+counter);
 			}
 			return true;
 		}
@@ -314,7 +315,6 @@ public class Library extends BaseClass {
 		// create Heirarchy
 		public static void CreateHeirarchy(String elements, String CreateDivion, String text) throws AWTException {
 			try {
-
 				List<WebElement> divisions = driver.findElements(By.xpath(elements));
 				for (int i = 0; i < divisions.size(); i++) {
 					String str = divisions.get(i).getText();
@@ -438,7 +438,6 @@ public class Library extends BaseClass {
 
 		public static String getElmtText(String element) {
 			String text = driver.findElement(By.xpath(element)).getText();
-
 			return text;
 		}
 
@@ -697,18 +696,6 @@ public class Library extends BaseClass {
 			Thread.sleep(1000);
 			robo.keyPress(KeyEvent.VK_TAB);
 			Thread.sleep(1000);
-			// r.keyPress(KeyEvent.VK_TAB);
-			// Thread.sleep(1000);
-			// r.keyPress(KeyEvent.VK_TAB);
-			// Thread.sleep(1000);
-			// r.keyPress(KeyEvent.VK_TAB);
-			// Thread.sleep(1000);
-			// r.keyPress(KeyEvent.VK_TAB);
-			// Thread.sleep(1000);
-			// r.keyPress(KeyEvent.VK_TAB);
-			// Thread.sleep(1000);
-			// r.keyPress(KeyEvent.VK_TAB);
-			// Thread.sleep(1000);
 			robo.keyPress(KeyEvent.VK_TAB);
 			robo.keyRelease(KeyEvent.VK_TAB);
 			Thread.sleep(2000);
@@ -826,7 +813,6 @@ public class Library extends BaseClass {
 
 		public static void ScrollDown() throws InterruptedException {
 			JavascriptExecutor j = (JavascriptExecutor) driver;
-
 			for (int i = 1; i <= 10; i++) {
 				j.executeScript("window.scrollBy(0,50)");
 				Thread.sleep(300);
@@ -836,7 +822,6 @@ public class Library extends BaseClass {
 
 		public static void ScrollUp() throws InterruptedException {
 			JavascriptExecutor j = (JavascriptExecutor) driver;
-
 			for (int i = 1; i <= 10; i++) {
 				j.executeScript("window.scrollBy(0,-500)");
 				Thread.sleep(300);
@@ -847,12 +832,8 @@ public class Library extends BaseClass {
 		public static void DateFormat(String xpath1) throws Exception {
 			robo = new Robot();
 			driver.findElement(By.xpath(xpath1)).click();
-
 			Thread.sleep(2000);
-			// Add the Xpath of the Text Available in the page for referance Click operation
-
 			robo.keyPress(KeyEvent.VK_ENTER);
-
 			Thread.sleep(2000);
 			robo.keyRelease(KeyEvent.VK_ENTER);
 		}
@@ -926,7 +907,7 @@ public class Library extends BaseClass {
 
 		// Wait for an element to be Displayed
 		public static void IsDisplayed_Click(String str) throws Exception {
-			for (int i = 0; i <1000; i++) {
+			for (int i = 0; i < 1000; i++) {
 				boolean submitDisplayed = driver.findElement(By.xpath(str)).isDisplayed();
 				if (submitDisplayed == true) {
 					Thread.sleep(1000);
@@ -939,12 +920,12 @@ public class Library extends BaseClass {
 
 		// Wait for an element to be Displayed
 		public static void IsDisplayed(String str) throws Exception {
-			for (int i = 0; i < 500; i++) {
+			for (int i = 0; i < 1000; i++) {
 				boolean submitDisplayed = driver.findElement(By.xpath(str)).isDisplayed();
 				if (submitDisplayed == true) {
 					Thread.sleep(1000);
 					System.out.println(str + "Element is Displayed Successfully");
-					break;			
+					break;
 				}
 
 			}
@@ -952,7 +933,7 @@ public class Library extends BaseClass {
 
 		// Wait for an element to be Enabled
 		public static void Enabled_Click(String str) throws Exception {
-			for (int i = 0; i <500; i++) {
+			for (int i = 0; i < 500; i++) {
 				boolean isEnabled = driver.findElement(By.xpath(str)).isEnabled();
 				if (isEnabled == true) {
 					driver.findElement(By.xpath(str)).click();
@@ -961,48 +942,72 @@ public class Library extends BaseClass {
 
 			}
 		}
-		
+
 		// ScrollDown Till Element is Found
 		public static void ScrollDownTill_ElementFound(String str) throws InterruptedException {
-		 js = (JavascriptExecutor) driver;
+			js = (JavascriptExecutor) driver;
 			for (int i = 1; i <= 100; i++) {
 				js.executeScript("window.scrollBy(0,250)");
 				boolean submitDisplayed = driver.findElement(By.xpath(str)).isDisplayed();
 				if (submitDisplayed == true) {
-					System.out.println(str + "ScrolledDown till the element found");
+					System.out.println(str + "ScrolledDown found the element found");
+					Thread.sleep(1000);
 					break;
 				}
 			}
 
 		}
-		
+
 		// ScrollUp Till Element is Found
 		public static void ScrollUpTill_ElementFound(String str) throws InterruptedException {
-			 js = (JavascriptExecutor) driver;
-				for (int i = 1; i <= 100; i++) {
-					js.executeScript("window.scrollBy(0,-250)");
-					boolean submitDisplayed = driver.findElement(By.xpath(str)).isDisplayed();
-					if (submitDisplayed == true) {
-						System.out.println(str + "ScrolledUp till the element found");
-						break;
-					}
+			js = (JavascriptExecutor) driver;
+			for (int i = 1; i <= 100; i++) {
+				js.executeScript("window.scrollBy(0,-250)");
+				boolean submitDisplayed = driver.findElement(By.xpath(str)).isDisplayed();
+				if (submitDisplayed == true) {
+					System.out.println(str + "ScrolledUp found the element");
+					Thread.sleep(1000);
+					break;
 				}
-
 			}
-		
-		// Enter Current system Date
-				public static String Current_Date() throws Exception {
-					int day, month, year;
-					date = new GregorianCalendar();
-					day = date.get(Calendar.DAY_OF_MONTH);
-					month = date.get(Calendar.MONTH) + 1;
-					year = date.get(Calendar.YEAR);
-					today = day + "-" + month + "-" + year;
-					return today;
-				}
+		}
 
-			
-		
+		// Enter Current system Date
+		public static String Current_Date() throws Exception {
+			int day, month, year;
+			date = new GregorianCalendar();
+			day = date.get(Calendar.DAY_OF_MONTH);
+			month = date.get(Calendar.MONTH) + 1;
+			year = date.get(Calendar.YEAR);
+			today = day + "-" + month + "-" + year;
+			return today;
+		}
+
+		//select the calender widget last month date
+		public static void CalenderDate(String xpath) {
+			try {
+				act = new Actions(driver);
+				WebElement ele = driver.findElement(By.xpath(xpath));
+				Thread.sleep(100);
+				act.moveToElement(ele).build().perform();
+				Thread.sleep(2000);
+				Actions act = new Actions(driver);
+				Thread.sleep(500);
+				act.moveByOffset(105, 0).click().build().perform();
+				Robot robo = new Robot();
+				Library.Interaction.EnterTab();
+				Thread.sleep(500);
+				Library.Interaction.EnterTab();
+				Thread.sleep(500);
+				Library.Interaction.EnterTab();
+				Thread.sleep(2000);
+				robo.keyPress(KeyEvent.VK_ENTER);
+				act.sendKeys(Keys.ENTER).build().perform();
+				Thread.sleep(500);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 		
 
 		public static void typeCharacter(String text) {

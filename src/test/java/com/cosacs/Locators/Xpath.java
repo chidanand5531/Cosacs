@@ -11,7 +11,7 @@ public class Xpath {
 	}
 
 	public static class LocationCreation {
-		public static String merchandising = "//a[contains(text(),'Merchandising')]/..";
+		public static String merchandising = "//li/a[contains(text(),'Merchandising')]";
 		public static String create = "//li[@class='ng-scope dropdown-submenu']//a[contains(text(),'Create')]";
 		public static String location = "//a[contains(text(),'Combo')]//../..//a[contains(text(),'Location')]";
 		public static String locationID = "//label[contains(text(),'Location Id')]/..//input[@class='form-control ng-pristine ng-invalid ng-invalid-required']";
@@ -57,7 +57,7 @@ public class Xpath {
 	}
 
 	public static class Vendor_Creation {
-		public static String merchandising = "//a[contains(text(),'Merchandising')]/..";
+		public static String merchandising = "//li/a[contains(text(),'Merchandising')]";
 		public static String create = "//li[@class='ng-scope dropdown-submenu']//a[contains(text(),'Create')]";
 		public static String vendor = "//a[contains(text(),'Combo')]//../..//a[contains(text(),'Vendor')]";
 		public static String Verify_VendorPage = "//div[@id='center']//h2";
@@ -105,23 +105,25 @@ public class Xpath {
 	}
 
 	public static class GoodsRecieptNO {
-		public static String merchandising = "//a[contains(text(),'Merchandising')]/..";
+		public static String merchandising = "//li/a[contains(text(),'Merchandising')]";
 		public static String create = "//li[@class='ng-scope dropdown-submenu']//a[contains(text(),'Create')]";
 		public static String Goodsreceipt = "//a[contains(text(),'Combo')]//../..//a[contains(text(),'Goods Receipt')]";
 		public static String Verify_GRNPage = "//div[@id='center']//h2";
 		public static String RecievingArrow = "(//div[@class='list-container ng-scope'])[1]//div[@class='list-arrow']";
 		public static String RecievigSearch = "//div[@class='list-search ng-scope']//input";
-		public static String SelectLocation = "//div[@class='list-item-container ng-scope']//div";
+		public static String SelectLocation = "//div[@class='list-item-container ng-scope']//div[@class='list-item ng-scope ng-binding']";
 		public static String SelectDate = "(//div[@class='form-group has-error'])[1]//input";
-		public static String VendordelvryNO = "//input[@name='vendorDeliveryNumber']";
+		public static String VendordelvryNO = "//div[@class='col-lg-3']//input[@name='vendorDeliveryNumber']";
 		public static String VendorArrow = "(//div[@class='list-container ng-scope'])[2]//div[@class='list-arrow']";
 		public static String VendorSearch = "//div[@class='list-options ng-scope']//input[@type='text']";
 		public static String VendorSelect = "//div[@class='list-options ng-scope']//div[@class='list-item-container ng-scope']//div";
 		public static String SelectReciever = "//select[@name='receivedById']";
 		public static String VendorInvoiceNO = "(//div[@class='form-group has-error'])[6]//input";
 		public static String Comment = "//div[@ng-show='editing']/textarea";
-		public static String SelectPO = "//select[@name='purchaseOrderId']";
+		public static String SelectPO = "//select[@ng-model='selectedPurchaseOrderId']";
+		public static String EnterQuantity = "//td[@class='quantity']//div[@class='has-error']//input";
 		public static String PlusMark = "(//div[@class='col-md-3'])[2]/p";
+		public static String ApproveStatus ="(//div[@class='form-group']//p[@class='ng-binding'])[1]";
 		public static String PONumber = "(//div[@class='ng-scope']//div[@class='col-lg-8']/a)[1]";
 		public static String ProductCode = "(//div[@class='col-lg-12']//tr[@ng-form='productForm'])[1]//a[@class='ng-binding']";
 		public static String OnHandProduct = "//a[contains(text(),'LUCKY DOLLAR MANDEVI')]/parent::td/following-sibling::td[1]";
@@ -133,17 +135,26 @@ public class Xpath {
 		public static String QuantityBackordre = "(//div[@class='col-lg-12']//td[@class='quantity'])[3]";
 		public static String CreaterecptBTN = "(//div[@class='pull-right'])[2]//button";
 		public static String Message_catch = "//div[@id='growlcontainer']";
+		public static String MessageClick = "//div[@id='growlcontainer']//button[@type='button']";
 		public static String GRNLabel = "//div[@id='center']//h2";
 		public static String VerifyCostBTN = "//div[@class='buffer-sm bottom ng-scope']//button[@ng-click='verifyCosts()']";
 		public static String ApproveBTN = "//div[@class='buffer-sm bottom ng-scope']//button[@ng-click='approve()']";
 		public static String ChildWndGoodReciept = "(//div[@id='center']//div[@class='col-lg-3'])[1]//p";
 		public static String ChildWnd_PONo = "//div[@class='col-lg-6']//a";
 		public static String ChildWnd_ConfirmBTN = "//div[@class='buffer-sm top']//button[@class='btn btn-primary']";
-
+		public static String Configuration = "//a[contains(text(),'Configuration')]/..";
+		public static String ReIndexing = "//a[contains(text(),'Configuration')]/..//a[text()='Re-Indexing']/..";
+		public static String ProductStLevelCheck = "//input[@id='doMerchandiseStockLevels']";
+		public static String PurchageOrdr_Chkbx = "//input[@id='doPurchaseOrders']";
+		public static String GoodsRcpt_Chkbx = "//input[@id='doGoodsReceipt']";
+		public static String ReIndeBTN = "//button[text()='Re-Index']";
+		public static String Verify_ReindexingPage = "//div[@id='center']//h2";
+		public static String GoodsRcpt_Done = "//div[text()='Goods Receipt done.']";
+		
 	}
 
 	public static class productHierarchy {
-		public static String merchandising = "//a[contains(text(),'Merchandising')]/..";
+		public static String merchandising = "//li/a[contains(text(),'Merchandising')]";
 		public static String ProductHierarchy = "//ul[@class='dropdown-menu']/..//a[text()='Product Hierarchy']";
 		public static String Heirarchylabel = "//div[@id='center']//h2";
 		public static String DivOptions = "(//div[@title='levels-container'])[1]//div[@class='tag col-lg-2 false']";
@@ -1184,14 +1195,10 @@ public static class paymentmethod
 	public static class ProductDetails
 	{
 		public static String VerifySKU="//div[@id='center']//h2[@id='page-heading']";
-		
 		public static String PrintPriceTicket="//input[@ng-model='vm.product.priceTicket']";
 		public static String RequiresLabel="//input[@ng-model='vm.product.labelRequired']";
 		public static String PriceTcktSuccesMsg="//div[@id='growlcontainer']//div[@class='growlstatus']";
 		public static String RequiresLabelSuccesMsg="//div[@id='growlcontainer']//div[@class='growlstatus']";
-		
-		
-		
 		public static String Division="//list[@id='hierarchy-00Q']//div[@class='list-arrow']";
 		public static String DivisionSearch="//div[@class='list-search ng-scope']/input[@ng-model='search']";
 		public static String DivisionClick="//list[@id='hierarchy-00Q']//div[@class='list-item-container ng-scope']//div";

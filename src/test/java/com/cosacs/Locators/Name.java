@@ -13,7 +13,7 @@ public class Name {
 	public static class GRNCreation
 	{
 		public static String GRNReciever="receivedById";
-		public static String GRNR_POId="purchaseOrderId";
+		public static String GRNR_PO="purchaseOrderId";
 		
 	}
 }

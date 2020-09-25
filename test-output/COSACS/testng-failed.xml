@@ -4,30 +4,16 @@
   <listeners>
     <listener class-name="com.cosacs.PageObject.TestListeners"/>
   </listeners>
-  <test thread-count="5" name="COS01_LocationCreation Test(failed)">
+  <test thread-count="5" name="COS17_GoodsReceipt Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.cosacs.TestCases.COS01_LocationCreation">
+      <class name="com.cosacs.TestCases.COS17_GoodsReceipt">
         <methods>
-          <include name="createLocation_Test"/>
-          <include name="close"/>
-          <include name="searchLocation_Test"/>
-          <include name="launchChrome"/>
-        </methods>
-      </class> <!-- com.cosacs.TestCases.COS01_LocationCreation -->
-    </classes>
-  </test> <!-- COS01_LocationCreation Test(failed) -->
-  <test thread-count="5" name="COS04_LocalVendorCreation Test(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.cosacs.TestCases.COS04_LocalVendorCreation">
-        <methods>
-          <include name="SearchVendor_Test"/>
-          <include name="createVendor_Test"/>
+          <include name="GoodsRecieptForm"/>
           <include name="close"/>
           <include name="launchChrome"/>
         </methods>
-      </class> <!-- com.cosacs.TestCases.COS04_LocalVendorCreation -->
+      </class> <!-- com.cosacs.TestCases.COS17_GoodsReceipt -->
     </classes>
-  </test> <!-- COS04_LocalVendorCreation Test(failed) -->
+  </test> <!-- COS17_GoodsReceipt Test(failed) -->
 </suite> <!-- Failed suite [COSACS] -->

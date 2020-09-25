@@ -6,7 +6,7 @@
  <listener class-name="com.cosacs.PageObject.TestListeners"> </listener>
  </listeners>
   
-  <test name="COS01_LocationCreation Test" enabled="true">
+  <!--  <test name="COS01_LocationCreation Test" enabled="true">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.cosacs.TestCases.COS01_LocationCreation" />
@@ -20,11 +20,126 @@
 		</classes>	
 	</test>
 	
+	<test name="COS05_RegularStock Test" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS05_RegularStock" />
+		</classes>	
+	</test>
+	
+	<test name="COS06_LocalProductCreation" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS06_LocalProductCreation" />
+		</classes>	
+	</test>
+	
+	<test name="COS_07_Repossessed" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS_07_Repossessed" />
+		</classes>	
+	</test>
+	
+	<test name="COS8_SetProduct" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS8_SetProduct" />
+		</classes>	
+	</test>
+	
+	<test name="COS09_ComboProductCreation" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS09_ComboProductCreation" />
+		</classes>	
+	</test>
+	
+	<test name="COS10_SparePartsProductCreation" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS10_SparePartsProductCreation" />
+		</classes>	
+	</test>
+	
+	<test name="COS13_NewNonStockCreation" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS13_NewNonStockCreation" />
+		</classes>	
+	</test>
+	
+	<test name="COS13_NonStockProductsLink" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS13_NonStockProductsLink" />
+		</classes>	
+	</test>
+	
+	<test name="COS13_NonStockPromotions" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS13_NonStockPromotions" />
+		</classes>	
+	</test>
+	
+	
+	<test name="COS13_NonStocksExports" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS13_NonStocksExports" />
+		</classes>	
+	</test>
+	
+	<test name="COS13_SearchNonStocks" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS13_SearchNonStocks" />
+		</classes>	
+	</test>
+	
+	<test name="COS14_PurchaseOrder" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS14_PurchaseOrder" />
+		</classes>	
+	</test>
+	
+	<test name="COS15_StockAllocation" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS15_StockAllocation" />
+		</classes>	
+	</test>
+	
+	<test name="COS16_StockRequisitionProcess" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS16_StockRequisitionProcess" />
+		</classes>	
+	</test>--> 
+	
+	
+	<test name="COS17_GoodsReceipt Test" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS17_GoodsReceipt" />
+		</classes>	
+	</test> 
+	
+<!-- 	<test name="COS_18_Directreceipt Test" enabled="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS_18_Directreceipt" />
+		</classes>	
+	</test>
+	
+		
 	<test name="COS100_TopSKUReports Test" enabled="true">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.cosacs.TestCases.COS100_TopSKUReports" />
 		</classes>	
-	</test>
+	</test>  -->
 	
 </suite> 

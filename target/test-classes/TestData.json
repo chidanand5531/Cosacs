@@ -2,9 +2,9 @@
 	"locationData": {
 		"Title": "Cosacs",
 		"ExpectedLabel": "Create Location",
-		"LocationId": "131022",
-		"SalesSystemId": "317",
-		"Name": "KORAMANGALA",
+		"LocationId": "131023",
+		"SalesSystemId": "318",
+		"Name": "HAL",
 		"AddressLine1": "#233 st.Road jamaica",
 		"AddressLine2": "#233 st.Road jamaica",
 		"City": "jamaica",
@@ -20,11 +20,11 @@
 	"vendordata": {
 		"Title": "Cosacs",
 		"Expectedcreate_VendorLabel": "Create Vendor",
-		"vendorcode": "201605",
-		"vendorName": "HUL MICO TRADERS",
+		"vendorcode": "201606",
+		"vendorName": "BRAN SAC TRADERS",
 		"eleText": "Local",
-		"AddressLine1": "#233 church steet BANGALORE",
-		"City": "BANGALORE ",
+		"AddressLine1": "#233 church street BANGALORE",
+		"City": "BANGALORE",
 		"State": "KARNATAKA",
 		"Postcode": "586828",
 		"IsoCode": "86",
@@ -42,10 +42,26 @@
 	},
 	"topSKUdata": {
 		"pageLabel": "Top Sku Report",
-		"fromDate": "20/2/2015",
+		"fromDate": "20-2-2015",
 		"Search_SlectDiv": "MATTRESS",
 		"Search_SlectDept": "BEDDING",
 		"Search_SlectClass": "MATTRESS SPRING",
 		"Search_SlectLocation": "LUCKY DOLLAR MAY PEN"
+	},
+	"GRNdata": {
+		"ExpectedGRN_Label" : "Create Goods Receipt",
+		"Seachvalue":"LUCKY DOLLAR",
+		"SelectSuggestion":"LUCKY DOLLAR MAY PEN",
+		"VendorsearchValue":"REG",
+		"SelectVendor":"REGAL WORLDWIDE TRADE",
+		"vendordeliveryno":"654",
+		"vendorInvoiceno":"100563",
+		"RecievedBy":"System Administrator",
+		"Comment":"Verify the Goods Reciept No and confirm",
+		"quantityRecived":"1",
+		"GRNMessage":"Goods receipt saved successfully",
+		"GRNCostMsg":"Goods receipt",
+		"newWndoLabel":"Verify Goods Receipt Costs"
 	}
+
 }
