@@ -22,13 +22,15 @@ package com.cosacs.TestCases;
 	public class COS15_StockAllocation extends BaseClass {
 
 		String ExpecStckAllocTitle = "Create Stock Allocation";
-		String WarehouseValue = "LUCKY DOLLAR MAY PEN";
-		String Search_Text = "LU";
+		String WarehouseValue = "TWICKENHAM  CLOSE";
+		String Search_Text = "TW";
+		String ReceivingVal = "TWICKENHAM  CLOSE";
 		String WarehouseComments = "Test";
-		String ProductCode = "MNT00083";
-		String ProductValue = "MNT00083";
+		String ProductCode = "OPU250";
+		String ProductValue = "OPU250";
 		String Quantity = "2";
-		String CreatedDate = "03/09/2020";
+		String CreatedDate = "09/24/2020";
+
 		
 		
 		// The below method helps the user to land the Create Stock Allocation Page
@@ -188,7 +190,6 @@ package com.cosacs.TestCases;
 				WebElement ShipmentID = driver.findElement(By.xpath(Xpath.StockAllocation.ShipmentID));
 				String ShipmentNum = ShipmentID.getText();
 				log.info("Shipment ID is "+ShipmentNum);
-				
 				log.info("Stock Allocation Creation and Search is Successfull");
 				
 

@@ -454,7 +454,6 @@ public class Library extends BaseClass {
 				Date tomorrow = calendar.getTime();
 				String tommorowsDate = new SimpleDateFormat("MM/dd/yyyy").format(tomorrow);
 				driver.findElement(By.xpath(xpath)).sendKeys(tommorowsDate);
-
 			} catch (Exception e) {
 				captureScreen(driver, "setTextBoxByXpath");
 				Assert.assertFalse(false);
@@ -924,7 +923,7 @@ public class Library extends BaseClass {
 				boolean submitDisplayed = driver.findElement(By.xpath(str)).isDisplayed();
 				if (submitDisplayed == true) {
 					Thread.sleep(1000);
-					System.out.println(str + "Element is Displayed Successfully");
+					System.out.println(str + "--Element is Displayed Successfully");
 					break;
 				}
 
@@ -946,12 +945,12 @@ public class Library extends BaseClass {
 		// ScrollDown Till Element is Found
 		public static void ScrollDownTill_ElementFound(String str) throws InterruptedException {
 			js = (JavascriptExecutor) driver;
-			for (int i = 1; i <= 100; i++) {
+			for (int i = 1; i <= 2500; i++) {
 				js.executeScript("window.scrollBy(0,250)");
 				boolean submitDisplayed = driver.findElement(By.xpath(str)).isDisplayed();
 				if (submitDisplayed == true) {
 					System.out.println(str + "ScrolledDown found the element found");
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 					break;
 				}
 			}
@@ -961,12 +960,12 @@ public class Library extends BaseClass {
 		// ScrollUp Till Element is Found
 		public static void ScrollUpTill_ElementFound(String str) throws InterruptedException {
 			js = (JavascriptExecutor) driver;
-			for (int i = 1; i <= 100; i++) {
+			for (int i = 1; i <= 2500; i++) {
 				js.executeScript("window.scrollBy(0,-250)");
 				boolean submitDisplayed = driver.findElement(By.xpath(str)).isDisplayed();
 				if (submitDisplayed == true) {
 					System.out.println(str + "ScrolledUp found the element");
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 					break;
 				}
 			}
@@ -1008,6 +1007,49 @@ public class Library extends BaseClass {
 				e.printStackTrace();
 			}
 		}
+		
+		//Splitting Hash symbol and copy index 1
+		public static String splithash(String Xpath)
+		{
+		String ele = driver.findElement(By.xpath(Xpath)).getText();
+	       String[] val = ele.split("#");
+		String value = val[1];
+	       return value;  		   
+		}
+		
+		//Splitting Hash symbol and copy index 0
+		public static String splithashandverify(String Xpath)
+		{
+		String ele = driver.findElement(By.xpath(Xpath)).getText();
+	       String[] val = ele.split("#");
+		String value = val[0];
+	       return value;  		   
+		}
+		
+		//wait until the required product code to display
+		 public static void IsDisplayed_required(String str, String val) throws Exception{
+	         for(int i=0;i<5000;i++){
+	                  String submitDisplayed = driver.findElement(By.xpath(str)).getText();
+	                 if (submitDisplayed.contains(val)) {
+	                     System.out.println("Element is Displayed Successfully");
+	                     driver.findElement(By.xpath(str)).click();
+	                     Thread.sleep(1000);
+	                      break;
+	                 }
+	                 
+	         } }
+
+		 //Split symbol in Print code 
+		 
+		 public static String splitsymbolprintcode(String Xpath)
+			{
+			String ele = driver.findElement(By.xpath(Xpath)).getText();
+		       String[] val = ele.split("-");
+			String value = val[1];
+		       return value;
+				   
+			}
+		 
 		
 
 		public static void typeCharacter(String text) {

@@ -4,16 +4,110 @@
   <listeners>
     <listener class-name="com.cosacs.PageObject.TestListeners"/>
   </listeners>
-  <test thread-count="5" name="COS17_GoodsReceipt Test(failed)">
+  <test thread-count="5" name="COS05_RegularStock Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.cosacs.TestCases.COS17_GoodsReceipt">
+      <class name="com.cosacs.TestCases.COS05_RegularStock">
         <methods>
-          <include name="GoodsRecieptForm"/>
+          <include name="ProductDetails"/>
+          <include name="ProductEnquiry"/>
+          <include name="close"/>
+          <include name="CreateRegularStock"/>
+          <include name="RegularStocks"/>
+          <include name="launchChrome"/>
+        </methods>
+      </class> <!-- com.cosacs.TestCases.COS05_RegularStock -->
+    </classes>
+  </test> <!-- COS05_RegularStock Test(failed) -->
+  <test thread-count="5" name="COS_07_Repossessed(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cosacs.TestCases.COS_07_Repossessed">
+        <methods>
+          <include name="Repossessed"/>
           <include name="close"/>
           <include name="launchChrome"/>
         </methods>
-      </class> <!-- com.cosacs.TestCases.COS17_GoodsReceipt -->
+      </class> <!-- com.cosacs.TestCases.COS_07_Repossessed -->
     </classes>
-  </test> <!-- COS17_GoodsReceipt Test(failed) -->
+  </test> <!-- COS_07_Repossessed(failed) -->
+  <test thread-count="5" name="COS14_PurchaseOrder(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cosacs.TestCases.COS14_PurchaseOrder">
+        <methods>
+          <include name="PurchaseOrderSearch"/>
+          <include name="PurchaseOrder"/>
+          <include name="close"/>
+          <include name="launchChrome"/>
+        </methods>
+      </class> <!-- com.cosacs.TestCases.COS14_PurchaseOrder -->
+    </classes>
+  </test> <!-- COS14_PurchaseOrder(failed) -->
+  <test thread-count="5" name="COS20_HomeDelivery Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cosacs.TestCases.COS20_HomeDelivery">
+        <methods>
+          <include name="Scheduling"/>
+          <include name="close"/>
+          <include name="Picking"/>
+          <include name="SearchPicklist"/>
+          <include name="launchChrome"/>
+          <include name="SearchDeliverySchedules"/>
+          <include name="SearchShipments"/>
+        </methods>
+      </class> <!-- com.cosacs.TestCases.COS20_HomeDelivery -->
+    </classes>
+  </test> <!-- COS20_HomeDelivery Test(failed) -->
+  <test thread-count="5" name="COS_54_Discountlimitsetup Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cosacs.TestCases.COS_54_Discountlimitsetup">
+        <methods>
+          <include name="Verify_DiscountLimit_Test"/>
+          <include name="Adding_discountvalue_Test"/>
+          <include name="close"/>
+          <include name="launchChrome"/>
+        </methods>
+      </class> <!-- com.cosacs.TestCases.COS_54_Discountlimitsetup -->
+    </classes>
+  </test> <!-- COS_54_Discountlimitsetup Test(failed) -->
+  <test thread-count="5" name="COS57_TechnicianDairy Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cosacs.TestCases.COS57_TechnicianDairy">
+        <methods>
+          <include name="close"/>
+          <include name="launchChrome"/>
+          <include name="TechnicianDairy"/>
+        </methods>
+      </class> <!-- com.cosacs.TestCases.COS57_TechnicianDairy -->
+    </classes>
+  </test> <!-- COS57_TechnicianDairy Test(failed) -->
+  <test thread-count="5" name="COS66_Service_SupplierContractualCosts Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cosacs.TestCases.COS66_Service_SupplierContractualCosts">
+        <methods>
+          <include name="close"/>
+          <include name="SupplierContractualCosts"/>
+          <include name="launchChrome"/>
+        </methods>
+      </class> <!-- com.cosacs.TestCases.COS66_Service_SupplierContractualCosts -->
+    </classes>
+  </test> <!-- COS66_Service_SupplierContractualCosts Test(failed) -->
+  <test thread-count="5" name="COS_86_Exchangerate Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cosacs.TestCases.COS_86_Exchangerate">
+        <methods>
+          <include name="verifyexchangerate_Test"/>
+          <include name="Validate_ExchangeRtae_Test"/>
+          <include name="close"/>
+          <include name="launchChrome"/>
+        </methods>
+      </class> <!-- com.cosacs.TestCases.COS_86_Exchangerate -->
+    </classes>
+  </test> <!-- COS_86_Exchangerate Test(failed) -->
 </suite> <!-- Failed suite [COSACS] -->

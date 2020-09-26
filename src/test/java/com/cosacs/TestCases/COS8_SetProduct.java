@@ -21,23 +21,21 @@ public class COS8_SetProduct extends BaseClass{
 	String HierClassValue = "RS RADIOS";
 	String AddTagsVal = "Fact";
 	String TagsVal = "Fact2000 Deleted";
-	String SetProdSrch = "OC0258";
-	String ProdValue = "OC0258";
-	String QuantitySetProd = "2";
-	String SetProdSrch2 = "OCC004";
-	String ProdValue2 = "OCC004";
+	String SetProdSrch = "MLT00055";
+	String ProdValue = "MLT00055";
+	String QuantitySetProd = "1";
+	String SetProdSrch2 = "840246";
+	String ProdValue2 = "840246";
 	String QuantitySetProd2 = "1";
-	String EffectiveDate = "05/14/2020";
+	String EffectiveDate = "09/25/2020";
 	String FasciaName = "Courts";
 	String FasciaValue = "Courts";
-	
-	
+
 	@Test
 	public void SetProduct() throws Throwable {
 	
 		try {
 			Library.Interaction.userWait();
-			//driver.findElement(By.xpath(Xpath.LocationCreation.merchandising)).click();
 			Library.Interaction.click(Xpath.LocationCreation.merchandising);
 			log.info("User Clicked on Merchandising");
 			Library.Interaction.userWait();

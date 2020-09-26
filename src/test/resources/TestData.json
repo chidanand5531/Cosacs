@@ -2,9 +2,9 @@
 	"locationData": {
 		"Title": "Cosacs",
 		"ExpectedLabel": "Create Location",
-		"LocationId": "131023",
-		"SalesSystemId": "318",
-		"Name": "HAL",
+		"LocationId": "131024",
+		"SalesSystemId": "319",
+		"Name": "PATNAFIR",
 		"AddressLine1": "#233 st.Road jamaica",
 		"AddressLine2": "#233 st.Road jamaica",
 		"City": "jamaica",
@@ -20,8 +20,8 @@
 	"vendordata": {
 		"Title": "Cosacs",
 		"Expectedcreate_VendorLabel": "Create Vendor",
-		"vendorcode": "201606",
-		"vendorName": "BRAN SAC TRADERS",
+		"vendorcode": "201607",
+		"vendorName": "BRAN WORLDWIDE TRADERS",
 		"eleText": "Local",
 		"AddressLine1": "#233 church street BANGALORE",
 		"City": "BANGALORE",
@@ -49,19 +49,110 @@
 		"Search_SlectLocation": "LUCKY DOLLAR MAY PEN"
 	},
 	"GRNdata": {
-		"ExpectedGRN_Label" : "Create Goods Receipt",
-		"Seachvalue":"LUCKY DOLLAR",
-		"SelectSuggestion":"LUCKY DOLLAR MAY PEN",
-		"VendorsearchValue":"REG",
-		"SelectVendor":"REGAL WORLDWIDE TRADE",
-		"vendordeliveryno":"654",
-		"vendorInvoiceno":"100563",
-		"RecievedBy":"System Administrator",
-		"Comment":"Verify the Goods Reciept No and confirm",
-		"quantityRecived":"1",
-		"GRNMessage":"Goods receipt saved successfully",
-		"GRNCostMsg":"Goods receipt",
-		"newWndoLabel":"Verify Goods Receipt Costs"
+		"ExpectedGRN_Label": "Create Goods Receipt",
+		"Seachvalue": "LUCKY DOLLAR",
+		"SelectSuggestion": "LUCKY DOLLAR MAY PEN",
+		"VendorsearchValue": "REG",
+		"SelectVendor": "REGAL WORLDWIDE TRADE",
+		"vendordeliveryno": "654",
+		"vendorInvoiceno": "100563",
+		"RecievedBy": "System Administrator",
+		"Comment": "Verify the Goods Reciept No and confirm",
+		"quantityRecived": "1",
+		"GRNMessage": "Goods receipt saved successfully",
+		"GRNCostMsg": "Goods receipt",
+		"newWndoLabel": "Verify Goods Receipt Costs"
+	},
+	"ProductHeirarchy": {
+		"pageLabel": "Product Hierarchy",
+		"Dev": "CHAMPAN",
+		"Dept": "KODAPAN",
+		"Class": "CHAMBU"
+	},
+	"DirectReceipt": {
+		"recinputval": "Courts m",
+		"recval": "COURTS MAY PEN",
+		"vendinputval": "Frigidair",
+		"vendval": "Frigidaire / Electrolux",
+		"vendornum": "124515",
+		"vendorinvnum": "1247515",
+		"Sku": "J1194SP",
+		"val": "#J1194SP",
+		"qty": "1",
+		"reftext": "in",
+		"reftextval": "Invoice Number",
+		"reftextnum": "12345",
+		"comment": "direct receipt has been refered",
+		"procomment": "qty received",
+		"headerpage": "Create Direct Receipt",
+		"propage": "Product Enquiry",
+		"sparepage": "Spare Part Maintenance ",
+		"directreceiptpage": "Direct Receipt ",
+		"statusbfrapprove": "Awaiting Approval",
+		"statusaftapprove": "Approved",
+		"scount1": ""
+	},
+	"PaymentMethod": {
+		"verifypage": "Payment Methods Setup",
+		"productcode": "231002",
+		"Salespage": "Sale"
+	},
+	"ExchangeRate": {
+		"codeselect": "INR",
+		"codeselectName": "INR - Indian Rupee",
+		"verifyheader": "Exchange Rate",
+		"date": "27/09/2020",
+		"currencyselect": "USD",
+		"productcode": "231002",
+		"poscurrency": "United States Dollar",
+		"CurrencyRate": "150",
+		"verifysalespage": "Sale"
+	},
+	"DiscountLimitSetup": {
+		"discountbranchcode": "910 COURTS CROSS ROADS",
+		"branchcode": "courts c",
+		"productcode": "231002",
+		"discountcode": "DEC - DS ELEC COMPETITION",
+		"discountpercentage": "12",
+		"adminpermission": "Discount Limit Authorisation",
+		"user": "99995",
+		"pwd": "system%%",
+		"discountcodename": "DEC",
+		"discountpercentage1": "8"
+	},
+	"SalesConfiguration": {
+		"verifysysheader": "System Settings",
+		"productcode": "231002",
+		"soldbyname": "9903010 - michelle pilgrim",
+		"cashier": "Miche",
+		"customerid": "ECOM022365",
+		"reason": "siva siva",
+		"taxfree": "Tax Free",
+		"dutyfree": "Duty Free",
+		"filename": "bill2",
+		"TestdataForCountryName": "123",
+		"TestDataCurrency": "$",
+		"TestDataTaxNumber": "123",
+		"TestDatataTaxName": "GST"
+	},
+	"Repossessed": {
+		"productenquiryverify": "Product Enquiry",
+		"regularpageverify": "Regular Stock Maintenance ",
+		"Div": "REPOSSESSED GOODS",
+		"Dep": "REPO ELECTRICAL",
+		"Class": "REPO PC'S GOODS"
+	},
+	"PointOfSales": {
+		"customerid": "ECOM022365",
+		"verifysalepage": "Sale",
+		"discountcode": "DEC - DS ELEC COMPETITION",
+		"discountpercentage": "2",
+		"soldbyname": "9903010 - michelle pilgrim",
+		"cashier": "mich",
+		"verifysearchorder": "Search Order",
+		"datefrom": "24,09,2020",
+		"Todate": "27/09/2020",
+		"disc_codename": "DEC"
 	}
-
+}
 }

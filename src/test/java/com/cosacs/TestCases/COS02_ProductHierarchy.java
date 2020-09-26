@@ -16,11 +16,8 @@
 
 package com.cosacs.TestCases;
 import java.io.IOException;
-
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.cosacs.Locators.Xpath;
 import com.cosacs.PageObject.BaseClass;
 import com.cosacs.PageObject.Library;
@@ -28,69 +25,57 @@ import com.cosacs.Utilities.JsonParser;
 
 public class COS02_ProductHierarchy extends BaseClass {
 
-	public static String pageLabel="Product Hierarchy";
-	public static String Dev="JEWELLARY";
-	public static String DevisionMessage="Tag JEWELLARY created under Level Division";
-	public static String Dept="GOLD";
-	public static String DeptMessage="Tag GOLD created under Level Department";
-	public static String Class="KGF GOLD";
-	public static String ClassMessage="KGF GOLD created under Level Class";
-	
-	//User Login with valid credentials
+	//User Creates Product heirarchy
 	@Test
-	public  void createprdthierarchy() throws IOException {
+	public  void create_prdthierarchy_Test() throws IOException {
 		try {
-			Library.Interaction.userWait();
-			boolean flag=driver.findElement(By.xpath(Xpath.LoginPage.Logo)).isDisplayed();
-			Assert.assertTrue(flag);
-			Library.Interaction.print("User verified Company Logo successfully");
-			log.info("User verified Company Logo successfully");
-			String title=driver.getTitle();
-			Assert.assertEquals(title, JsonParser.testData("locationData.Title"));
-			Library.Interaction.print("User has verified Page Title successfully");
-			log.info("User has verified Page Title successfully");
-			Library.Interaction.click(Xpath.LocationCreation.merchandising);
-			Library.Interaction.print("User Clicked on Merchandising");
+			Library.Interaction.IsDisplayed_Click(Xpath.LocationCreation.merchandising);
 			log.info("User Clicked on Merchandising");
 			Library.Interaction.userWait();
 			Library.Interaction.click((Xpath.productHierarchy.ProductHierarchy));
-			Library.Interaction.print("User Clicked on Product Hierarchy");
 			log.info("User Clicked on Product Hierarchy");
+			Library.Interaction.IsDisplayed(Xpath.productHierarchy.Heirarchylabel);
 			String Heirarchylabel=Library.Interaction.getelementText(Xpath.productHierarchy.Heirarchylabel);
-			Assert.assertEquals(Heirarchylabel,pageLabel);
+			Assert.assertEquals(Heirarchylabel,JsonParser.testData("ProductHeirarchy.pageLabel"));
 			log.info("User validated Product Hierarchy Label successfully");
-			Library.Interaction.CreateHeirarchy(Xpath.productHierarchy.DivOptions, Xpath.productHierarchy.CreateDivTag, Dev);
+			Library.Interaction.CreateHeirarchy(Xpath.productHierarchy.DivOptions, Xpath.productHierarchy.CreateDivTag, JsonParser.testData("ProductHeirarchy.Dev"));
 			Library.Interaction.click(Xpath.productHierarchy.DIvBTN);
 			log.info("User clicked on Division save button");
+			Library.Interaction.IsDisplayed(Xpath.productHierarchy.Message_catch);
 			String text=Library.Interaction.verifyToastMessage(Xpath.productHierarchy.Message_catch);
-			log.info("User  Created Division successfully and Message is-->" +text);
-			Assert.assertEquals(text, DevisionMessage);
-			Library.Interaction.CreateHeirarchy(Xpath.productHierarchy.DeptOptions, Xpath.productHierarchy.CreateDepttag,Dept);
+			log.info("User Created Division successfully and Message is-->" +text);
+			Library.Interaction.CreateHeirarchy(Xpath.productHierarchy.DeptOptions, Xpath.productHierarchy.CreateDepttag, JsonParser.testData("ProductHeirarchy.Dept"));
 			Library.Interaction.click(Xpath.productHierarchy.DeptSaVeBTN);
-			Thread.sleep(3000);
+			Library.Interaction.IsDisplayed(Xpath.productHierarchy.Message_catch);
 			String text1=Library.Interaction.verifyToastMessage(Xpath.productHierarchy.Message_catch);
 			log.info("User  Created Department successfully and Message is -->" +text1);
-			Library.Interaction.CreateHeirarchy(Xpath.productHierarchy.ClassOptions, Xpath.productHierarchy.CreateClasstag, Class);
+			Library.Interaction.CreateHeirarchy(Xpath.productHierarchy.ClassOptions, Xpath.productHierarchy.CreateClasstag, JsonParser.testData("ProductHeirarchy.Class"));
 			Library.Interaction.click(Xpath.productHierarchy.ClassSaVeBTN);
-			Thread.sleep(2000);
+			Library.Interaction.IsDisplayed(Xpath.productHierarchy.Message_catch);
 			String text2=Library.Interaction.verifyToastMessage(Xpath.productHierarchy.Message_catch);
-			log.info("User  Created Clas successfully and Message is-->" +text2);
-/*			Thread.sleep(2000);
-			Library.Interaction.click(Xpath.productHierarchy.Configuration);
-			Library.Interaction.click(Xpath.productHierarchy.ReIndexing);
-			Library.Interaction.click(Xpath.productHierarchy.ProductStLevelCheck);
-			Library.Interaction.userWait();
-			Library.Interaction.click(Xpath.productHierarchy.ReIndeBTN);
-			log.info("User Clicked on Re-indexing" );
-			Thread.sleep(9000);
-			String text3=Library.Interaction.getelementText(Xpath.productHierarchy.Verify_ReindexingPage);
-			log.info("User Cliked on Re-indexing successfully and Message is-->" +text3);*/
+			log.info("User  Created Class successfully and Message is-->" +text2);
 			log.info("User  Created Division,Department,Class successfully ");
-			} 
+			Library.Interaction.IsDisplayed_Click(Xpath.productHierarchy.merchandising);
+			log.info("User Clicked on Merchandising");
+			Library.Interaction.moveToElement(Xpath.productHierarchy.SearchMenu);
+			Library.Interaction.IsDisplayed_Click(Xpath.productHierarchy.ProductEnquiry);
+			Library.Interaction.IsDisplayed_Click(Xpath.productHierarchy.FirstLink);
+			Library.Interaction.IsDisplayed(Xpath.productHierarchy.DivArrow);
+			Library.Interaction.ScrollDownTill_ElementFound(Xpath.productHierarchy.DivArrow);
+			Library.Interaction.selectSuggestions(Xpath.productHierarchy.DivArrow, Xpath.productHierarchy.Search, Xpath.productHierarchy.Select, JsonParser.testData("ProductHeirarchy.Dev"), JsonParser.testData("ProductHeirarchy.Dev"));
+			Library.Interaction.IsDisplayed(Xpath.productHierarchy.Message_catch);
+			Library.Interaction.click(Xpath.productHierarchy.Message_catch);
+			log.info("New Division Updated");
+/*			Library.Interaction.selectSuggestions(Xpath.productHierarchy.DivArrow, Xpath.productHierarchy.Search, Xpath.productHierarchy.Select, JsonParser.testData("ProductHeirarchy.Dept"), JsonParser.testData("ProductHeirarchy.Dept"));
+			Library.Interaction.IsDisplayed(Xpath.productHierarchy.Message_catch);
+			Library.Interaction.click(Xpath.productHierarchy.Message_catch);
+			log.info("New Department Updated");
+			Library.Interaction.selectSuggestions(Xpath.productHierarchy.DivArrow, Xpath.productHierarchy.Search, Xpath.productHierarchy.Select, JsonParser.testData("ProductHeirarchy.Class"), JsonParser.testData("ProductHeirarchy.Class"));
+			log.info("New Class Updated");*/
+			log.info("Product heirarchy created and Validated successfully");
+		} 
 		catch (Exception e) {
 			e.printStackTrace();
-			captureScreen(driver, "createprdthierarchy");
-			Assert.assertFalse(false);
 			log.info("Test Failed");
 		}
      }

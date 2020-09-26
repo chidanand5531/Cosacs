@@ -20,15 +20,16 @@ import com.cosacs.PageObject.Library;
 public class COS16_StockRequisitionProcess extends BaseClass {
 	
 	String ExpecStckRequisitionTitle = "Create Stock Requisition";
-	String SearchText = "LUCKY";
+	String SearchText = "LU";
 	String RecLocValue = "LUCKY DOLLAR MAY PEN";
-	String WarehouseText = "LUCKY";
-	String WarehouseVal = "LUCKY DOLLAR MAY PEN";
-	String ProductSrchText = "SST773";
-	String ProductText = "SST773";
-	String ProductQuantity = "5";
+	String WarehouseText = "TW";
+	String WarehouseVal = "TWICKENHAM  CLOSE";
+	String ProductSrchText = "407023";
+	String ProductText = "407023";
+	String ProductQuantity = "2";
 	String ProductComments = "Testing";
-	String CreatedDate = "03/09/2020";
+	String CreatedDate = "09/24/2020";
+
 	
 	// The below method helps the user to land the Create Stock Requisition Page
 	

@@ -9,79 +9,58 @@ import org.testng.annotations.Test;
 import com.cosacs.Locators.Xpath;
 import com.cosacs.PageObject.BaseClass;
 import com.cosacs.PageObject.Library;
+import com.cosacs.Utilities.JsonParser;
+
+/*
+* Project Name : CosaCS -  Unicomer
+* Author : Shivaprasad
+* Version : v10.5.2.2124 and v10.6
+* Reviewed By : 
+* Date of Creation : 
+* Date of change : 
+* changed function : 
+* Steps followed : Login-->Merchandising-->search product-->Verify the stock quantity of product-->Create-->Direct Receipt-->Printing Direct receipt number-->Validate the Stock count after DRN process-->Home page
+* Modified By : 
+*/
 
 public class COS_18_Directreceipt extends BaseClass {
 
-	 static String recinputval="luc";
-		static String recval="LUCKY DOLLAR MOBAY";
-		static String vendinputval="/";
-		static String vendval="Frigidaire / Electrolux";
-		static String vendornum="124515";
-		static String vendorinvnum="1247515";
-		static String Sku="j3";
-		static String val="J3681SP";
-		static String qty="2";
-		static String reftext="in";
-		static String reftextval="Invoice Number";
-		static String reftextnum="12345";
-		static String comment="direct receipt has been refered";
-		static String procomment="qty received";
-		static String headerpage="Create Direct Receipt";
-		static String propage="Product Enquiry";
-		static String sparepage="Spare Part Maintenance ";
-		static String directreceiptpage="Direct Receipt";
-		static String scount1="";
-		public static int countv;
-		 public static int qty1=2;
-
-	
+	public static int countv;
+	public static int qty1 = 1;
 
 	@Test
 
-	public static void Directreceipt_verify_stockcount() throws Exception {
+	public static void Directreceipt_verify_stockcount_Test() throws Exception {
 
 		try {
-			// *******Log into product enquiry page for selecting required product**********
 
 			Library.Interaction.userWait();
 			Library.Interaction.click(Xpath.Directreceipt.merchandising);
 			log.info("User clicked on merchandising");
-			;
 			Library.Interaction.moveToElement(Xpath.Directreceipt.search);
 			Library.Interaction.print("mouse over action on search");
 			Library.Interaction.click(Xpath.Directreceipt.productenquiry);
 			log.info("User clicked on product enquiry");
-			;
 			Library.Interaction.userWait();
 			String verifypage = driver.findElement(By.xpath(Xpath.Directreceipt.verifyproductpage)).getText();
-			Assert.assertEquals(verifypage, propage);
+			Assert.assertEquals(verifypage, JsonParser.testData("DirectReceipt.propage"));
 			log.info("User successfully logged into Product Enquiry page");
-
-			// ******************Noting the stock value of the product before generating GRN
-
-			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.searchtext, "j3681sp");
+			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.searchtext,
+					JsonParser.testData("DirectReceipt.val"));
 			log.info("User entered the product code");
-			;
-			Thread.sleep(2000);
-			Library.Interaction.click(Xpath.Directreceipt.product);
+			Library.Interaction.IsDisplayed(Xpath.Directreceipt.product);
+			Library.Interaction.IsDisplayed_required(Xpath.Directreceipt.product,
+					JsonParser.testData("DirectReceipt.val"));
 			log.info("User selected required product for next process");
-			;
-			Library.Interaction.userWait();
 			String verifysparepage = Library.Interaction.splitsymbol(Xpath.Directreceipt.verifysparepartpage);
-
 			System.out.println(verifysparepage + "<--");
-			Assert.assertEquals(verifysparepage, sparepage);
+			Assert.assertEquals(verifysparepage, JsonParser.testData("DirectReceipt.sparepage"));
 			log.info("User successfully logged into spare part maintenance page");// verify spare part maintain page
-			Library.Interaction.ScrollElemntdirectloc(Xpath.Directreceipt.verifylocation);
-			log.info("User scrolled down to required location for noting the stock value");
 			Library.Interaction.userWait();
 			String locname = driver.findElement(By.xpath(Xpath.Directreceipt.verifylocation)).getText();
-			Library.Interaction.print(locname + " <--Stock Count Location Name");
+			log.info(locname + " <--Stock Count Location Name");
 			String scount1 = driver.findElement(By.xpath(Xpath.Directreceipt.verifylocationcount1)).getText();
-			Library.Interaction.print(scount1 + "   <----Stock count value");
-			Library.Interaction.userWait();
-			Library.Interaction.ScrollElemntdirectlocact(Xpath.Directreceipt.merchandising);
-			Library.Interaction.userWait();
+			log.info(scount1 + "   <----Stock count value");
 			log.info("User noted the stockcount of the product");
 			countv = Integer.parseInt(scount1.trim());
 
@@ -90,15 +69,11 @@ public class COS_18_Directreceipt extends BaseClass {
 			captureScreen(driver, "Directreceipt_verify_stockcount");
 			Assert.assertFalse(false);
 			log.info("Test Failed");
-
 		}
-
 	}
 
-	// ***************Generating Direct Receipt for the product****************
-
-	@Test(dependsOnMethods = { "Directreceipt_verify_stockcount" })
-	public void Directreceipt_form() throws Exception {
+	@Test(dependsOnMethods = { "Directreceipt_verify_stockcount_Test" })
+	public void Generate_Directreceipt_number_form_Test() throws Exception {
 		try {
 
 			Library.Interaction.click(Xpath.Directreceipt.merchandising);
@@ -106,43 +81,54 @@ public class COS_18_Directreceipt extends BaseClass {
 			Library.Interaction.moveToElement(Xpath.Directreceipt.create);
 			Library.Interaction.userWait();
 			Library.Interaction.click(Xpath.Directreceipt.directreceipt);
-			log.info("clicked on direct receipt");
-			Thread.sleep(4000);
+			log.info("clicked on create direct receipt");
+			Library.Interaction.IsDisplayed(Xpath.Directreceipt.verifydirectpage);
 			String header = driver.findElement(By.xpath(Xpath.Directreceipt.verifydirectpage)).getText();
-			Assert.assertEquals(header, headerpage);
+			Assert.assertEquals(header, JsonParser.testData("DirectReceipt.headerpage"));
 			log.info("USer successfully logged into Direct Receipt page");
-			Library.Interaction.print("create direct receipt page is dislayed successfully");
-			Library.Interaction.userWait();
+			Library.Interaction.IsDisplayed(Xpath.Directreceipt.recarrowclick);
 			Library.Interaction.selectele(Xpath.Directreceipt.recarrowclick, Xpath.Directreceipt.recsearchval,
-					Xpath.Directreceipt.recslectlist, recinputval, recval);
+					Xpath.Directreceipt.recslectlist, JsonParser.testData("DirectReceipt.recinputval"),
+					JsonParser.testData("DirectReceipt.recval"));
 			log.info("User successfully selected the receiving location");
+			Library.Interaction.userWait();
 			Library.Interaction.selectele(Xpath.Directreceipt.vendorarrowclick, Xpath.Directreceipt.vendorsearchval,
-					Xpath.Directreceipt.vendorselectlist, vendinputval, vendval);
+					Xpath.Directreceipt.vendorselectlist, JsonParser.testData("DirectReceipt.vendinputval"),
+					JsonParser.testData("DirectReceipt.vendval"));
 			log.info("User successfully selected the vendor");
 			Library.Interaction.selectEleByIndex(Xpath.Directreceipt.receivedby, 4);
 			log.info("User successfully selected the receiving person");
-			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.vendordevnum, vendornum);
+			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.vendordevnum,
+					JsonParser.testData("DirectReceipt.vendornum"));
 			log.info("User successfully entered the vendor referance number");
-			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.vendorinvnum, vendorinvnum);
+			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.vendorinvnum,
+					JsonParser.testData("DirectReceipt.vendorinvnum"));
 			log.info("User successfully entered the vendor invoice number");
 			Library.Interaction.click(Xpath.Directreceipt.refaddicon);
-			Library.Interaction.print("Referance add icon is clicked");
+			log.info("Referance add icon is clicked successfully");
 			Library.Interaction.selectele(Xpath.Directreceipt.refarrow, Xpath.Directreceipt.reftext,
-					Xpath.Directreceipt.refselect, reftext, reftextval);
+					Xpath.Directreceipt.refselect, JsonParser.testData("DirectReceipt.reftext"),
+					JsonParser.testData("DirectReceipt.reftextval"));
 			log.info("User successfully selected the referance option");
-			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.refinput, reftextnum);
+			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.refinput,
+					JsonParser.testData("DirectReceipt.reftextnum"));
 			log.info("User successfully entered contacts details");
-			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.textarea, comment);
+			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.textarea,
+					JsonParser.testData("DirectReceipt.comment"));
 			log.info("User successfully updated comment details");
 			Library.Interaction.click(Xpath.Directreceipt.addicon);
-			Library.Interaction.print("clicked on add icon");
+			log.info("User clicked on add icon fro adding product");
 			Library.Interaction.userWait();
 			Library.Interaction.selectele(Xpath.Directreceipt.addproductarrow, Xpath.Directreceipt.productcode,
-					Xpath.Directreceipt.productselect, Sku, val);
+					Xpath.Directreceipt.productselect, JsonParser.testData("DirectReceipt.Sku"),
+					JsonParser.testData("DirectReceipt.Sku"));
 			log.info("User successfully entered product code and selected");
-			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.qtyReceived, qty);
+			Library.Interaction.IsDisplayed(Xpath.Directreceipt.qtyReceived);
+			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.qtyReceived,
+					JsonParser.testData("DirectReceipt.qty"));
 			log.info("User successfully entered product code and selected");
-			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.procomment, procomment);
+			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.procomment,
+					JsonParser.testData("DirectReceipt.procomment"));
 			log.info("User successfully updated comment details of product");
 			Library.Interaction.click(Xpath.Directreceipt.tickmark);
 			log.info("product added successfully");
@@ -151,28 +137,37 @@ public class COS_18_Directreceipt extends BaseClass {
 			Library.Interaction.userWait();
 			Library.Interaction.click(Xpath.Directreceipt.createreceiptbut);
 			log.info("User successfully clicked on create receipt button");
+			Library.Interaction.IsDisplayed(Xpath.Directreceipt.status);
+			Library.Interaction.IsDisplayed(Xpath.Directreceipt.verifydirectpage);
+			String verifydirectpage = Library.Interaction.splithashandverify(Xpath.Directreceipt.verifydirectpage);
+			System.out.println(verifydirectpage);
+			System.out.println(JsonParser.testData("DirectReceipt.directreceiptpage"));
+			Assert.assertEquals(verifydirectpage, JsonParser.testData("DirectReceipt.directreceiptpage"));
 			log.info("User successfully logged into directreceipt page for approval");
-		
-
-			// ********************Noted with the Direct receipt code***********************
-
+			String statusbeforeapprove = driver.findElement(By.xpath(Xpath.Directreceipt.status)).getText();
+			System.out.println(statusbeforeapprove);
+			System.out.println(JsonParser.testData("DirectReceipt.statusbfrapprove"));
+			Assert.assertEquals(statusbeforeapprove, JsonParser.testData("DirectReceipt.statusbfrapprove"));
+			log.info("Status is Awaiting still");
+			String dircode = Library.Interaction.splithash(Xpath.Directreceipt.verifyapprovepage);
+			log.info("Direct receipt number has been noted");
 			Library.Interaction.userWait();
 			Library.Interaction.click(Xpath.Directreceipt.approvebut);
 			log.info("User successfully clicked on approved button");
-			;
-			Library.Interaction.userWait();
-			String statusdirect1 = driver.findElement(By.xpath(Xpath.Directreceipt.awaitingapprove)).getText();
-			Library.Interaction.print(statusdirect1 + "   <-----Status after approval");
-			Library.Interaction.userWait();
-			Library.Interaction.click(Xpath.Directreceipt.printcostbut);
+			Library.Interaction.IsDisplayed(Xpath.Directreceipt.approvedstatus);
+			String statusdirect1 = driver.findElement(By.xpath(Xpath.Directreceipt.status)).getText();
+			log.info(statusdirect1 + "   <-----Status after approval");
+			Library.Interaction.IsDisplayed(Xpath.Directreceipt.printcostbut);
+			Library.Interaction.IsDisplayed_Click(Xpath.Directreceipt.printcostbut);
 			log.info("User successfully clicked on print cost button for printing");
-			;
-			Thread.sleep(4000);
-			Library.Interaction.click(Xpath.Directreceipt.okbutton);
+			Library.Interaction.IsDisplayed_Click(Xpath.Directreceipt.okbutton);
 			log.info("Clicked on ok button for confirmation");
-			Thread.sleep(4000);
-			String win = driver.getWindowHandle();
-			driver.switchTo().window(win);
+			Library.Interaction.switchtochildwin1();
+			Library.Interaction.IsDisplayed(Xpath.Directreceipt.refnumber);
+			String retainval = Library.Interaction.retainonlynumbers(Xpath.Directreceipt.refnumber);
+			Assert.assertEquals(retainval, dircode);
+			log.info("Successfully validated the Receipt number generated");
+			Library.Interaction.switchtoparent();
 			log.info("User is now successfully switched back to main page from print page");
 
 		} catch (InterruptedException e) {
@@ -180,63 +175,35 @@ public class COS_18_Directreceipt extends BaseClass {
 			captureScreen(driver, "Directreceipt_form");
 			Assert.assertFalse(false);
 			log.info("Test Failed");
-		}
-	}
-
-	// *********************Verify The Stock Count****************************
-	@Test(dependsOnMethods = { "Directreceipt_form" })
-	public void Directreceipt_stockcount_afterDRN() throws IOException {
+		} }
+	
+	@Test(dependsOnMethods = { "Generate_Directreceipt_number_form_Test" })
+	public void Validate_Directreceipt_stockcount_afterDRN_Test() throws Exception {
 
 		try {
 
-			Library.Interaction.userWait();
-			Library.Interaction.click(Xpath.Directreceipt.merchandising);
-			Library.Interaction.print("clicked on merchandising");
-			Library.Interaction.moveToElement(Xpath.Directreceipt.search);
-			Library.Interaction.print("mouse over action on search");
-			Library.Interaction.click(Xpath.Directreceipt.productenquiry);
-			Library.Interaction.print("clicked on product enquiry");
-			Library.Interaction.userWait();
-			String verifypage1 = driver.findElement(By.xpath(Xpath.Directreceipt.verifyproductpage)).getText();
-			Assert.assertEquals(verifypage1, propage);
-			log.info("User is in Product Enquiry page");
-
-			Library.Interaction.setTextBoxByXpath(Xpath.Directreceipt.searchtext, "j3681sp");
-			Library.Interaction.print("Entered the product code");
-			Thread.sleep(2000);
-			Library.Interaction.click(Xpath.Directreceipt.product);
-			Library.Interaction.print("randomly one product is selected");
-			Library.Interaction.userWait();
+			Library.Interaction.IsDisplayed_Click(Xpath.Directreceipt.productlinkforverify);
+			Library.Interaction.IsDisplayed(Xpath.Directreceipt.verifysparepartpage);
 			String verifysparepage = Library.Interaction.splitsymbol(Xpath.Directreceipt.verifysparepartpage);
-			Assert.assertEquals(verifysparepage, sparepage);
-			log.info("USer is in sapre part maintenance page");
-
-			Library.Interaction.ScrollElemntdirectloc(Xpath.Directreceipt.verifylocation);
-			Library.Interaction.print("scrolled to required location");
+			System.out.println(verifysparepage + "<--");
+			Assert.assertEquals(verifysparepage, JsonParser.testData("DirectReceipt.sparepage"));
+			log.info("User successfully logged into spare part maintenance page");// verify spare part maintain page
 			Library.Interaction.userWait();
-			String locname1 = driver.findElement(By.xpath(Xpath.Directreceipt.verifylocation)).getText();
-			Library.Interaction.print(locname1 + " <--Stock Count Location Name");
-			String scount1v = driver.findElement(By.xpath(Xpath.Directreceipt.verifylocationcount1)).getText();
-
-			Library.Interaction.print(scount1v + "   <----Stock count value");
-			int count = Integer.parseInt(scount1v.trim());
-			log.info("User successfully noted the stock value after DRN generated");
-			if (countv + qty1 == count) {
-				Library.Interaction.print("successsss");
-			} else {
-				Library.Interaction.print("dhammaraaa");
-			}
-
-			System.out.println(countv + qty1 == count);
-			int wow = countv + qty1;
-			System.out.println(wow);
-
-			Assert.assertEquals(wow, count);
-			log.info("User successfully validated teh total quantity added to the location");
-
+			String locname = driver.findElement(By.xpath(Xpath.Directreceipt.verifylocation)).getText();
+			log.info(locname + " <--Stock Count Location Name");
+			String scount1 = driver.findElement(By.xpath(Xpath.Directreceipt.verifylocationcount1)).getText();
+			log.info(scount1 + "   <----Stock count value");
+			log.info("User noted the stockcount of the product");
+			int actualcount = Integer.parseInt(scount1.trim());
+			log.info(countv + " <-- Initial product stock count");
+			log.info(qty1 + " <--Added stock count quantity");
+			log.info(actualcount + " <--Actual count after adding product stock");
+			int expectedquantity = countv + qty1;
+			log.info(expectedquantity + " <--Expected product count");
+			Assert.assertEquals(actualcount, expectedquantity);
+			log.info("User successfully validated the total quantity added to the location");
 			Library.Interaction.userWait();
 			Library.Interaction.click(Xpath.Directreceipt.homeicon);
-			Library.Interaction.print("User is in Home page");
 			log.info("User is in Home Page");
 
 		} catch (InterruptedException e) {
@@ -245,8 +212,10 @@ public class COS_18_Directreceipt extends BaseClass {
 			Assert.assertFalse(false);
 			log.info("Test Failed");
 
-		}
-
+		} 
 	}
-
 }
+
+	
+
+

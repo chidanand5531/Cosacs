@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="COSACS" duration-ms="104819" started-at="2020-09-25T03:39:07Z" finished-at="2020-09-25T03:40:51Z">
+  <suite name="COSACS" duration-ms="50825" started-at="2020-09-26T08:19:23Z" finished-at="2020-09-26T08:20:14Z">
     <groups>
     </groups>
-    <test name="COS17_GoodsReceipt Test" duration-ms="104819" started-at="2020-09-25T03:39:07Z" finished-at="2020-09-25T03:40:51Z">
-      <class name="com.cosacs.TestCases.COS17_GoodsReceipt">
-        <test-method status="PASS" signature="launchChrome(java.lang.String)[pri:0, instance:com.cosacs.TestCases.COS17_GoodsReceipt@5f71c76a]" name="launchChrome" is-config="true" duration-ms="11719" started-at="2020-09-25T03:39:07Z" finished-at="2020-09-25T03:39:18Z">
+    <test name="COS_86_Exchangerate Test" duration-ms="50825" started-at="2020-09-26T08:19:23Z" finished-at="2020-09-26T08:20:14Z">
+      <class name="com.cosacs.TestCases.COS_86_Exchangerate">
+        <test-method status="PASS" signature="launchChrome(java.lang.String)[pri:0, instance:com.cosacs.TestCases.COS_86_Exchangerate@5f71c76a]" name="launchChrome" is-config="true" duration-ms="11683" started-at="2020-09-26T08:19:23Z" finished-at="2020-09-26T08:19:35Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChrome -->
-        <test-method status="PASS" signature="GoodsRecieptForm()[pri:0, instance:com.cosacs.TestCases.COS17_GoodsReceipt@5f71c76a]" name="GoodsRecieptForm" duration-ms="92454" started-at="2020-09-25T03:39:18Z" finished-at="2020-09-25T03:40:51Z">
+        <test-method status="PASS" signature="verifyexchangerate_Test()[pri:0, instance:com.cosacs.TestCases.COS_86_Exchangerate@5f71c76a]" name="verifyexchangerate_Test" duration-ms="25655" started-at="2020-09-26T08:19:35Z" finished-at="2020-09-26T08:20:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GoodsRecieptForm -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.cosacs.TestCases.COS17_GoodsReceipt@5f71c76a]" name="close" is-config="true" duration-ms="623" started-at="2020-09-25T03:40:51Z" finished-at="2020-09-25T03:40:51Z">
+        </test-method> <!-- verifyexchangerate_Test -->
+        <test-method status="PASS" signature="Validate_ExchangeRtae_Test()[pri:0, instance:com.cosacs.TestCases.COS_86_Exchangerate@5f71c76a]" name="Validate_ExchangeRtae_Test" duration-ms="12586" started-at="2020-09-26T08:20:01Z" depends-on-methods="com.cosacs.TestCases.COS_86_Exchangerate.verifyexchangerate_Test" finished-at="2020-09-26T08:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_ExchangeRtae_Test -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.cosacs.TestCases.COS_86_Exchangerate@5f71c76a]" name="close" is-config="true" duration-ms="819" started-at="2020-09-26T08:20:13Z" finished-at="2020-09-26T08:20:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.cosacs.TestCases.COS17_GoodsReceipt -->
-    </test> <!-- COS17_GoodsReceipt Test -->
+      </class> <!-- com.cosacs.TestCases.COS_86_Exchangerate -->
+    </test> <!-- COS_86_Exchangerate Test -->
   </suite> <!-- COSACS -->
 </testng-results>

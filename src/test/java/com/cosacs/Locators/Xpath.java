@@ -7,7 +7,6 @@ public class Xpath {
 		public static String passWord = "//input[@name='password']";
 		public static String logIn = "//button[contains(text(),'Log In')]";
 		public static String Logo = "//div[@id='center']/div";
-
 	}
 
 	public static class LocationCreation {
@@ -172,7 +171,15 @@ public class Xpath {
 		public static String ProductStLevelCheck = "//input[@id='doMerchandiseStockLevels']";
 		public static String ReIndeBTN = "//button[text()='Re-Index']";
 		public static String Verify_ReindexingPage = "//div[@id='center']//h2";
-		
+		public static String SearchMenu = "(//a[contains(text(),'Merchandising')]/..//a)[20]";
+		public static String ProductEnquiry = "//a[contains(text(),'Product Enquiry')]";
+		public static String FirstLink = "(//a[@class='ng-binding'])[1]";
+		public static String MessageClick = "//div[@id='growlcontainer']//button[@type='button']";
+		public static String DivArrow="(//list[@name='hierarchyList']//div[@class='list-arrow'])[1]";
+		public static String Search="//list[@name='hierarchyList']//div[@class='list-search ng-scope']//input";
+		public static String Select="//list[@name='hierarchyList']//div[@class='list-item-container ng-scope']//div";
+		public static String DeptArrow="(//list[@name='hierarchyList']//div[@class='list-arrow'])[2]";
+		public static String ClassArrow="(//list[@name='hierarchyList']//div[@class='list-arrow'])[2]";
 	}
 
 	public static class TopskuReports {
@@ -301,10 +308,6 @@ public class Xpath {
 		public static String Export = "//button[text()='Export']";
 	}
 
-
-
-
-	
 
 	// ********Kartik******
 
@@ -603,366 +606,381 @@ public class Xpath {
 		   
 	   }
 //*********SHIVA PRASAD *********
-	public static class Repossessed
-	{
-		public static String merchandising="//a[contains(text(),'Merchandising')]/..";
-		public static String search="(//a[contains(.,'Merchandising')]/..//a)[20]";
-		public static String productenquiryverify="//div[@id='center']//h2[@id='page-heading']";
-		public static String productenquiry="//a[.='Product Enquiry']";
-		public static String regularstock="(//ul[@class='facet-field list-unstyled'])[5]//li[contains(text(),'RegularStock ')]";
-		public static String activenew="(//ul[@class='facet-field list-unstyled'])[6]//li[contains(text(),'Active New')]";
-		public static String activecurrent="//div//ul//li[contains(.,'Active Current')]";
-		//public static String randomproduct="(//a[@class='ng-binding'])[13]";
-		public static String randomproduct="(//a[@class='ng-binding'])[3]";                        //Update for every run
-		public static String regularstockmaintenance="//div//h2[contains(.,'Regular Stock Maintenance')]";
-		public static String repossessedcodebutton="//button[.='Create Repossession Codes']";
-		public static String repossessedsuccessfully="//div[@class='growlstatus']";
-		public static String divpro="(//div[@class='list-container ng-scope'])[2]/div/span";
-		public static String deppro="(//div[@class='list-container ng-scope'])[3]/div/span";
-		public static String classpro="(//div[@class='list-container ng-scope'])[4]/div/span";
-		public static String savebut="//div[@class='col-md-12']//button[@class='btn btn-primary']";
-		public static String volume="(//div//td[.='Volume'])[2]";                 //Update for every run
-		public static String productcoderepoosessed="(//div[@class='col-md-8']//p[@class='form-control-static ng-binding'])[1]";
-		
-		//**********PATH FOR PRODUCT EXCELLENT************
-		public static String productE="(//div[@class='growlstatus']//a)[1]";
-		public static String printpriceE="(//input[@class='ng-pristine ng-valid'])[1]";
-		public static String requireslabelE="(//input[@class='ng-pristine ng-valid'])[2]";
-		
-		public static String divisionE="(//div[@class='list-arrow']//i[@class='glyphicons play'])[2]";
-		public static String divisiontextboxE="(//input[@class='ng-pristine ng-valid'])[3]";		
-		public static String divisiontextE="//div[@class='list-item-container ng-scope']//div";
-		
-		public static String depE="(//div[@class='list-arrow']//i[@class='glyphicons play'])[3]";
-		public static String deptextboxE="(//input[@class='ng-pristine ng-valid'])[3]";
-		public static String deptextE="//div[@class='list-item-container ng-scope']//div";
-		
-		public static String calssE="(//div[@class='list-arrow']//i[@class='glyphicons play'])[4]";
-		public static String classtextboxE="(//input[@class='ng-pristine ng-valid'])[3]";
-		public static String classtextE="//div[@class='list-item-container ng-scope']//div";
-				
-		//**********PATH FOR PRODUCT FAIR************
-		
-		public static String productF="(//div[@class='growlstatus']//a)[2]";
+	 public static class Repossessed
+		{
+			public static String merchandising="//a[contains(text(),'Merchandising')]/..";
+			public static String search="(//a[contains(.,'Merchandising')]/..//a)[20]";
+			public static String productenquiryverify="//div[@id='center']//h2[@id='page-heading']";
+			public static String productenquiry="//a[.='Product Enquiry']";
+			public static String regularstock="(//ul[@class='facet-field list-unstyled'])[5]//li[contains(text(),'RegularStock ')]";
+			public static String activenew="(//ul[@class='facet-field list-unstyled'])[6]//li[contains(text(),'Active New')]";
+			public static String activecurrent="//div//ul//li[contains(.,'Active Current')]";
+			public static String randomproduct="(//a[@class='ng-binding'])[6]";                        //Update for every run
+			public static String regularstockmaintenance="//div//h2[contains(.,'Regular Stock Maintenance')]";
+			public static String repossessedcodebutton="//button[.='Create Repossession Codes']";
+			public static String repossessedsuccessfully="//div[@class='growlstatus']";
+			public static String divpro="(//div[@class='list-container ng-scope'])[2]/div/span";
+			public static String deppro="(//div[@class='list-container ng-scope'])[3]/div/span";
+			public static String classpro="(//div[@class='list-container ng-scope'])[4]/div/span";
+			public static String savebut="//div[@class='col-md-12']//button[@class='btn btn-primary']";
+			public static String volume="(//div//td[.='Volume'])[5]";                 //Update for every run
+			public static String productcoderepoosessed="(//div[@class='col-md-8']//p[@class='form-control-static ng-binding'])[1]";
+			//**********PATH FOR PRODUCT EXCELLENT************
+			public static String productE="(//div[@class='growlstatus']//a)[1]";
+			public static String printpriceE="(//input[@class='ng-pristine ng-valid'])[1]";
+			public static String requireslabelE="(//input[@class='ng-pristine ng-valid'])[2]";
+			public static String divisionE="//div[@class='form-group']//label[.='Division']/..//div[@class='list-arrow']//div";
+			public static String divisiontextboxE="//div[@class='form-group']//label[.='Division']/..//div[@class='list-options ng-scope']//div//input";		
+			public static String divisiontextE="//div[@class='form-group']//label[.='Division']/..//div[@class='list-item-container ng-scope']//div";
+			public static String depE="//div[@class='form-group']//label[.='Department']/..//div[@class='list-arrow']//div";
+			public static String deptextboxE="//div[@class='form-group']//label[.='Department']/..//div[@class='list-options ng-scope']//div//input";
+			public static String deptextE="//div[@class='form-group']//label[.='Department']/..//div[@class='list-item-container ng-scope']//div";
+			public static String classE="//div[@class='form-group']//label[.='Class']/..//div[@class='list-arrow']//div";
+			public static String classtextboxE="//div[@class='form-group']//label[.='Class']/..//div[@class='list-options ng-scope']//div//input";
+			public static String classtextE="//div[@class='form-group']//label[.='Class']/..//div[@class='list-item-container ng-scope']//div";
+					
+			//**********PATH FOR PRODUCT FAIR************
+			
+			public static String productF="(//div[@class='growlstatus']//a)[2]";
 
-		//**********PATH FOR PRODUCT POOR************
-		
-		public static String productP="(//div[@class='growlstatus']//a)[3]";
+			//**********PATH FOR PRODUCT POOR************
+			
+			public static String productP="(//div[@class='growlstatus']//a)[3]";
 
-		//**********PATH FOR PRODUCT EFAIR************
-		
-		public static String productW="(//div[@class='growlstatus']//a)[4]";
-		
-		
-		public static String notifyclose="//div[@class='growlstatus']//button";
-		public static String condition="//div[@class='col-lg-8']";
-		public static String type="(//div//select[@name='type'])[1]//option[@selected='selected']";
-		public static String searchtext="//div[@class='col-lg-4 col-md-4']//input";
-		public static String product="//span//a";
-	    public static String printpricecheckbox="(//div//input[@class='ng-pristine ng-valid'])[1]";
-		public static String requireslabelcheckbox="(//div//input[@class='ng-pristine ng-valid'])[2]";
-		public static String homeicon="//li//a[@id='home']";
-		public static String status="//div//input[@class='form-control']";
-		
-	}
-	
-	
-	public static class Directreceipt
-	{
-		public static String product="//span//a";
-		public static String search="(//a[contains(.,'Merchandising')]/..//a)[20]";
-		//public static String productenquiryverify="//div[@id='center']//h2[@id='page-heading']";
-		public static String productenquiry="//a[.='Product Enquiry']";
-		public static String searchtext="//div[@class='col-lg-4 col-md-4']//input";
-		public static String merchandising="//a[contains(text(),'Merchandising')]/..";
-		public static String create="(//a[contains(.,'Create')])[2]";
-		public static String directreceipt="//a[contains(.,'Direct Receipt')]";
-		public static String recarrowclick="(//div//i[@class='glyphicons play'])[1]";
-		public static String recsearchval="//div//input[@class='ng-pristine ng-valid']";
-		public static String recslectlist="//div[@class='list-item-container ng-scope']//div";
-		public static String vendorarrowclick="(//div//i[@class='glyphicons play'])[2]";
-		public static String vendorsearchval="//input[@class='ng-pristine ng-valid']";
-		public static String vendorselectlist="//div[@class='list-item-container ng-scope']//div";
-		public static String receivedby="//select[@name='receivedById']";
-		public static String vendordevnum="//input[@name='vendorDeliveryNumber']";
-		public static String vendorinvnum="//input[@name='vendorInvoiceNumber']";
-		public static String addicon="//span[@class='glyphicons glyph-btn plus']";
-		public static String addproductarrow="//a[@class='select2-choice select2-default']";
-		public static String refaddicon="(//div[@class='row buffer top']//td)[1]";
-		public static String refarrow="(//div[@class='row buffer top']//div[@class='list-arrow'])[2]//i";
-		public static String reftext="//div[@class='list-options ng-scope']//input";
-		public static String refselect="(//div[@class='list-options ng-scope']//div[@class='list-item-container ng-scope'])//div";
-		public static String refinput="//td//input[@class='form-control ng-pristine ng-valid ng-valid-required']";
-		public static String textarea="//div[@class='form-group']//textarea";
-		public static String productcode="//div[@class='select2-drop productResults select2-with-searchbox select2-drop-active']//input";
-		public static String procomment="//td//input[@class='form-control ng-pristine ng-valid']";
-		public static String productselect="//div[@id='select2-drop']//ul[@class='select2-results']//li//b";
-		public static String qtyReceived="(//div[@id='directReceiptProductsGrid']//input)[3]";
-		public static String tickmark="(//td[@class='component-controls']//span)[4]";
+			//**********PATH FOR PRODUCT EFAIR************
+			
+			public static String productW="(//div[@class='growlstatus']//a)[4]";
+			
+			
+			public static String notifyclose="//div[@class='growlstatus']//button";
+			public static String condition="//div[@class='col-lg-8']//input";
+			public static String type="(//div//select[@name='type'])[1]//option[@selected='selected']";
+			public static String searchtext="//div[@class='col-lg-4 col-md-4']//input";
+			public static String product="//span//a";
+		    public static String printpricecheckbox="(//div//input[@class='ng-pristine ng-valid'])[1]";
+			public static String requireslabelcheckbox="(//div//input[@class='ng-pristine ng-valid'])[2]";
+			public static String homeicon="//li//a[@id='home']";
+			public static String status="//div//input[@class='form-control']";
+			
+		}
 		
 		
-		public static String verifylocation="//td//a[.='COURTS CROSS ROADS']";
-		public static String verifylocationcount1="(//tr//td//a[.='COURTS CROSS ROADS']/../..//td)[2]";
-		public static String verifylocationcount2="(//tr//td//a[.='COURTS CROSS ROADS']/../..//td)[3]";
+		public static class Directreceipt
+		{
+			public static String product="//span//a";
+			public static String search="(//a[contains(.,'Merchandising')]/..//a)[20]";
+			public static String productenquiry="//a[.='Product Enquiry']";
+			public static String searchtext="//div[@class='col-lg-4 col-md-4']//input";
+			public static String merchandising="//a[contains(text(),'Merchandising')]/..";
+			public static String create="(//a[contains(.,'Create')])[2]";
+			public static String directreceipt="//a[contains(.,'Direct Receipt')]";
+			public static String recarrowclick="(//div//i[@class='glyphicons play'])[1]";
+			public static String recsearchval="//div//input[@class='ng-pristine ng-valid']";
+			public static String recslectlist="//div[@class='list-item-container ng-scope']//div";
+			public static String vendorarrowclick="(//div//i[@class='glyphicons play'])[2]";
+			public static String vendorsearchval="//input[@class='ng-pristine ng-valid']";
+			public static String vendorselectlist="//div[@class='list-item-container ng-scope']//div";
+			public static String receivedby="//select[@name='receivedById']";
+			public static String vendordevnum="//input[@name='vendorDeliveryNumber']";
+			public static String vendorinvnum="//input[@name='vendorInvoiceNumber']";
+			public static String addicon="//span[@class='glyphicons glyph-btn plus']";
+			public static String addproductarrow="//a[@class='select2-choice select2-default']";
+			public static String refaddicon="(//div[@class='row buffer top']//td)[1]";
+			public static String refarrow="(//div[@class='row buffer top']//div[@class='list-arrow'])[2]//i";
+			public static String reftext="//div[@class='list-options ng-scope']//input";
+			public static String refselect="(//div[@class='list-options ng-scope']//div[@class='list-item-container ng-scope'])//div";
+			public static String refinput="//td//input[@class='form-control ng-pristine ng-valid ng-valid-required']";
+			public static String textarea="//div[@class='form-group']//textarea";
+			public static String productcode="//div[@class='select2-drop productResults select2-with-searchbox select2-drop-active']//input";
+			public static String procomment="//td//input[@class='form-control ng-pristine ng-valid']";
+			public static String productselect="//div[@id='select2-drop']//ul[@class='select2-results']//li//b";
+			public static String qtyReceived="(//div[@id='directReceiptProductsGrid']//input)[3]";
+			public static String tickmark="(//td[@class='component-controls']//span)[4]";
+			//**************Barbados**************
+//			
+//			public static String verifylocation="//td//a[.='COURTS DRONE']";
+//			public static String verifylocationcount1="(//tr//td//a[.='COURTS DRONE']/../..//td)[2]";
+//			public static String verifylocationcount2="(//tr//td//a[.='COURTS DRONE']/../..//td)[3]";
+			
+			//****************BELIZE****************
+			
+//			public static String verifylocation="//td//a[.='COURTS (BELIZE CITY)']";
+//			public static String verifylocationcount1="(//tr//td//a[.='COURTS (BELIZE CITY)']/../..//td)[2]";
+//			public static String verifylocationcount2="(//tr//td//a[.='COURTS (BELIZE CITY)']/../..//td)[3]";
+//			
+			//******************TRINIDAD*********
+			
+//			public static String verifylocation="//td//a[.='COURTS MEGASTORE']";
+//			public static String verifylocationcount1="(//tr//td//a[.='COURTS MEGASTORE']/../..//td)[2]";
+//			public static String verifylocationcount2="(//tr//td//a[.='COURTS MEGASTORE']/../..//td)[3]";
+//			
+			
+			//******************Jamaica*********
+			
+			public static String verifylocation="//td//a[.='COURTS MAY PEN']";
+			public static String verifylocationcount1="(//tr//td//a[.='COURTS MAY PEN']/../..//td)[2]";
+			public static String verifylocationcount2="(//tr//td//a[.='COURTS MAY PEN']/../..//td)[3]";	
+			
+			
+			public static String verifyproductpage="//div//h2[.='Product Enquiry']";
+			public static String verifysparepartpage="//div//h2[contains(.,'Spare Part Maintenance')]";
+			public static String createdirectreceiptpage="//div//h2[contains(.,'Create Direct Receipt')]";
+			public static String verifydirectpage="//div//h2[contains(.,'Direct Receipt')]";
+			public static String createreceiptbut="//div//button[.='Create Receipt']";
+			public static String verifyapprovepage="//div//h2[@id='page-heading']";
+			public static String approvedstatus="//div//p[.='Approved']";
+			public static String approvebut="//div//button[contains(.,'Approve')]";
+			public static String printcostbut="//div[@class='pull-right']//button[.='Print with cost ']";
+			public static String auditconfirm="//div//h3";
+			public static String okbutton="//div//button[.='OK']";
+			public static String homeicon="//li//a[@id='home']";
+			public static String refnumber="//div[@class='ref']";
+			public static String status="//div//label[.='Status']/..//p";
+			public static String productlinkforverify="//div[@id='directReceiptProductsGrid']//tbody//p//a";
+		}
 		
-		//****************Jamaica*******************
+		public static class PointOfSales
+		{
+			public static String salesbut="//div[@class='nav-collapse navbar-inverse-collapse ng-scope']//li/a[.='Sales']";
+			public static String pointofsalesbut="//li//a[.='Point of Sale']";
+			public static String saleverify="//div[.='Sale']";
+			public static String majorwhitegreen="//div[.='MAJOR WHITES']";
+			public static String randaomproduct="(//span[@class='glyphicons cart_in'])[1]";
+			public static String randaomproduct1="(//span[@class='glyphicons cart_in'])[2]";
+			public static String resetbutton="//div//button[.='Reset']";
+			public static String audiovisual="//div[.='AUDIO VISUAL']";
+			public static String cellphoneorange="//div[.='CELLPHONES AND ACCESSORIES']";
+			//public static String 12monthsblue="//div[.='12 MONTHS SERVICE PACKAGE']";
+			public static String basketicon="//div//h4//span[@class='glyphicons cart_in']";
+			public static String warrantyaddicon="(//div//span[@class='input-group-addon glyphicons bordered cart_in click'])[1]";
+			public static String customer="(//div[@class='col-lg-3 col-md-3 no-margin no-pad']//button)[2]";
+			public static String customeridtextbox="//div//input[@id='CustomerId']";
+			public static String searchbutton="//div//button[@id='buttonSearch']";
+			public static String selectcustomer="//table";
+			public static String unlockbutton="//button[@id='buttonUnlock']";
+			public static String clearbutton="//button[@id='buttonClear']";
+			public static String basketbutton="//div[@class='col-lg-3 col-md-3 no-margin no-pad basket-button']";
+			public static String getproductinbasket="//div[@class='form-control-static onlyLeftSidePadding col-lg-9 ng-binding']";
+			public static String downarrow="//span[@class='glyphicons click bordered input-group-addon basket-btn col-lg-1 ng-scope down_arrow']";
+			public static String deleteselectedproduct="(//span[@class='glyphicons input-group-addon bordered bin click basket-btn col-lg-1 ng-scope'])[1]";
+			public static String discountdropdownarrow="//i[@class='glyphicons play']";
+			public static String discounttextbox="//div[@class='list-search ng-scope']//input";
+			public static String discounttextselectlist="(//div//div[@class='list-item-container ng-scope']//div)[1]";
+			public static String addproducticon="//span[@class='input-group-addon glyphicons plus click ng-scope']";
+			public static String discountpercentagetextbox="//div[@class='col-lg-2 col-md-2 has-error']//input";
+			public static String discountaddicon="//span[@class='input-group-addon glyphicons bordered plus click']";
+			public static String hidediscountarrow="//span[@class='glyphicons click bordered input-group-addon basket-btn col-lg-1 ng-scope up_arrow']";
+			public static String soldbydroparrow2="(//i[@class='glyphicons play'])[2]";
+			public static String soldbydroparrow1="//i[@class='glyphicons play']";
+			public static String soldbytextbox="//div[@class='list-search ng-scope']//input[@type='text']";		
+			public static String soldbyselectlist="//div[@class='list-item-container ng-scope']//div";
+			public static String soldbyjamaica="//div[@class='list-item-container ng-scope']//div[contains(.,'Jamaica 911')]";
+			public static String paymentbutton="(//div[@class='col-lg-3 col-md-3 no-margin no-pad']//button)[3]";
+		    public static String cashoption="//div[@class='col-md-3 no-margin ng-scope']//button[@data-payment-type='Cash']";
+			public static String paybutton="//div//button[@class='ok btn btn-lg btn-block btn-primary ng-scope']";
+			public static String invoicenumber="//p[@id='invNo']";
+			public static String verifyinvnumberpresent="//td[@class='text-right ng-scope']";
+			public static String salecompleted="//div[@id='completedMsg']";
+			public static String menubutton="//div[@class='col-lg-1 col-md-1 ']//button";
+			public static String searchorder="//li[@class='dropdown ng-scope open']//a[.='Search Orders']";
+			public static String verifysearchorder="//div//h1[.='Search Order']";
+			public static String datefrom="//div[@class='col col-lg-10 no-sidePadding has-error']//input[@type='date']";
+			public static String Todate="//div//input[@ng-model='searchObject.dateTo']";
+			public static String dateto="//div[@class='col col-lg-9 no-sidePadding has-error']//input[@type='date']";
+			public static String invoicefrom="//input[@id='invoiceNoFrom']";
+			public static String invoiceto="//input[@id='invoiceNoTo']";
+			public static String SOsearchbutton="//button[@id='buttonSearch']";//search order page
+			public static String SOclearbutton="//button[@id='buttonClear']";
+			public static String Basketunitcost="//div[@class='form-control-static ng-binding ng-scope']";
+			public static String Baskettaxcost="//div[@class='form-control-static  ng-binding']";
+			public static String Basketaddedqty="//input[@class='form-control text-center quantitySize ng-pristine ng-untouched ng-valid']";
+			public static String Salestotalitem="//div[@class='col-sm-8 form-control-static amount text-right']//small[@id='itemsTotal']";
+			public static String Saletotaltax="//div[@class='col-sm-8 form-control-static amount text-right']//small[@id='taxTotal']";
+			public static String Saleduebalance="//p[@id='dueAmount']";
+			public static String Saletotalbalance="//p[@id='balanceAmount']";
+			public static String Tendered="//input[@id='tenderedAmount']";
+			public static String verifyDiscountpervalue="//div[@class='form-control-static text-right ng-binding']";
+			public static String discountunitcost="(//div[@class='form-control-static ng-binding'])[2]";
+			public static String discounttaxcost="(//div[@class='form-control-static  ng-binding'])[2]";
+			public static String invoicenumb="//div[@class='form-group ng-scope']//label[contains(.,'Ord/Invoice No')]/..//div//p[@id='invNo']";
+			public static String salescomplete="//div[@class='panel panel-default']//div[@id='completedMsg']";
+			public static String homeicon="//li//a[@id='home']";
+			
+		}
+		public static class systemconfig{
+			public static String saleverify="//div[.='Sale']";
+			public static String salescomplete="//div[@class='panel panel-default']//div[@id='completedMsg']";
+			public static String configurationtab="//a[.='Configuration']";
+			public static String systemsetting="//a[.='System Settings']";
+			public static String systemsettingheader="//h1[.='System Settings']";
+			public static String sales="(//li//a[.='Sales'])[2]";
+			public static String desc="//th[.='Description']";
+			public static String pointofsalesbut="//li//a[.='Point of Sale']";
+			public static String countryname="//td[.='Country Name']";//Scroll Use
+			public static String presentcountryname="((//td[.='Country Name']/..//td)[7]//div)[1]";
+			public static String countrynameediticon="(//td[.='Country Name']/..//td//a)[1]";//pencil icon				
+			public static String editcountrynametextbox="(//td[.='Country Name']/..//td)[7]//input";//edit
+			public static String saveiconcountryname="(//td[.='Country Name']/..//td//a)[2]";//save icon
+			public static String undoiconcountryname="(//td[.='Country Name']/..//td//a)[3]";//undo icon
+			public static String currencysymbolname="//td[.='Curreny Symbol for print']";//Scroll USe
+			public static String presentcurrency="((//td[.='Curreny Symbol for print']/..//td)[7]//div)[1]";
+			public static String currencysymbolediticon="(//td[.='Curreny Symbol for print']/..//td//a)[1]";//pencil icon
+			public static String editcurrencysymbol="(//td[.='Curreny Symbol for print']/..//td)[7]//input";//edit
+			public static String saveiconcurrency="(//td[.='Curreny Symbol for print']/..//td//a)[2]";
+			public static String undoiconcurrency="(//td[.='Curreny Symbol for print']/..//td//a)[3]";
+			public static String companytaxnumber="//td[.='Company Tax Number']";
+			public static String presenttaxnumber="((//td[.='Company Tax Number']/..//td)[7]//div)[1]";
+			public static String taxnumberediticon="(//td[.='Company Tax Number']/..//td//a)[1]";//pencil icon
+			public static String edittaxnumber="(//td[.='Company Tax Number']/..//td)[7]//textarea";//edit
+			public static String saveicontaxnumber="(//td[.='Company Tax Number']/..//td//a)[2]";
+			public static String undoicontaxnumber="(//td[.='Company Tax Number']/..//td//a)[3]";
+			public static String Taxname="//td[.='Tax Name']";
+			public static String presenttaxname="((//td[.='Tax Name']/..//td)[7]//div)[1]";
+			public static String taxnameediticon="(//td[.='Tax Name']/..//td//a)[1]";//pencil icon
+			public static String edittaxname="(//td[.='Tax Name']/..//td)[7]//input";//edit
+			public static String saveicontaxname="(//td[.='Tax Name']/..//td//a)[2]";
+			public static String undoicontaxname="(//td[.='Tax Name']/..//td//a)[3]";
+			public static String returnreason="//td[.='Return/Exchange Reason']";
+			public static String presentreturnreason="((//td[.='Return/Exchange Reason']/..//td)[7]//div)//li";
+			public static String returnediticon="(//td[.='Return/Exchange Reason']/..//td//a)[1]";//pencil icon
+			public static String editreturnreason="(//td[.='Return/Exchange Reason']/..//td)[7]//textarea";
+			public static String firstreason="(((//td[.='Return/Exchange Reason']/..//td)[7]//div)//li)[1]";
+			public static String saveiconreturnreason="(//td[.='Return/Exchange Reason']/..//td//a)[2]";
+			public static String undoiconreturnreason="(//td[.='Return/Exchange Reason']/..//td//a)[3]";
+			public static String dutyfree="//td[.='Is Duty Free Sale Allowed']";
+			public static String presentdutyfreesales="((//td[.='Is Duty Free Sale Allowed']/..//td)[7]//div)[1]";
+			public static String dutyfreeediticon="(//td[.='Is Duty Free Sale Allowed']/..//td//a)[1]";//pencil icon
+			public static String editdutyfree="(//td[.='Is Duty Free Sale Allowed']/..//td)[7]//input";//edit click
+			public static String saveicondutyfree="(//td[.='Is Duty Free Sale Allowed']/..//td//a)[2]";
+			public static String undoicondutyfree="(//td[.='Is Duty Free Sale Allowed']/..//td//a)[3]";
+			public static String soldbydroparrow="//i[@class='glyphicons play']";
+			public static String exchangeitemicon="//span[@title='Exchange item']";
+			public static String manualreturnbutton="//button[contains(.,'Manual Return')]";
+			public static String returnicon="//span[@id='retItemBtnMi8']";
+			public static String reasondroparrow="(//i[@class='glyphicons play'])[1]";
+			public static String reasonselecttext="//div[@class='list-search ng-scope']//input[@type='text']";
+			public static String reasonselectlist="//div[@class='list-item-container ng-scope']//div";
+			public static String reasonselectlistfirstname="(//div[@class='list-item-container ng-scope']//div)[1]";
+			public static String authorizemanualreturn="//button[contains(.,'Authorise Manual Return')]";
+			public static String dutyfreecheckbox="//label[@class='checkbox-inline ng-scope']";
+			public static String taxfreecheckbox="//label[@class='checkbox-inline']";
+			public static String user="(//div[@class='col-lg-8']//input)[1]";
+			public static String pwd="(//div[@class='col-lg-8']//input)[2]";
+			public static String authorise="(//div[@class='form-group']//button)[1]";
+			public static String addtocart="(//span[@class='glyphicons cart_in'])[1]";
+			public static String POSsearchtextbox="//input[@id='searchString']";
+			public static String customer="(//div[@class='col-lg-3 col-md-3 no-margin no-pad']//button)[2]";
+			public static String customeridtextbox="//div//input[@id='CustomerId']";
+			public static String searchbutton="//div//button[@id='buttonSearch']";
+			public static String basketbutton="//div[@class='col-lg-3 col-md-3 no-margin no-pad basket-button']";
+			public static String selectcustomer="//table";
+			public static String paymentbutton="(//div[@class='col-lg-3 col-md-3 no-margin no-pad']//button)[3]";
+			  public static String cashoption="//div[@class='col-md-3 no-margin ng-scope']//button[@data-payment-type='Cash']";
+			  public static String paybutton="//div//button[@class='ok btn btn-lg btn-block btn-primary ng-scope']";
+			public static String cancelbutton="//button[@id='CancelSaleBtn']";
+			public static String menubutton="//div[@class='col-lg-1 col-md-1 ']//button";
+			public static String salesbut="//div[@class='nav-collapse navbar-inverse-collapse ng-scope']//li/a[.='Sales']";
+		}
 		
-//		public static String verifylocation="//td//a[.='COURTS (BELIZE CITY)']";
-//		public static String verifylocationcount1="(//tr//td//a[.='COURTS (BELIZE CITY)']/../..//td)[2]";
-//		public static String verifylocationcount2="(//tr//td//a[.='COURTS (BELIZE CITY)']/../..//td)[3]";
-		
-		//****************BELIZE****************
-		
-		/*public static String verifylocation="//td//a[.='COURTS MEGASTORE']";
-		public static String verifylocationcount1="(//tr//td//a[.='COURTS MEGASTORE']/../..//td)[2]";
-		public static String verifylocationcount2="(//tr//td//a[.='COURTS MEGASTORE']/../..//td)[3]";*/
-		
-		//******************TRINIDAD*********
-		
-		public static String verifyproductpage="//div//h2[.='Product Enquiry']";
-		public static String verifysparepartpage="//div//h2[contains(.,'Spare Part Maintenance')]";
-		public static String createdirectreceiptpage="//div//h2[contains(.,'Create Direct Receipt')]";
-		public static String verifydirectpage="//div//h2[contains(.,'Direct Receipt')]";
-		public static String createreceiptbut="//div//button[.='Create Receipt']";
-		public static String verifyapprovepage="//div//h2[@id='page-heading']";
-		public static String awaitingapprove="//div//p[.='Awaiting Approval']";
-		public static String approvebut="//div//button[contains(.,'Approve')]";
-		public static String printcostbut="(//div[@class='pull-right']//button)[1]";
-		public static String auditconfirm="//div//h3";
-		public static String okbutton="//div//button[.='OK']";
-		public static String homeicon="//li//a[@id='home']";
-		public static String refnumber="//div[@class='ref']";
-	}
-	
-	public static class PointOfSales
+		public static class Exchangerate
+		{
+			public static String saleverify="//div[.='Sale']";
+			public static String pointofsalesbut="//li//a[.='Point of Sale']";
+			public static String exchangeratetab="//a[.='Exchange Rate']";
+			public static String paymenttab="(//li//a[contains(.,'Payments')])[1]";
+			public static String verifyheader="//div//h1";
+			public static String addicon="//span[@class='glyphicons plus click glyph-btn ng-scope']";
+			public static String currencydroparrow2="(//i[@class='glyphicons play'])[2]";
+			public static String currencydroptextbox2="//div[@class='list-search ng-scope']//input";
+			public static String currencydropselect2="(//div[@class='list-item-container ng-scope']//div)";
+			public static String rateinput="//input[@ng-model='$parent.newRate']";
+			public static String datefrom="(//input[@type='date'])[2]";
+			public static String saveicon="//span[@class='glyphicons floppy_disk click glyph-btn ng-scope']";
+			public static String undoicon="//span[@class='glyphicons undo click glyph-btn ng-scope']";
+			public static String currencydroparrow1="//i[@class='glyphicons play']";
+			public static String currencytextbox1="//div[@class='list-search ng-scope']//input";
+			public static String currencyselect1="(//div[@class='list-item-container ng-scope']//div)[1]";
+			public static String effdate="//input[@id='effectiveDateInput']";
+			public static String searchbutton="//button[@id='buttonSearchExchangeRate']";
+			public static String currencydisplayed="(//tr[@class='ng-scope']//td[@class='col-lg-5 col-md-5']//div)[1]";
+			public static String Ratedisplayed="(((//tr[@class='ng-scope'])[1]//td)[3]//div)[1]";
+			public static String datedisplayed="((//tr[@class='ng-scope'])[1]//td)[4]//div";
+			public static String verifyconversionpos="//div[@class='col-md-8 col-lg-offset-4 ng-binding ng-scope']";
+			public static String foriengcashPOS="//div[@class='col-md-3 no-margin ng-scope']//button[contains(.,'Foreign Cash')]";
+			public static String currencydroparrowPOS="(//div[@class='list-arrow']//div)[1]";
+			public static String currencytextboxPOS="//div[@class='list-search ng-scope']//input";
+			public static String currencyselectPOS="//div[@class='list-item-container ng-scope']//div[@class='list-item ng-binding ng-scope']";
+			public static String Tenderedvalue="//div//input[@id='tenderedAmount']";
+			public static String salesbut="//div[@class='nav-collapse navbar-inverse-collapse ng-scope']//li/a[.='Sales']";
+			public static String POSsearchtextbox="//input[@id='searchString']"; 
+			public static String selectproductPOS="(//div//h4//span[@class='glyphicons cart_in'])[1]";
+			public static String paymentbuttonPOS="(//div[@class='col-lg-3 col-md-3 no-margin no-pad']//button)[3]";
+			public static String menubutton="//div[@class='col-lg-1 col-md-1 ']//button";
+			public static String homeicon="//li//a[@id='home']";
+			public static String savecurrency="//span[@title='Save']";
+			public static String deletecurrencyicon="//span[@title='Delete']";
+			public static String deletebutton="//button[.='Delete']";
+			public static String sucessnotifyclose="//body[@class='ng-scope']//article//p[.='undefined currency added successfully']/..//button";
+			public static String closebutton="//div[@class='alert alert-success alert-dismissable']//button[@class='close']";
+			public static String salespage="//div[@class='panel-heading']";
+		}
+	public static class discountlimit{
+			
+			public static String pointofsalesbut="//li//a[.='Point of Sale']";
+			public static String salesbut="//div[@class='nav-collapse navbar-inverse-collapse ng-scope']//li/a[.='Sales']";
+			public static String discountlimitsetupbutton="//li//a[.='Discount Limit Setup']";
+			public static String addicon="//span[@class='glyphicons plus click glyph-btn ng-scope']";
+			public static String brachdroparrow2="(//div//i[@class='glyphicons play'])[4]";
+			public static String branchdroptextbox2="//div[@class='list-search ng-scope']//input";
+			public static String branchdropselect2="(//div[@class='list-item-container ng-scope']//div)";
+			public static String limitpercentage="//input[@type='number']";
+			public static String saveicon="//span[@title='Save']";
+			public static String tablesearch="//tbody//tr//td";
+			public static String deleteicon="(//span[@title='Delete'])[1]";
+			public static String adminauthority="//div[@class='modal-header']//h3";
+			public static String user="(//div[@class='col-lg-8']//input)[1]";
+			public static String pwd="(//div[@class='col-lg-8']//input)[2]";
+			public static String authorise="(//div[@class='form-group']//button)[1]";
+			public static String deletepopup="(//div[@class='pull-right']//button)[1]";
+			public static String purchasetextname1="h3[class='ng-binding']";
+			public static String purchasetextname="//div[.='Purchasing']";
+			public static String adminauthority1="h3[class='ng-binding']";
+			public static String POSsearchtextbox="//input[@id='searchString']";
+			public static String basketbutton="//div[@class='col-lg-3 col-md-3 no-margin no-pad basket-button']";
+			public static String basketicon="(//div//h4//span[@class='glyphicons cart_in'])[1]";
+			public static String downarrow="//span[@class='glyphicons click bordered input-group-addon basket-btn col-lg-1 ng-scope down_arrow']";
+			public static String discountdropdownarrow="//i[@class='glyphicons play']";
+			public static String discounttextbox="//div[@class='list-search ng-scope']//input";
+			public static String discounttextselectlist="(//div//div[@class='list-item-container ng-scope']//div)";
+			public static String discountpercentagetextbox="//div[@class='col-lg-2 col-md-2 has-error']//input";
+			public static String discountaddicon="//span[@class='input-group-addon glyphicons bordered plus click']";
+			public static String menubutton="//div[@class='col-lg-1 col-md-1 ']//button";
+			public static String homeicon="//li//a[@id='home']";
+			public static String saleverify="//div[.='Sale']";	
+		}
+	public static class paymentmethod
 	{
 		public static String salesbut="//div[@class='nav-collapse navbar-inverse-collapse ng-scope']//li/a[.='Sales']";
 		public static String pointofsalesbut="//li//a[.='Point of Sale']";
-		public static String saleverify="//div[.='Sale']";
-		public static String majorwhitegreen="//div[.='MAJOR WHITES']";
-		public static String randaomproduct="(//span[@class='glyphicons cart_in'])[1]";
-		public static String randaomproduct1="(//span[@class='glyphicons cart_in'])[2]";
-		public static String resetbutton="//div//button[.='Reset']";
-		public static String audiovisual="//div[.='AUDIO VISUAL']";
-		public static String cellphoneorange="//div[.='CELLPHONES AND ACCESSORIES']";
-		//public static String 12monthsblue="//div[.='12 MONTHS SERVICE PACKAGE']";
-		public static String basketicon="//div//h4//span[@class='glyphicons cart_in']";
-		public static String warrantyaddicon="(//div//span[@class='input-group-addon glyphicons bordered cart_in click'])[1]";
-		public static String customer="(//div[@class='col-lg-3 col-md-3 no-margin no-pad']//button)[2]";
-		public static String customeridtextbox="//div//input[@id='CustomerId']";
-		public static String searchbutton="//div//button[@id='buttonSearch']";
-		public static String selectcustomer="//table";
-		public static String unlockbutton="//button[@id='buttonUnlock']";
-		public static String clearbutton="//button[@id='buttonClear']";
-		public static String basketbutton="//div[@class='col-lg-3 col-md-3 no-margin no-pad basket-button']";
-		public static String getproductinbasket="//div[@class='form-control-static onlyLeftSidePadding col-lg-9 ng-binding']";
-		public static String downarrow="//span[@class='glyphicons click bordered input-group-addon basket-btn col-lg-1 ng-scope down_arrow']";
-		public static String deleteselectedproduct="(//span[@class='glyphicons input-group-addon bordered bin click basket-btn col-lg-1 ng-scope'])[1]";
-		public static String discountdropdownarrow="//i[@class='glyphicons play']";
-		public static String discounttextbox="//div[@class='list-search ng-scope']//input";
-		public static String discounttextselectlist="(//div//div[@class='list-item-container ng-scope']//div)[1]";
-		public static String addproducticon="//span[@class='input-group-addon glyphicons plus click ng-scope']";
-		public static String discountpercentagetextbox="//div[@class='col-lg-2 col-md-2 has-error']//input";
-		public static String discountaddicon="//span[@class='input-group-addon glyphicons bordered plus click']";
-		public static String soldbydroparrow2="(//i[@class='glyphicons play'])[2]";
-		public static String soldbydroparrow1="//i[@class='glyphicons play']";
-		public static String soldbytextbox="//div[@class='list-search ng-scope']//input[@type='text']";		
-		public static String soldbyselectlist="//div[@class='list-item-container ng-scope']//div";
-		public static String soldbyjamaica="//div[@class='list-item-container ng-scope']//div[contains(.,'Jamaica 911')]";
-		public static String paymentbutton="(//div[@class='col-lg-3 col-md-3 no-margin no-pad']//button)[3]";
-	    public static String cashoption="(//div//button[@class='btn btn-default btn-lg btn-block ng-binding'])[1]";
-		public static String paybutton="//div//button[@class='ok btn btn-lg btn-block btn-primary ng-scope']";
-		public static String invoicenumber="//p[@id='invNo']";
-		public static String verifyinvnumberpresent="//td[@class='text-right ng-scope']";
-		public static String salecompleted="//div[@id='completedMsg']";
-		public static String menubutton="//div[@class='col-lg-1 col-md-1 ']//button";
-		public static String searchorder="//li[@class='dropdown ng-scope open']//a[.='Search Orders']";
-		public static String verifysearchorder="//div//h1[.='Search Order']";
-		public static String datefrom="//div[@class='col col-lg-10 no-sidePadding has-error']//input[@type='date']";
-		public static String Todate="//div//input[@ng-model='searchObject.dateTo']";
-		public static String dateto="//div[@class='col col-lg-9 no-sidePadding has-error']//input[@type='date']";
-		public static String invoicefrom="//input[@id='invoiceNoFrom']";
-		public static String invoiceto="//input[@id='invoiceNoTo']";
-		public static String SOsearchbutton="//button[@id='buttonSearch']";//search order page
-		public static String SOclearbutton="//button[@id='buttonClear']";
-		public static String Basketunitcost="//div[@class='form-control-static ng-binding ng-scope']";
-		public static String Baskettaxcost="//div[@class='form-control-static  ng-binding']";
-		public static String Basketaddedqty="//input[@class='form-control text-center quantitySize ng-pristine ng-untouched ng-valid']";
-		public static String Salestotalitem="//div[@class='col-sm-8 form-control-static amount text-right']//small[@id='itemsTotal']";
-		public static String Saletotaltax="//div[@class='col-sm-8 form-control-static amount text-right']//small[@id='taxTotal']";
-		public static String Saleduebalance="//p[@id='dueAmount']";
-		public static String Saletotalbalance="//p[@id='balanceAmount']";
-		public static String Tendered="//input[@id='tenderedAmount']";
-		public static String verifyDiscountpervalue="//div[@class='form-control-static text-right ng-binding']";
-		public static String discountunitcost="(//div[@class='form-control-static ng-binding'])[2]";
-		public static String discounttaxcost="(//div[@class='form-control-static  ng-binding'])[2]";
-		public static String homeicon="//li//a[@id='home']";
-		
-		
-	}
-	public static class manualreturn{
-		public static String configurationtab="//a[.='Configuration']";
-		public static String systemsetting="//a[.='System Settings']";
-		public static String systemsettingheader="//h1[.='System Settings']";
-		public static String sales="(//li//a[.='Sales'])[2]";
-		public static String desc="//th[.='Description']";
-		
-		public static String countryname="//td[.='Country Name']";//Scroll Use
-		public static String presentcountryname="((//td[.='Country Name']/..//td)[7]//div)[1]";
-		public static String countrynameediticon="(//td[.='Country Name']/..//td//a)[1]";//pencil icon				
-		public static String editcountrynametextbox="(//td[.='Country Name']/..//td)[7]//input";//edit
-		public static String saveiconcountryname="(//td[.='Country Name']/..//td//a)[2]";//save icon
-		public static String undoiconcountryname="(//td[.='Country Name']/..//td//a)[3]";//undo icon
-		
-		public static String currencysymbolname="//td[.='Curreny Symbol for print']";//Scroll USe
-		public static String presentcurrency="((//td[.='Curreny Symbol for print']/..//td)[7]//div)[1]";
-		public static String currencysymbolediticon="(//td[.='Curreny Symbol for print']/..//td//a)[1]";//pencil icon
-		public static String editcurrencysymbol="(//td[.='Curreny Symbol for print']/..//td)[7]//input";//edit
-		public static String saveiconcurrency="(//td[.='Curreny Symbol for print']/..//td//a)[2]";
-		public static String undoiconcurrency="(//td[.='Curreny Symbol for print']/..//td//a)[3]";
-		
-		public static String companytaxnumber="//td[.='Company Tax Number']";
-		public static String presenttaxnumber="((//td[.='Company Tax Number']/..//td)[7]//div)[1]";
-		public static String taxnumberediticon="(//td[.='Company Tax Number']/..//td//a)[1]";//pencil icon
-		public static String edittaxnumber="(//td[.='Company Tax Number']/..//td)[7]//textarea";//edit
-		public static String saveicontaxnumber="(//td[.='Company Tax Number']/..//td//a)[2]";
-		public static String undoicontaxnumber="(//td[.='Company Tax Number']/..//td//a)[3]";
-		
-		public static String Taxname="//td[.='Tax Name']";
-		public static String presenttaxname="((//td[.='Tax Name']/..//td)[7]//div)[1]";
-		public static String taxnameediticon="(//td[.='Tax Name']/..//td//a)[1]";//pencil icon
-		public static String edittaxname="(//td[.='Tax Name']/..//td)[7]//input";//edit
-		public static String saveicontaxname="(//td[.='Tax Name']/..//td//a)[2]";
-		public static String undoicontaxname="(//td[.='Tax Name']/..//td//a)[3]";
-		
-		public static String returnreason="//td[.='Return/Exchange Reason']";
-		public static String presentreturnreason="((//td[.='Return/Exchange Reason']/..//td)[7]//div)//li";
-		public static String returnediticon="(//td[.='Return/Exchange Reason']/..//td//a)[1]";//pencil icon
-		public static String editreturnreason="(//td[.='Return/Exchange Reason']/..//td)[7]//textarea";
-		public static String firstreason="(((//td[.='Return/Exchange Reason']/..//td)[7]//div)//li)[1]";
-		public static String saveiconreturnreason="(//td[.='Return/Exchange Reason']/..//td//a)[2]";
-		public static String undoiconreturnreason="(//td[.='Return/Exchange Reason']/..//td//a)[3]";
-			
-		
-		public static String dutyfree="//td[.='Is Duty Free Sale Allowed']";
-		public static String presentdutyfreesales="((//td[.='Is Duty Free Sale Allowed']/..//td)[7]//div)[1]";
-		public static String dutyfreeediticon="(//td[.='Is Duty Free Sale Allowed']/..//td//a)[1]";//pencil icon
-		public static String editdutyfree="(//td[.='Is Duty Free Sale Allowed']/..//td)[7]//input";//edit click
-		public static String saveicondutyfree="(//td[.='Is Duty Free Sale Allowed']/..//td//a)[2]";
-		public static String undoicondutyfree="(//td[.='Is Duty Free Sale Allowed']/..//td//a)[3]";
-		
-		public static String soldbydroparrow="//i[@class='glyphicons play']";
-		
-		public static String manualreturnbutton="//button[contains(.,'Manual Return')]";
-		public static String returnicon="//span[@id='retItemBtnMi8']";
-		public static String reasondroparrow="(//i[@class='glyphicons play'])[1]";
-		public static String reasonselecttext="//div[@class='list-search ng-scope']//input[@type='text']";
-		public static String reasonselectlist="//div[@class='list-item-container ng-scope']//div";
-		public static String reasonselectlistfirstname="(//div[@class='list-item-container ng-scope']//div)[1]";
-		public static String authorizemanualreturn="//button[contains(.,'Authorise Manual Return')]";
-		public static String dutyfreecheckbox="//label[@class='checkbox-inline ng-scope']";
-		public static String taxfreecheckbox="//label[@class='checkbox-inline']";
-		
-		public static String user="(//div[@class='col-lg-8']//input)[1]";
-		public static String pwd="(//div[@class='col-lg-8']//input)[2]";
-		public static String authorise="(//div[@class='form-group']//button)[1]";
-			
-}
-	public static class Exchangerate
-	{
-		
-		public static String pointofsalesbut="//li//a[.='Point of Sale']";
-		public static String exchangeratetab="//a[.='Exchange Rate']";
 		public static String paymenttab="(//li//a[contains(.,'Payments')])[1]";
-		public static String verifyheader="//div//h1";
-		public static String addicon="//span[@class='glyphicons plus click glyph-btn ng-scope']";
-		public static String currencydroparrow2="(//i[@class='glyphicons play'])[2]";
-		public static String currencydroptextbox2="//div[@class='list-search ng-scope']//input";
-		public static String currencydropselect2="(//div[@class='list-item-container ng-scope']//div)[1]";
-		public static String rateinput="(//div//input[@type='text'])[2]";
-		public static String datefrom="(//input[@type='date'])[2]";
-		public static String saveicon="//span[@class='glyphicons floppy_disk click glyph-btn ng-scope']";
-		public static String undoicon="//span[@class='glyphicons undo click glyph-btn ng-scope']";
-		public static String currencydroparrow1="//i[@class='glyphicons play']";
-		public static String currencytextbox1="//div[@class='list-search ng-scope']//input";
-		public static String currencyselect1="(//div[@class='list-item-container ng-scope']//div)[1]";
-		public static String effdate="//input[@id='effectiveDateInput']";
-		public static String searchbutton="//button[@id='buttonSearchExchangeRate']";
-		public static String currencydisplayed="((//tr[@class='ng-scope'])[1]//td)[2]//div";
-		public static String Ratedisplayed="((//tr[@class='ng-scope'])[1]//td)[3]//div";
-		public static String datedisplayed="((//tr[@class='ng-scope'])[1]//td)[4]//div";
-		public static String verifyconversionpos="//div[@class='col-md-8 col-lg-offset-4 ng-binding ng-scope']";
-		public static String foriengcashPOS="(//div[@class='col-md-3 no-margin ng-scope']//button)[2]";
-		public static String currencydroparrowPOS="(//div[@class='list-arrow']//div)[1]";
-		public static String currencytextboxPOS="//div[@class='list-search ng-scope']//input";
-		public static String currencyselectPOS="(//div[@class='list-item-container ng-scope']//div)[1]";
-		public static String Tenderedvalue="//div//input[@id='tenderedAmount']";
-		public static String salesbut="//div[@class='nav-collapse navbar-inverse-collapse ng-scope']//li/a[.='Sales']";
-		public static String POSsearchtextbox="//input[@id='searchString']"; 
-		public static String selectproductPOS="//div//h4//span";
-		public static String paymentbuttonPOS="(//div[@class='col-lg-3 col-md-3 no-margin no-pad']//button)[3]";
-		public static String menubutton="//div[@class='col-lg-1 col-md-1 ']//button";
-		public static String homeicon="//li//a[@id='home']";
-	}
-public static class discountlimit{
-		
-		public static String pointofsalesbut="//li//a[.='Point of Sale']";
-		public static String salesbut="//div[@class='nav-collapse navbar-inverse-collapse ng-scope']//li/a[.='Sales']";
-		public static String discountlimitsetupbutton="//li//a[.='Discount Limit Setup']";
-		public static String addicon="//span[@class='glyphicons plus click glyph-btn ng-scope']";
-		public static String brachdroparrow2="(//div//i[@class='glyphicons play'])[4]";
-		public static String branchdroptextbox2="//div[@class='list-search ng-scope']//input";
-		public static String branchdropselect2="(//div[@class='list-item-container ng-scope']//div)[1]";
-		public static String limitpercentage="//input[@type='number']";
-		public static String saveicon="//span[@title='Save']";
-		public static String tablesearch="//tbody//tr//td";
-		public static String deleteicon="(//span[@title='Delete'])[1]";
-		public static String adminauthority="//div[@class='modal-header']//h3";
-		public static String user="(//div[@class='col-lg-8']//input)[1]";
-		public static String pwd="(//div[@class='col-lg-8']//input)[2]";
-		public static String authorise="(//div[@class='form-group']//button)[1]";
-		public static String deletepopup="(//div[@class='pull-right']//button)[1]";
-		public static String purchasetextname1="h3[class='ng-binding']";
-		public static String purchasetextname="//div[.='Purchasing']";
-		public static String adminauthority1="h3[class='ng-binding']";
+		public static String paymentnxttab="(//li[@class='dropdown ng-scope'])[5]";
+		public static String paymentsetup="//li//a[.='Payment Methods Setup']";
+		public static String verifypaymentsetuppage="//div[@class='col-md-8 ng-scope']//h1";
+		public static String tablelist="//div[@class='col-md-8 ng-scope']//table//tbody//tr";
+		public static String tdd="//div[@class='col-md-8 ng-scope']//table//tbody//tr//td/../td[2]//input";
+		public static String tddp="//td/../td[1]";//method name list
+		public static String paymentoption="//div[@class='col-md-3 no-margin ng-scope']//button";
+		public static String cashPOS="(//div[@id='payment-methods']//button)[1]";
 		public static String POSsearchtextbox="//input[@id='searchString']";
-		public static String basketbutton="//div[@class='col-lg-3 col-md-3 no-margin no-pad basket-button']";
-		public static String basketicon="//div//h4//span[@class='glyphicons cart_in']";
-		public static String downarrow="//span[@class='glyphicons click bordered input-group-addon basket-btn col-lg-1 ng-scope down_arrow']";
-		public static String discountdropdownarrow="//i[@class='glyphicons play']";
-		public static String discounttextbox="//div[@class='list-search ng-scope']//input";
-		public static String discounttextselectlist="(//div//div[@class='list-item-container ng-scope']//div)[1]";
-		public static String discountpercentagetextbox="//div[@class='col-lg-2 col-md-2 has-error']//input";
-		public static String discountaddicon="//span[@class='input-group-addon glyphicons bordered plus click']";
-		public static String menubutton="//div[@class='col-lg-1 col-md-1 ']//button";
+		public static String selectproductPOS="(//div//h4//span)[1]";
+		public static String paymentbuttonPOS="(//div[@class='col-lg-3 col-md-3 no-margin no-pad']//button)[3]";
+		public static String POScash="//div[@id='payment-methods']";
 		public static String homeicon="//li//a[@id='home']";
-		
+		public static String menubutton="//div[@class='col-lg-1 col-md-1 ']//button";
+		public static String saleverify="//div[.='Sale']";
 		
 	}
-public static class paymentmethod
-{
-	public static String salesbut="//div[@class='nav-collapse navbar-inverse-collapse ng-scope']//li/a[.='Sales']";
-	public static String pointofsalesbut="//li//a[.='Point of Sale']";
-	public static String paymenttab="(//li//a[contains(.,'Payments')])[1]";
-	public static String paymentnxttab="(//li[@class='dropdown ng-scope'])[5]";
-	public static String paymentsetup="//li//a[.='Payment Methods Setup']";
-	public static String verifypaymentsetuppage="//div[@class='col-md-8 ng-scope']//h1";
-	public static String tablelist="//div[@class='col-md-8 ng-scope']//table//tbody//tr";
-	//public static String tablelistselected="//td[@class='ng-binding']";
-	//public static String tdd="//td/../td[2]";//checkbox list
-	public static String tdd="//div[@class='col-md-8 ng-scope']//table//tbody//tr//td/../td[2]//input";
-	public static String tddp="//td/../td[1]";//method name list
-	public static String paymentoption="//div[@class='col-md-3 no-margin ng-scope']//button";
-	//public static String cashcheckbox1="((//div[@class='col-md-8 ng-scope']//table//tbody//tr)[1]//input)[1]";
-	public static String cashPOS="(//div[@id='payment-methods']//button)[1]";
-	public static String POSsearchtextbox="//input[@id='searchString']";
-	public static String selectproductPOS="//div//h4//span";
-	public static String paymentbuttonPOS="(//div[@class='col-lg-3 col-md-3 no-margin no-pad']//button)[3]";
-	public static String POScash="//div[@id='payment-methods']";
-	public static String homeicon="//li//a[@id='home']";
-	public static String menubutton="//div[@class='col-lg-1 col-md-1 ']//button";
-	
-}
+
 
 	//***************VIVEK*************
 	public static class toastMassage
@@ -1013,9 +1031,10 @@ public static class paymentmethod
 		public static String Currency = "//div[@class='col-md-4']/select[@name='type']";
 		public static String selectCurrency="//option[contains(text(),'USD')]";
 		public static String costPriceSave="//input[@class='btn btn-primary']";
+		public static String RetailPrice="(//table[@class='table table-bordered table-striped aligned pb-table']/..//div[@class='section'])[1]";
 		public static String RtlPriceAdd = "//tr[@class='ng-pristine ng-invalid ng-invalid-required']//span[@class='glyphicons glyph-btn plus']";
 		public static String clickEffDate = "//td[@class='currency has-error']//input[@name='effectiveDate']";
-		public static String selectEffDate = "(//td[@data-handler='selectDay'])[position()=1]";
+		public static String selectEffDate = "(//td[@data-handler='selectDay'])[position()=2]";
 		public static String CashPrice = "//td[@class='currency has-error']/input[@ng-model='cashPriceInclusive']";
 		public static String RegularPrice = "//td[@class='currency has-error']/input[@ng-model='regularPriceInclusive']";
 		public static String DutyFreePrice = "//td[@class='currency long has-error']/input[@ng-model='dutyFreePriceInclusive']";
@@ -1023,6 +1042,7 @@ public static class paymentmethod
 	    public static String PTOverrideAdd = "//td[@class='col-btn']//span[@class='glyphicons glyph-btn plus']";
 		public static String PTOName="//input[@name='name']";
 		public static String PTORate="//input[@name='rate']";
+		public static String MessageClick = "//div[@id='growlcontainer']//button[@type='button']";
 		public static String PTOEffectDate="//input[@class='form-control text-center effectiveDate ng-pristine ng-valid ng-valid-required']";
 		public static String PTOSave="(//span[@class='glyphicons glyph-btn floppy_disk'])[position()=1]";
 		public static String status="(//div[contains(text(),'Status')]/..//select)[position()=1]";
@@ -1030,8 +1050,7 @@ public static class paymentmethod
 	}
 	public static class ServRqustFinancialReport
 	{
-		//public static String merchandising="//a[contains(text(),'Merchandising')]/..";
-		//public static String merchandising="//a[text()='Service']/..";
+
 		public static String Service ="//a[text()='Service']/..";
 		public static String reports="(//a[text()='Reports'])[2]";
 		public static String ServReqFinancial="//a[contains(text(),'Service Request Financial')]";
@@ -1089,35 +1108,27 @@ public static class paymentmethod
 		public static String Merchandising = "//li/a[contains(text(),'Merchandising')]";
 		public static String Create = "//li[@class='ng-scope dropdown-submenu']//a[contains(text(),'Create')]";
 		public static String PurchaseOrder = "(//li//a[contains(.,'Purchase Order')])[1]";
-
 		public static String VerifyCreatePurchaseOrderPage = "//div//h2[contains(.,'Create Purchase Order')]";
 		public static String ReceivingLocation = "//list [@name='receivingLocation']//div[@class='list-arrow']";
 		public static String RecevingLocationSearch = "//list [@name='receivingLocation']//div//input[@ng-model='search']";
 		public static String RecevingLocationList = "//list [@name='receivingLocation']//div//div[@class='list-item-container ng-scope']//div";
-
 		public static String Vendor = "//list [@name='vendor']//div[@class='list-arrow']";
 		public static String VendorSearch = "//list [@name='vendor']//div[@class='list-options ng-scope']//input";
 		public static String VendorList = "//list [@name='vendor']//div[@class='list-item-container ng-scope']//div";
-
 		public static String RequestedDelivery = "//label[@for='requestedDeliveryDate']/..//input[@id='requestedDeliveryDate']";
 		public static String RequestedDeliveryDate = "//label[@for='requestedDeliveryDate']/..//input[@id='requestedDeliveryDate']";
-
 		public static String PaymentTerms = "//textarea[@name='paymentTerms']";
 		public static String PaymentTermsText = "//textarea[@name='paymentTerms']";
-
 		public static String AddProduct = "//div[@id='productsContainer']//tr[@class='addNew']//span[@class='glyphicons glyph-btn plus']";
 		public static String ProductCode = "//div[@id='productsContainer']//tr//td[@class='sku']//span";
 		public static String SKUSearch = "//div[@id='select2-drop']//input[@class='select2-input select2-focused']";
 		public static String SKUList = "//ul[@class='select2-results']//div[@class='select2-result-label']";
 		public static String ProductReciving = "(//input[@name='requestedDeliveryDate'])[2]";
 		public static String ProductRecevingDate = "(//input[@name='requestedDeliveryDate'])[2]";
-
 		public static String Quantity = "//td[@class='quantity']//input[@name='quantityOrdered']";
 		public static String RequireLabel = "(//tr[@ng-form='productForm']//td//input[@ng-model='product.labelRequired'])[1]";
 		public static String ProductComments = "//input[@name='comments']";
-
 		public static String SavePO = "(//div[@id='productsContainer']//span[@class='glyphicons glyph-btn ok_2'])[1]";
-
 		public static String CreatePO = "//button[contains(.,'Create Order')]";
 		public static String POPrint = "(//button[@ng-click='printAlternate()'])[1]";
 		public static String POSuccessMsg = "//div[@id='growlcontainer']//div[@class='growlstatus']";
@@ -1208,25 +1219,20 @@ public static class paymentmethod
 		public static String DepartmentSearch="//div[@class='list-search ng-scope']/input[@ng-model='search']";
 		public static String DepartmentClick="//list[@id='hierarchy-00T']//div[@class='list-item-container ng-scope']//div";
 		public static String DepartmentSuccessMsg="//div[@id='growlcontainer']//div[@class='growlstatus']";
-		
+		public static String Warrenty="//div//input[@name='vendorWarranty']";
 		public static String Class="//list[@id='hierarchy-00W']//div[@class='list-arrow']";
 		public static String ClassSearch="//div[@class='list-search ng-scope']/input[@ng-model='search']";
 		public static String ClassClick="//list[@id='hierarchy-00W']//div[@class='list-item-container ng-scope']//div";
 		public static String ClassSuccessMsg="//div[@id='growlcontainer']//div[@class='growlstatus']";
 		public static String SaveHirarchy="//div[@id='accordion']/../..//div[@class='row buffer top']//button[@ng-click='saveProduct()']";
-		
-		//New
 		public static String ScrollFasia="(//tr//th[contains(.,'Fascia')])[1]";
 		public static String AddTax="//pb-tax-rate-grid//td//span[@class='glyphicons glyph-btn plus']";
 		public static String TaxName="//pb-tax-rate-grid//td//input[@ng-model='newRate.name']";
 		public static String TaxRate="//pb-tax-rate-grid//td//input[@ng-model='newRate.rate']";
 		public static String TaxEffectiveDate="//pb-tax-rate-grid//td//input[@ng-model='newRate.effectiveDate']";
-		
 		public static String SaveTax="//tr[@ng-form='taxRateForm']//td//span[@class='glyphicons glyph-btn floppy_disk']";
 		public static String NewTaxSuccesMsg="//div[@id='growlcontainer']//div[@class='growlstatus']";
-		
 		public static String ScrollAWC="(//div[contains(text(),'JMD')])[2]";
-		
 		public static String VendorCostClick="//div//input[@name='supplierCost']";
 		public static String VendorCost="//div//input[@name='supplierCost']";
 		public static String CurrencyClick="//select[@ng-model='costPrice.supplierCurrency']";
@@ -1235,23 +1241,16 @@ public static class paymentmethod
 		public static String LastLandedCost="//div//input[@name='landedCost']";
 		public static String CostPricingSave="//ng-form[@name='costsForm']//div//input[@type='button']";
 		public static String CostPriceSuccessMsg="//div[@id='growlcontainer']//div[@class='growlstatus']";
-		
-		
 		public static String RetailpricingAddIcon="//tr[@ng-form='retailPriceForm']//span[@class='glyphicons glyph-btn plus']";
-		
 		public static String Location="//td[@class='location']//div[@class='list-container ng-scope']";
 		public static String LocationSearch="//div[@class='list-search ng-scope']/input[@ng-model='search']";
 		public static String LocationList="//list[@name='location']//div[@class='list-item-container ng-scope']//div";
-		
 		public static String Fasia="//list[@name='fascia']//div[@class='list-arrow']";
 		public static String FasiaSearch="//list[@name='fascia']//div//input[@ng-model='search']";
 		public static String FasiaList="//list[@name='fascia']//div//div[@class='list-item-container ng-scope']";
-		
-		
 		public static String EffectivedateClick="//td[@class='currency has-error']//input[@name='effectiveDate']";
 		public static String EDP="(//table[@class='ui-datepicker-calendar']//a)[1]";
 		public static String EffectivedateCalenderDatePicker="(//table[@class='ui-datepicker-calendar']//td)[17]";
-		
 		public static String CashPriceClick="//td//input[@name='cashPriceInclusive']";
 		public static String CashPrice="//td//input[@name='cashPriceInclusive']";
 		public static String RegularPriceClick="//td//input[@name='regularPriceInclusive']";
@@ -1259,7 +1258,6 @@ public static class paymentmethod
 		public static String DutyPriceClick="//td//input[@name='dutyFreePriceInclusive']";
 		public static String DutyPrice="//td//input[@name='dutyFreePriceInclusive']";
 		public static String SaveRetailPricing="//tr[@ng-form='retailPriceForm']//td//span[@class='glyphicons glyph-btn floppy_disk']";
-	
 	    public static String RetailPriceMsg="//div[@id='growlcontainer']//div[@class='growlstatus']";
 		
 	}
@@ -1420,7 +1418,8 @@ public static class paymentmethod
 		public static String AvailbleToDate="(//input[@class='form-control ng-pristine ng-valid hasDatepicker'])[1]";
 		public static String ASubmit="//div[@class='col-lg-2 text-right']//button";
 		public static String color="(//tr[@ng-repeat='slot in day.slots']//td[@class='fixed holidayApproved click'])[1]";
-		
+		public static String HolidayApprove="(//td[@class='fixed holidayApproved click'])[14]";
+		public static String Delete="//button[@class='ok btn btn-primary ng-binding']";
 	}
 	public static class Suppliers
 	{
