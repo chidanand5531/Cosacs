@@ -72,36 +72,7 @@
 	<test name="COS13_NewNonStockCreation" enabled="false">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.cosacs.TestCases.COS13_NewNonStockCreation" />
-		</classes>	
-	</test>
-	
-	<test name="COS13_NonStockProductsLink" enabled="false">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.cosacs.TestCases.COS13_NonStockProductsLink" />
-		</classes>	
-	</test>
-	
-	<test name="COS13_NonStockPromotions" enabled="false">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.cosacs.TestCases.COS13_NonStockPromotions" />
-		</classes>	
-	</test>
-	
-	
-	<test name="COS13_NonStocksExports" enabled="false">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.cosacs.TestCases.COS13_NonStocksExports" />
-		</classes>	
-	</test>
-	
-	<test name="COS13_SearchNonStocks" enabled="false">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.cosacs.TestCases.COS13_SearchNonStocks" />
+			<class name="com.cosacs.TestCases.COS13_NonStockProductCreation" />
 		</classes>	
 	</test>
 	
@@ -125,7 +96,6 @@
 			<class name="com.cosacs.TestCases.COS16_StockRequisitionProcess" />
 		</classes>	
 	</test>
-	
 	
 	<test name="COS17_GoodsReceipt Test" enabled="false">
 		<parameter name="browser" value="chrome" />
@@ -162,6 +132,52 @@
 		</classes>	
 	</test>
 	
+	
+	<test name="COS38_TechServRepairs Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS38_TechServRepairs" />
+		</classes>	
+	</test>
+	
+
+	<test name="COS_45Extended Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS_45Extended" />
+		</classes>	
+	</test>
+	
+	<test name="COS48_WarrantyProductLink Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS46_WarrantyInstantReplacement" />
+		</classes>	
+	</test>
+	
+	
+	<test name="COS48_WarrantyProductLink Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS48_WarrantyProductLink" />
+		</classes>	
+	</test>
+	
+	<test name="COS49_WarrantySimulator Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS49_WarrantySimulator" />
+		</classes>	
+	</test>
+	
+	<test name="COS50_WarrantyPromotions Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS50_WarrantyPromotions" />
+		</classes>	
+	</test>
+	
+	
 	<test name="COS_53_SalesSystemConf Test" enabled="false">
 		<parameter name="browser" value="chrome" />
 		<classes>
@@ -184,6 +200,21 @@
 		</classes>	
 	</test>
 	
+	<test name="COS60_Search_MyJobs Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS60_Search_MyJobs" />
+		</classes>	
+	</test>
+	
+	
+	<test name="COS61_TechnicianPayments Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS61_TechnicianPayments" />
+		</classes>	
+	</test>
+	
 	
 	<test name="COS65_Service_Suppliers Test" enabled="false">
 		<parameter name="browser" value="chrome" />
@@ -199,6 +230,14 @@
 		</classes>	
 	</test>
 	
+
+	<test name="COS75_SpareParts_Report Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS75_SpareParts_Report" />
+		</classes>	
+	</test>
+	
 	<test name="COS77_ServiceRequestFinancialReport Test" enabled="false">
 		<parameter name="browser" value="chrome" />
 		<classes>
@@ -206,13 +245,21 @@
 		</classes>	
 	</test>
 	
-	
-	<test name="COS75_SpareParts_Report Test" enabled="false">
+	<test name="COS77_ServiceRequestFinancialReport Test" enabled="false">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.cosacs.TestCases.COS75_SpareParts_Report" />
+			<class name="com.cosacs.TestCases.COS79_ServiceIncomeAnalysis" />
 		</classes>	
 	</test>
+	
+	<test name="COS83_OutstandingSRForProdDept Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS83_OutstandingSRForProdDept" />
+		</classes>	
+	</test>
+	
+	
 	
 	<test name="COS84_Service_Claims_Report Test" enabled="false">
 		<parameter name="browser" value="chrome" />
@@ -228,7 +275,7 @@
 		</classes>	
 	</test>
 	
-	<test name="COS_86_Exchangerate Test" enabled="true">
+	<test name="COS_86_Exchangerate Test" enabled="false">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.cosacs.TestCases.COS_86_Exchangerate" />
@@ -241,12 +288,57 @@
 			<class name="com.cosacs.TestCases.COS_87_Paymentmethod" />
 		</classes>	
 	</test>
+	
+	<test name="COS92_AllocatedStockReport Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS92_AllocatedStockReport" />
+		</classes>	
+	</test>
 
+	<test name="COS93_BuyerSalesHistoryReport Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS93_BuyerSalesHistoryReport" />
+		</classes>	
+	</test>
+	
+	<test name="COS96_SalesComparisonReport Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS96_SalesComparisonReport" />
+		</classes>	
+	</test>
+	
 	<test name="COS100_TopSKUReports Test" enabled="false">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.cosacs.TestCases.COS100_TopSKUReports" />
 		</classes>	
 	</test> 
+	
+	<test name="COS103_Merchandising_Warehouse_OverSupply Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS103_Merchandising_Warehouse_OverSupply" />
+		</classes>	
+	</test>
+	
+	<test name="COS112_Logistics_DeliveryPerformanceSummary Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.COS112_Logistics_DeliveryPerformanceSummary" />
+		</classes>	
+	</test>
+	
+	<test name="WeeklyTradingReport Test" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cosacs.TestCases.WeeklyTradingReport" />
+		</classes>	
+	</test>
+	
+	
+	
 	
 </suite> 

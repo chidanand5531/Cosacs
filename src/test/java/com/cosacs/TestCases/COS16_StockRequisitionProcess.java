@@ -6,6 +6,8 @@ Author : Vincy Virgenia James*/
 package com.cosacs.TestCases;
 
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -20,15 +22,14 @@ import com.cosacs.PageObject.Library;
 public class COS16_StockRequisitionProcess extends BaseClass {
 	
 	String ExpecStckRequisitionTitle = "Create Stock Requisition";
-	String SearchText = "LU";
-	String RecLocValue = "LUCKY DOLLAR MAY PEN";
+	String SearchText = "KE";
+	String RecLocValue = "KENGERITOWN";
 	String WarehouseText = "TW";
-	String WarehouseVal = "TWICKENHAM  CLOSE";
-	String ProductSrchText = "407023";
-	String ProductText = "407023";
-	String ProductQuantity = "2";
+	String WarehouseVal = "TWICKENHAM CLOSE";
+	String ProductSrchText = "SST773";
+	String ProductText = "SST773";
+	String ProductQuantity = "5";
 	String ProductComments = "Testing";
-	String CreatedDate = "09/24/2020";
 
 	
 	// The below method helps the user to land the Create Stock Requisition Page
@@ -66,90 +67,36 @@ public class COS16_StockRequisitionProcess extends BaseClass {
 	
 	public void createStockRequisition() throws IOException {
 		try {
-			
-			/*Selecting value from Receiving Location Drop Down */
-			Library.Interaction.click(Xpath.StockRequisitionProcess.RecLocDrpDown);
-			Library.Interaction.setTextBoxByXpath(Xpath.StockRequisitionProcess.RecLocSrch, SearchText);
 
-			List<WebElement> DropDownVal = driver.findElements(By.xpath(Xpath.StockRequisitionProcess.RecLocName));
-			for (int i = 0; i < DropDownVal.size(); i++)
-			{
-				if (DropDownVal.get(i).getText().equals(RecLocValue))
-				{
-					log.info("Text-->"+DropDownVal.get(i).getText());
-					Thread.sleep(2000);
-					DropDownVal.get(i).click();
-					break;
-				}
-			}
+			Library.Interaction.selectSuggestion(Xpath.StockRequisitionProcess.RecLocDrpDown, Xpath.StockRequisitionProcess.RecLocSrch,Xpath.StockRequisitionProcess.RecLocName, SearchText, RecLocValue);
 			log.info("User clicked LUCKY DOLLAR MAY PEN");
-		
-			
-			/*Selecting value from Warehouse Drop Down */
-			Library.Interaction.click(Xpath.StockRequisitionProcess.WarehouseDro);
-			Library.Interaction.setTextBoxByXpath(Xpath.StockRequisitionProcess.WarehouseSearch, WarehouseText);
-
-			List<WebElement> WarehouseDropDownVal = driver.findElements(By.xpath(Xpath.StockRequisitionProcess.WarehouseName));
-			for (int i = 0; i < WarehouseDropDownVal.size(); i++)
-			{
-				if (WarehouseDropDownVal.get(i).getText().equals(WarehouseVal))
-				{
-					WarehouseDropDownVal.get(i).click();
-					break;
-				}
-			}
-			log.info("User clicked LUCKY DOLLAR MAY PEN");
-			
-			/*Selecting value from Product Drop Down */
-			
+			Library.Interaction.selectSuggestion(Xpath.StockRequisitionProcess.WarehouseDro, Xpath.StockRequisitionProcess.WarehouseSearch,Xpath.StockRequisitionProcess.WarehouseName, WarehouseText, WarehouseVal);
 			Library.Interaction.selectEle(Xpath.StockRequisitionProcess.ProductDrp, Xpath.StockRequisitionProcess.ProductSrch, Xpath.StockRequisitionProcess.Productname, ProductSrchText, ProductText);
-			
 			log.info("User clicked  SST773:456510168-RED HYACINTH 95CM 456510168");
-			
-			/* Entering the Quantity in text field */
 			Library.Interaction.setTextBoxByXpath(Xpath.StockRequisitionProcess.ProductQty, ProductQuantity);
-			
-			/*Entering the Product Comments */
 			Library.Interaction.setTextBoxByXpath(Xpath.StockRequisitionProcess.ProductCmnts, ProductComments);
-			
-			/* Clicking on Add Button */
 			Library.Interaction.click(Xpath.StockRequisitionProcess.AddButton);
-			
-			/*Verifying the SKU Number*/
 			WebElement SKU = driver.findElement(By.xpath(Xpath.StockRequisitionProcess.SKUnumb));
 			String SKUnumb = SKU.getText();
 			log.info("SKU number is "+SKUnumb);
-			
-			/* Verifying The Description*/
 			WebElement Description = driver.findElement(By.xpath(Xpath.StockRequisitionProcess.DescSRP));
 			String Desc = Description.getText();
 			log.info("Description of Product is " +Desc);
-			
-			/* Verifying the Comments */
 			WebElement Comments = driver.findElement(By.xpath(Xpath.StockRequisitionProcess.CommentsSRP));
 			String Cmnts = Comments.getText();
 			log.info("Comments is "+Cmnts);
-			
-			/* Validating AWC */
 			WebElement AvgWeighCost = driver.findElement(By.xpath(Xpath.StockRequisitionProcess.AvgWeighCostSRP));
 			String str1 = AvgWeighCost.getText().replaceAll("[^0-9]","");
 			int number1 = Integer.parseInt(str1);
-			
 			int LineCostProd = Integer.parseInt(ProductQuantity)*number1;
 			log.info("The line cost is "+LineCostProd);
-			
-			/* Verifying the Line Cost in the grid */
 			WebElement LineCost = driver.findElement(By.xpath(Xpath.StockRequisitionProcess.LineCostSRP));
 			String Str2 = LineCost.getText().replaceAll("[^0-9]","");
 			int number2 = Integer.parseInt(Str2);
 			Assert.assertEquals(LineCostProd, number2);
 			log.info("Line cost is displayed as per Quantity");
-			
-			/* Clicking on Save Button */
 			Library.Interaction.click(Xpath.StockRequisitionProcess.SaveBtn);
-			Library.Interaction.userWait();
-			
-			/* Verifying the Success Message */
+			Library.Interaction.IsDisplayed(Xpath.StockRequisitionProcess.SuccMsgSRP);
 			WebElement SuccMsg = driver.findElement(By.xpath(Xpath.StockRequisitionProcess.SuccMsgSRP));
 			String Success = SuccMsg.getText();
 			log.info("Success Message is "+Success);
@@ -169,8 +116,6 @@ public class COS16_StockRequisitionProcess extends BaseClass {
 			
 	public void SearchStockRequisition() throws IOException {
 			try {
-			
-			/*Click on Merchandising,search and Stock Requisition*/
 			Library.Interaction.userWait();
 			Library.Interaction.click(Xpath.LocationCreation.merchandising);
 			log.info("User Clicked on Merchandising");
@@ -179,17 +124,20 @@ public class COS16_StockRequisitionProcess extends BaseClass {
 			log.info("User Clicked on Search");
 			Library.Interaction.userWait();
 			Library.Interaction.click(Xpath.StockRequisitionProcess.SrchStockRequisitions);
-			Library.Interaction.userWait();
 			log.info("User Clicked on StockRequisitions");
-			
-			/*Entering Date in the Created Form field */
-			Library.Interaction.setTextBoxByXpath(Xpath.StockRequisitionProcess.StockReqCreatedForm, CreatedDate);
-			
-			/*Clicking on Search Button*/
+			Thread.sleep(5000);
+			Library.Interaction.IsDisplayed(Xpath.StockRequisitionProcess.StockReqSrchbtn);
+			int day, month, year;
+			GregorianCalendar date = new GregorianCalendar();
+			day = date.get(Calendar.DAY_OF_MONTH);
+			month = date.get(Calendar.MONTH) + 1;
+			year = date.get(Calendar.YEAR);
+			String today =day+"-"+month+"-"+year;
+			log.info(today);
+			Library.Interaction.setTextBoxByXpath(Xpath.StockRequisitionProcess.StockReqCreatedForm, today);
+			Library.Interaction.selectSuggestion(Xpath.StockRequisitionProcess.RecvingArrow, Xpath.StockRequisitionProcess.RecLocSrch,Xpath.StockRequisitionProcess.RecLocName, SearchText, RecLocValue);
 			Library.Interaction.click(Xpath.StockRequisitionProcess.StockReqSrchbtn);
 			Library.Interaction.userWait();
-			
-			/* Verifying the Shipment ID */
 			WebElement ShipmentID = driver.findElement(By.xpath(Xpath.StockRequisitionProcess.ShipmentIdSRP));
 			String ShipmentNumb = ShipmentID.getText();
 			log.info("Shipment ID is "+ShipmentNumb);
@@ -204,4 +152,3 @@ public class COS16_StockRequisitionProcess extends BaseClass {
 		}
 	}
 }
-

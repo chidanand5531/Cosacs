@@ -1,10 +1,10 @@
 
 package com.cosacs.TestCases;
 
-import org.testng.annotations.Test;
+import java.io.IOException;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
-import java.io.IOException;
+import org.testng.annotations.Test;
 
 import com.cosacs.Locators.Xpath;
 import com.cosacs.PageObject.BaseClass;
@@ -13,8 +13,8 @@ import com.cosacs.PageObject.Library;
 public class COS19_StockCount extends BaseClass {
 	String Div_Name = "SDA";
 	String Location_Send = "LUCKY DOLLAR";
-	String Location_Name = "LUCKY DOLLAR MAY PEN";
-	String CountDate = "05/06/2020";
+	String Location_Name = "LUCKY DOLLAR MANDEVI";
+	String CountDate = "26/09/2020";
 	String DivSend = "FURNI";
 	String DivName = "FURNITURE";
 	String DepSend = "BEDR";
@@ -25,7 +25,7 @@ public class COS19_StockCount extends BaseClass {
 	String LocSearchName = "Scheduled";
 	String TypeSend = "Perpe";
 	String TypeName = "Perpetual";
-	String ScheduleFrom = "03/18/2020";
+	String ScheduleFrom = "27/09/2020";
 	String StockCount = "150";
 	String Comment = "No Variance";
 	String FindProductSend = "BA749";
@@ -77,7 +77,7 @@ public class COS19_StockCount extends BaseClass {
 			Library.Interaction.click(Xpath.CreateStockCount.SearchStockCount);
 			Library.Interaction.print("User Entered Location");
 			Library.Interaction.userWait();
-			Library.Interaction.click(Xpath.CreateStockCount.LocationSearchDropDown);
+			Thread.sleep(5000);
 			Library.Interaction.selectEle(Xpath.CreateStockCount.LocationSearchDropDown, Xpath.CreateStockCount.Search,
 					Xpath.CreateStockCount.List, Location_Send, Location_Name);
 			Library.Interaction.selectEle(Xpath.CreateStockCount.StatusDropDown, Xpath.CreateStockCount.Search,
@@ -86,7 +86,6 @@ public class COS19_StockCount extends BaseClass {
 					Xpath.CreateStockCount.List, TypeSend, TypeName);
 			Library.Interaction.setTextBoxByXpath(Xpath.CreateStockCount.ScheduledFrom, ScheduleFrom);
 			Library.Interaction.click(Xpath.CreateStockCount.Search2);
-
 			Library.Interaction.click(Xpath.CreateStockCount.StockCountID);
 			Library.Interaction.click(Xpath.CreateStockCount.StartButton);
 			Library.Interaction.print("User Checks the Radio button");
@@ -129,7 +128,6 @@ public class COS19_StockCount extends BaseClass {
 			Thread.sleep(5000);
 			Library.Interaction.setTextBoxByXpath(Xpath.CreateStockCount.StockCountMin, StockCountID1);
 			Library.Interaction.click(Xpath.CreateStockCount.Search2);
-
 			String StockCountStatus = Library.Interaction.getElmtText(Xpath.CreateStockCount.Status);
 			Assert.assertEquals(StockCountStatus, "Closed");
 			System.out.println("status verified");
@@ -138,7 +136,7 @@ public class COS19_StockCount extends BaseClass {
 
 		} catch (Exception e) {
 			captureScreen(driver, "createStockCount");
-			AssertJUnit.assertFalse(false);
+			Assert.assertFalse(false);
 			log.info("Test Failed");
 		}
 	}

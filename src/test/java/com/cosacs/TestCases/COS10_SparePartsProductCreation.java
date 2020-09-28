@@ -30,10 +30,8 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import java.util.List;
 import com.cosacs.Locators.Xpath;
 import com.cosacs.PageObject.BaseClass;
 import com.cosacs.PageObject.Library;
@@ -103,13 +101,14 @@ public class COS10_SparePartsProductCreation extends BaseClass {
 			log.info("User Selected Primary Vendor");
 			Library.Interaction.userWait();
 			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("window.scrollBy(0,100)");
+			js.executeScript("window.scrollBy(0,150)");
 			Library.Interaction.click(Xpath.SparePartsCreation.saveSparePart);
 			log.info("User is able to save Spare Party");
-			// Library.Interaction.userWait();
-			Thread.sleep(7000);
+			Library.Interaction.IsDisplayed(Xpath.toastMassage.Message_catch);
 			Library.Interaction.verifyToastMessage(Xpath.toastMassage.Message_catch);
 			Library.Interaction.userWait();
+			((JavascriptExecutor) driver).executeScript("window.scrollTo(document.body.scrollHeight, 0)");
+			Thread.sleep(3000);
 			Library.Interaction.ExplicitWait(Xpath.SparePartsCreation.SKU);
 			String SKUName = driver.findElement(By.xpath(Xpath.SparePartsCreation.SKU)).getText();
 			Thread.sleep(7000);

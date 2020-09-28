@@ -1,88 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [COSACS]]]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [COSACS]">
   <listeners>
     <listener class-name="com.cosacs.PageObject.TestListeners"/>
   </listeners>
-  <test thread-count="5" name="COS05_RegularStock Test(failed)(failed)(failed)">
+  <test thread-count="5" name="COS8_SetProduct(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.cosacs.TestCases.COS05_RegularStock">
+      <class name="com.cosacs.TestCases.COS8_SetProduct">
         <methods>
-          <include name="ProductDetails"/>
-          <include name="ProductEnquiry"/>
-          <include name="close"/>
-          <include name="CreateRegularStock"/>
-          <include name="RegularStocks"/>
-          <include name="launchChrome"/>
-        </methods>
-      </class> <!-- com.cosacs.TestCases.COS05_RegularStock -->
-    </classes>
-  </test> <!-- COS05_RegularStock Test(failed)(failed)(failed) -->
-  <test thread-count="5" name="COS14_PurchaseOrder(failed)(failed)(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.cosacs.TestCases.COS14_PurchaseOrder">
-        <methods>
-          <include name="PurchaseOrderSearch"/>
-          <include name="PurchaseOrder"/>
+          <include name="SetProduct"/>
+          <include name="createSetProduct"/>
           <include name="close"/>
           <include name="launchChrome"/>
         </methods>
-      </class> <!-- com.cosacs.TestCases.COS14_PurchaseOrder -->
+      </class> <!-- com.cosacs.TestCases.COS8_SetProduct -->
     </classes>
-  </test> <!-- COS14_PurchaseOrder(failed)(failed)(failed) -->
-  <test thread-count="5" name="COS20_HomeDelivery Test(failed)(failed)(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.cosacs.TestCases.COS20_HomeDelivery">
-        <methods>
-          <include name="Scheduling"/>
-          <include name="close"/>
-          <include name="Picking"/>
-          <include name="SearchPicklist"/>
-          <include name="launchChrome"/>
-          <include name="SearchDeliverySchedules"/>
-          <include name="SearchShipments"/>
-        </methods>
-      </class> <!-- com.cosacs.TestCases.COS20_HomeDelivery -->
-    </classes>
-  </test> <!-- COS20_HomeDelivery Test(failed)(failed)(failed) -->
-  <test thread-count="5" name="COS57_TechnicianDairy Test(failed)(failed)(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.cosacs.TestCases.COS57_TechnicianDairy">
-        <methods>
-          <include name="close"/>
-          <include name="launchChrome"/>
-          <include name="TechnicianDairy"/>
-        </methods>
-      </class> <!-- com.cosacs.TestCases.COS57_TechnicianDairy -->
-    </classes>
-  </test> <!-- COS57_TechnicianDairy Test(failed)(failed)(failed) -->
-  <test thread-count="5" name="COS66_Service_SupplierContractualCosts Test(failed)(failed)(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.cosacs.TestCases.COS66_Service_SupplierContractualCosts">
-        <methods>
-          <include name="close"/>
-          <include name="SupplierContractualCosts"/>
-          <include name="launchChrome"/>
-        </methods>
-      </class> <!-- com.cosacs.TestCases.COS66_Service_SupplierContractualCosts -->
-    </classes>
-  </test> <!-- COS66_Service_SupplierContractualCosts Test(failed)(failed)(failed) -->
-  <test thread-count="5" name="COS_86_Exchangerate Test(failed)(failed)(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.cosacs.TestCases.COS_86_Exchangerate">
-        <methods>
-          <include name="verifyexchangerate_Test"/>
-          <include name="Validate_ExchangeRtae_Test"/>
-          <include name="close"/>
-          <include name="launchChrome"/>
-        </methods>
-      </class> <!-- com.cosacs.TestCases.COS_86_Exchangerate -->
-    </classes>
-  </test> <!-- COS_86_Exchangerate Test(failed)(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [Failed suite [COSACS]]] -->
+  </test> <!-- COS8_SetProduct(failed) -->
+</suite> <!-- Failed suite [COSACS] -->

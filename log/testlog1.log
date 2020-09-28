@@ -1041,3 +1041,780 @@ SRY
 2020-09-26 13:50:13,675 [main] INFO cosac - Conversion Exchange rate is verified and currency value are matching successfully
 2020-09-26 13:50:13,800 [main] INFO cosac - User click on menu button
 2020-09-26 13:50:13,907 [main] INFO cosac - User is in home page
+2020-09-26 15:41:24,141 [main] INFO cosac - Test Failed
+2020-09-26 15:43:50,256 [main] INFO cosac - Test Failed
+2020-09-26 15:51:00,531 [main] INFO cosac - Test Failed
+2020-09-26 15:56:04,103 [main] INFO cosac - Test Failed
+2020-09-26 15:59:56,614 [main] INFO cosac - Test Failed
+2020-09-26 16:06:42,403 [main] INFO cosac - Warrenty creation Starts for extended type
+2020-09-26 16:06:57,624 [main] INFO cosac - Warrenty Verification starts for the Extended warrenty
+2020-09-26 16:07:09,400 [main] INFO cosac - Warrenty creation Starts for New type
+2020-09-26 16:07:20,005 [main] INFO cosac - Warrenty Verification starts for new
+2020-09-26 19:18:07,370 [main] INFO cosac - User Clicked on Merchandising
+2020-09-26 19:18:15,068 [main] INFO cosac - User Clicked on Spare Part
+2020-09-26 19:18:18,183 [main] INFO cosac - User are in Create Spare Part Page
+2020-09-26 19:18:18,381 [main] INFO cosac - User Entered Description
+2020-09-26 19:18:19,079 [main] INFO cosac - User Entered Long Description
+2020-09-26 19:18:19,224 [main] INFO cosac - User Entered PartNumber
+2020-09-26 19:18:19,484 [main] INFO cosac - User Entered Long Vendor Model Number
+2020-09-26 19:18:22,984 [main] INFO cosac - User Selected Primary Vendor
+2020-09-26 19:18:23,045 [main] INFO cosac - User is able to save Spare Party
+2020-09-26 19:18:45,122 [main] INFO cosac - User is able to search Product with product status: Aged
+2020-09-26 19:19:05,519 [main] INFO cosac - Warrenty creation Starts for extended type
+2020-09-26 19:19:25,428 [main] INFO cosac - Warrenty Verification starts for the Extended warrenty
+2020-09-26 19:19:37,081 [main] INFO cosac - Warrenty creation Starts for New type
+2020-09-26 19:19:47,818 [main] INFO cosac - Warrenty Verification starts for new
+2020-09-27 07:22:45,962 [main] INFO cosac - User are in Service Request Financial Report
+2020-09-27 07:22:56,336 [main] INFO cosac - User is able to Select Procuct Department
+2020-09-27 07:23:08,074 [main] INFO cosac - User use able to see the Report with result Count: 1
+1801720
+EW
+02/05/2019
+203001
+AUDIO
+1382
+03/05/2019
+2930
+SRY
+1214.0000
+2020-09-27 07:23:08,249 [main] INFO cosac - First SR Num: 1801720& First Amount: 1214.0
+2020-09-27 07:23:08,250 [main] INFO cosac - Second SR Num: 1801720& Second Amount: -1214.0000
+2020-09-27 07:23:08,251 [main] INFO cosac - User is able to get data with CreditAmount - DebitAmount=0
+2020-09-27 07:26:21,640 [main] INFO cosac - User are in Service Request Financial Report
+2020-09-27 07:26:31,939 [main] INFO cosac - User is able to Select Procuct Department
+2020-09-27 07:26:50,857 [main] INFO cosac - User use able to see the Report with result Count: 1
+1801720
+EW
+02/05/2019
+203001
+AUDIO
+1382
+03/05/2019
+2930
+SRY
+1214.0000
+2020-09-27 07:26:51,012 [main] INFO cosac - First SR Num: 1801720& First Amount: 1214.0
+2020-09-27 07:26:51,013 [main] INFO cosac - Second SR Num: 1801720& Second Amount: -1214.0000
+2020-09-27 07:26:51,013 [main] INFO cosac - User is able to get data with CreditAmount - DebitAmount=0
+2020-09-27 07:28:17,174 [main] INFO cosac - User Clicked on Service
+2020-09-27 07:28:17,435 [main] INFO cosac - User Clicked on Reports
+2020-09-27 07:28:24,227 [main] INFO cosac - User Clicked on Service Request Financial Report
+2020-09-27 07:28:24,306 [main] INFO cosac - User are in Service Request Financial Report
+2020-09-27 07:28:34,545 [main] INFO cosac - User Selected Product Department
+2020-09-27 07:28:34,545 [main] INFO cosac - User is able to Select Procuct Department
+2020-09-27 07:28:44,771 [main] INFO cosac - User use able to see the Report with result Count: 1
+1801720
+EW
+02/05/2019
+203001
+AUDIO
+1382
+03/05/2019
+2930
+SRY
+1214.0000
+2020-09-27 07:28:44,773 [main] INFO cosac - User use able to see the Report with result Count: 1
+1801720
+EW
+02/05/2019
+203001
+AUDIO
+1382
+03/05/2019
+2930
+SRY
+1214.0000
+2020-09-27 07:28:44,943 [main] INFO cosac - First SR Num: 1801720& First Amount: 1214.0
+2020-09-27 07:28:44,944 [main] INFO cosac - First SR Num: 1801720& First Amount: 1214.0
+2020-09-27 07:28:44,944 [main] INFO cosac - First SR Num: 1801720& First Amount: -1214.0000
+2020-09-27 07:28:44,945 [main] INFO cosac - Second SR Num: 1801720& Second Amount: -1214.0000
+2020-09-27 07:28:44,945 [main] INFO cosac - User is able to get data with CreditAmount-DebitAmount=0
+2020-09-27 07:28:44,946 [main] INFO cosac - User is able to get data with CreditAmount - DebitAmount=0
+2020-09-27 07:33:04,040 [main] INFO cosac - User are in Buyer Sales History Report Page
+2020-09-27 07:33:07,414 [main] INFO cosac - User is able to Select KPI
+2020-09-27 07:33:10,706 [main] INFO cosac - User is able to Select Location
+2020-09-27 07:33:14,003 [main] INFO cosac - User is able to Select Division
+2020-09-27 07:33:14,085 [main] INFO cosac - User is able to Click to Serch Report
+2020-09-27 07:33:44,544 [main] INFO cosac - User use able to se the Report with result Count: 48 results found.
+2020-09-27 07:33:54,641 [main] INFO cosac - Hide show button verified
+2020-09-27 07:33:57,733 [main] INFO cosac - User is able to click to Print Button, Print Verified
+2020-09-27 07:36:27,771 [main] INFO cosac - User are in Outstanding SR Per Product Department
+2020-09-27 07:36:31,122 [main] INFO cosac - User is able to Select Procuct Department
+2020-09-27 07:44:37,713 [main] INFO cosac - User are in Outstanding SR Per Product Department
+2020-09-27 07:44:41,033 [main] INFO cosac - User is able to Select Procuct Department
+2020-09-27 07:44:42,880 [main] INFO cosac - Number of total matching records: 31
+2020-09-27 07:54:25,330 [main] INFO cosac - Test Failed
+2020-09-27 07:59:00,871 [main] INFO cosac - Test Failed
+2020-09-27 08:04:09,130 [main] INFO cosac - Test Failed
+2020-09-27 09:00:26,739 [main] INFO cosac - User are in Non Stock Details Page
+2020-09-27 09:00:41,104 [main] INFO cosac - User are in Search NonStocks Page
+2020-09-27 09:01:14,659 [main] INFO cosac - User are in NonStock Product link Page
+2020-09-27 09:01:53,525 [main] INFO cosac - User are in NonStock Promotions Page
+2020-09-27 09:02:13,894 [main] INFO cosac - User are in Non Stock Export Page
+2020-09-27 09:04:59,154 [main] INFO cosac - User are in Non Stock Details Page
+2020-09-27 09:05:13,574 [main] INFO cosac - User are in Search NonStocks Page
+2020-09-27 09:05:37,798 [main] INFO cosac - User are in NonStock Product link Page
+2020-09-27 09:06:16,738 [main] INFO cosac - User are in NonStock Promotions Page
+2020-09-27 09:07:00,161 [main] INFO cosac - User are in Non Stock Export Page
+2020-09-27 09:09:42,874 [main] INFO cosac - User are in Search My Jobs Page
+2020-09-27 09:13:06,943 [main] INFO cosac - Test Failed
+2020-09-27 09:20:17,042 [main] INFO cosac - User are in ExpectedTechnicianPayments Page
+2020-09-27 09:25:43,263 [main] INFO cosac - User are in Technical Service Income and Margin Analysis Report Page
+2020-09-27 09:30:01,163 [main] INFO cosac - User are in Allocated Stock Report Page
+2020-09-27 09:30:41,493 [main] INFO cosac - Test Failed
+2020-09-27 09:36:24,482 [main] INFO cosac - User clicked on merchandising option
+2020-09-27 09:36:24,758 [main] INFO cosac - Cursor moved to Reporst Option
+2020-09-27 09:36:25,018 [main] INFO cosac - Cursor moved to AllocatedStock Option
+2020-09-27 09:36:30,608 [main] INFO cosac - User clicked on AllocatedStock Option
+2020-09-27 09:36:35,674 [main] INFO cosac - User are in Allocated Stock Report Page
+2020-09-27 09:36:38,968 [main] INFO cosac - User Selected Location Data
+2020-09-27 09:36:44,103 [main] INFO cosac - User Clicked on Search Button
+2020-09-27 09:37:41,599 [main] INFO cosac - User clicked on Export button
+2020-09-27 09:38:06,769 [main] INFO cosac - User Clicked on Print Button
+2020-09-27 09:38:32,204 [main] INFO cosac - User Clicked on Clear Button
+2020-09-27 12:25:45,153 [main] INFO cosac - User are in Sales Comparison Report Page
+2020-09-27 12:28:33,470 [main] INFO cosac - User clicked on merchandising option
+2020-09-27 12:28:33,733 [main] INFO cosac - Cursor moved to Reporst Option
+2020-09-27 12:28:33,983 [main] INFO cosac - Cursor moved to Sales Comparison Option
+2020-09-27 12:28:51,627 [main] INFO cosac - User clicked on Sales Comparison Option
+2020-09-27 12:28:52,204 [main] INFO cosac - User are in Sales Comparison Report Page
+2020-09-27 12:28:53,517 [main] INFO cosac - User Selected Period Data
+2020-09-27 12:28:54,703 [main] INFO cosac - User Selected Brand Data
+2020-09-27 12:28:54,957 [main] INFO cosac - User Selected Fascia Data
+2020-09-27 12:28:55,253 [main] INFO cosac - User Selected Divison Data
+2020-09-27 12:28:55,497 [main] INFO cosac - User Selected Department Data
+2020-09-27 12:28:55,923 [main] INFO cosac - User Selected Class Data
+2020-09-27 12:28:55,996 [main] INFO cosac - User Clicked on Search Button
+2020-09-27 12:29:13,478 [main] INFO cosac - User clicked on Export button
+2020-09-27 12:29:18,633 [main] INFO cosac - User Clicked on Print Button
+2020-09-27 12:29:28,894 [main] INFO cosac - User clicked on Clear button
+2020-09-27 13:11:27,235 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:13:29,061 [main] INFO cosac - Test Failed
+2020-09-27 13:13:31,179 [main] INFO cosac - Test Failed
+2020-09-27 13:21:43,377 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:22:17,930 [main] INFO cosac - Test Failed
+2020-09-27 13:22:18,023 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 13:22:18,259 [main] INFO cosac - User Clicked on Search
+2020-09-27 13:22:18,369 [main] INFO cosac - User Clicked on StockAllocations
+2020-09-27 13:22:19,010 [main] INFO cosac - User clicked on Search Button
+2020-09-27 13:24:31,035 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:26:05,869 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:26:40,455 [main] INFO cosac - Test Failed
+2020-09-27 13:26:42,302 [main] INFO cosac - Test Failed
+2020-09-27 13:28:04,917 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:30:08,363 [main] INFO cosac - Test Failed
+2020-09-27 13:30:10,453 [main] INFO cosac - Test Failed
+2020-09-27 13:30:50,398 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:33:40,688 [main] INFO cosac - Test Failed
+2020-09-27 13:33:42,749 [main] INFO cosac - Test Failed
+2020-09-27 13:35:57,309 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:36:20,885 [main] INFO cosac - Test Failed
+2020-09-27 13:36:21,036 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 13:36:21,307 [main] INFO cosac - User Clicked on Search
+2020-09-27 13:36:25,534 [main] INFO cosac - User Clicked on StockAllocations
+2020-09-27 13:40:46,789 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:40:59,286 [main] INFO cosac - User Selected OPU250
+2020-09-27 13:40:59,323 [main] INFO cosac - Product Name 0VO2966 OPL BL AZ 2314 48 - ACETATE UNISEX FULL RIM is displayed in the description
+2020-09-27 13:40:59,379 [main] INFO cosac - Quantity Available 0 is displayed
+2020-09-27 13:40:59,564 [main] INFO cosac - The line cost is 625200
+2020-09-27 13:40:59,608 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 13:41:01,490 [main] INFO cosac - Success Message is ×
+Stock allocation saved.
+2020-09-27 13:41:01,491 [main] INFO cosac - User Created Stock Allocation Successfully
+2020-09-27 13:41:01,597 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 13:41:01,839 [main] INFO cosac - User Clicked on Search
+2020-09-27 13:41:01,940 [main] INFO cosac - User Clicked on StockAllocations
+2020-09-27 13:41:02,854 [main] INFO cosac - User clicked on Search Button
+2020-09-27 13:42:14,713 [main] INFO cosac - Shipment ID is #2076403
+2020-09-27 13:42:14,713 [main] INFO cosac - Stock Allocation Creation and Search is Successfull
+2020-09-27 13:42:50,995 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:43:03,882 [main] INFO cosac - User Selected OPU250
+2020-09-27 13:43:03,914 [main] INFO cosac - Product Name 0VO2966 OPL BL AZ 2314 48 - ACETATE UNISEX FULL RIM is displayed in the description
+2020-09-27 13:43:03,956 [main] INFO cosac - Quantity Available 0 is displayed
+2020-09-27 13:43:04,129 [main] INFO cosac - The line cost is 625200
+2020-09-27 13:43:04,174 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 13:43:06,013 [main] INFO cosac - Success Message is ×
+Stock allocation saved.
+2020-09-27 13:43:06,013 [main] INFO cosac - User Created Stock Allocation Successfully
+2020-09-27 13:43:06,119 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 13:43:06,371 [main] INFO cosac - User Clicked on Search
+2020-09-27 13:43:06,471 [main] INFO cosac - User Clicked on StockAllocations
+2020-09-27 13:43:09,404 [main] INFO cosac - User clicked on Search Button
+2020-09-27 13:43:16,526 [main] INFO cosac - Shipment ID is #2076403
+2020-09-27 13:43:16,527 [main] INFO cosac - Stock Allocation Creation and Search is Successfull
+2020-09-27 13:45:06,488 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:45:18,472 [main] INFO cosac - User Selected OPU250
+2020-09-27 13:45:18,494 [main] INFO cosac - Product Name 0VO2966 OPL BL AZ 2314 48 - ACETATE UNISEX FULL RIM is displayed in the description
+2020-09-27 13:45:18,515 [main] INFO cosac - Quantity Available 0 is displayed
+2020-09-27 13:45:18,616 [main] INFO cosac - The line cost is 625200
+2020-09-27 13:45:18,640 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 13:45:20,364 [main] INFO cosac - Success Message is ×
+Stock allocation saved.
+2020-09-27 13:45:20,364 [main] INFO cosac - User Created Stock Allocation Successfully
+2020-09-27 13:45:20,445 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 13:45:20,679 [main] INFO cosac - User Clicked on Search
+2020-09-27 13:45:20,739 [main] INFO cosac - User Clicked on StockAllocations
+2020-09-27 13:45:20,740 [main] INFO cosac - 27-9-2020
+2020-09-27 13:45:23,354 [main] INFO cosac - User clicked on Search Button
+2020-09-27 13:45:30,846 [main] INFO cosac - Shipment ID is #2076403
+2020-09-27 13:45:30,846 [main] INFO cosac - Stock Allocation Creation and Search is Successfull
+2020-09-27 13:51:13,699 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:51:26,742 [main] INFO cosac - User Selected OPU250
+2020-09-27 13:51:26,765 [main] INFO cosac - Product Name 0VO2966 OPL BL AZ 2314 48 - ACETATE UNISEX FULL RIM is displayed in the description
+2020-09-27 13:51:26,787 [main] INFO cosac - Quantity Available 0 is displayed
+2020-09-27 13:51:26,883 [main] INFO cosac - The line cost is 625200
+2020-09-27 13:51:26,904 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 13:51:28,591 [main] INFO cosac - Success Message is ×
+Stock allocation saved.
+2020-09-27 13:51:28,591 [main] INFO cosac - User Created Stock Allocation Successfully
+2020-09-27 13:51:28,664 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 13:51:28,900 [main] INFO cosac - User Clicked on Search
+2020-09-27 13:51:28,966 [main] INFO cosac - User Clicked on StockAllocations
+2020-09-27 13:51:28,966 [main] INFO cosac - 9/27/2020
+2020-09-27 13:51:31,627 [main] INFO cosac - User clicked on Search Button
+2020-09-27 13:51:39,651 [main] INFO cosac - Shipment ID is #2076403
+2020-09-27 13:51:39,652 [main] INFO cosac - Stock Allocation Creation and Search is Successfull
+2020-09-27 13:54:48,417 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 13:54:58,405 [main] INFO cosac - User Selected OPU250
+2020-09-27 13:54:58,428 [main] INFO cosac - Product Name 0VO2966 OPL BL AZ 2314 48 - ACETATE UNISEX FULL RIM is displayed in the description
+2020-09-27 13:54:58,449 [main] INFO cosac - Quantity Available 0 is displayed
+2020-09-27 13:54:58,553 [main] INFO cosac - The line cost is 625200
+2020-09-27 13:54:58,574 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 13:55:00,520 [main] INFO cosac - Success Message is ×
+Stock allocation saved.
+2020-09-27 13:55:00,520 [main] INFO cosac - User Created Stock Allocation Successfully
+2020-09-27 13:55:00,586 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 13:55:00,825 [main] INFO cosac - User Clicked on Search
+2020-09-27 13:55:00,893 [main] INFO cosac - User Clicked on StockAllocations
+2020-09-27 13:55:00,893 [main] INFO cosac - 27/9/2020
+2020-09-27 13:55:01,482 [main] INFO cosac - User clicked on Search Button
+2020-09-27 13:57:01,937 [main] INFO cosac - Test Failed
+2020-09-27 14:01:34,488 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 14:01:44,389 [main] INFO cosac - User Selected OPU250
+2020-09-27 14:01:44,410 [main] INFO cosac - Product Name 0VO2966 OPL BL AZ 2314 48 - ACETATE UNISEX FULL RIM is displayed in the description
+2020-09-27 14:01:44,431 [main] INFO cosac - Quantity Available 0 is displayed
+2020-09-27 14:01:44,517 [main] INFO cosac - The line cost is 625200
+2020-09-27 14:01:44,539 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 14:01:46,272 [main] INFO cosac - Success Message is ×
+Stock allocation saved.
+2020-09-27 14:01:46,272 [main] INFO cosac - User Created Stock Allocation Successfully
+2020-09-27 14:01:46,332 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:01:46,560 [main] INFO cosac - User Clicked on Search
+2020-09-27 14:01:46,625 [main] INFO cosac - User Clicked on StockAllocations
+2020-09-27 14:01:50,869 [main] INFO cosac - 27/9/2020
+2020-09-27 14:01:50,969 [main] INFO cosac - User clicked on Search Button
+2020-09-27 14:01:52,770 [main] INFO cosac - Shipment ID is #3821409
+2020-09-27 14:01:52,770 [main] INFO cosac - Stock Allocation Creation and Search is Successfull
+2020-09-27 14:08:07,496 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 14:08:17,339 [main] INFO cosac - User Selected OPU250
+2020-09-27 14:08:17,360 [main] INFO cosac - Product Name 0VO2966 OPL BL AZ 2314 48 - ACETATE UNISEX FULL RIM is displayed in the description
+2020-09-27 14:08:17,377 [main] INFO cosac - Quantity Available 0 is displayed
+2020-09-27 14:08:17,473 [main] INFO cosac - The line cost is 625200
+2020-09-27 14:08:17,496 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 14:08:19,328 [main] INFO cosac - Success Message is ×
+Stock allocation saved.
+2020-09-27 14:08:19,328 [main] INFO cosac - User Created Stock Allocation Successfully
+2020-09-27 14:08:19,388 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:08:19,616 [main] INFO cosac - User Clicked on Search
+2020-09-27 14:08:19,686 [main] INFO cosac - User Clicked on StockAllocations
+2020-09-27 14:08:23,914 [main] INFO cosac - 27/9/2020
+2020-09-27 14:08:24,010 [main] INFO cosac - User clicked on Search Button
+2020-09-27 14:08:25,776 [main] INFO cosac - Shipment ID is #3821409
+2020-09-27 14:08:25,776 [main] INFO cosac - Stock Allocation Creation and Search is Successfull
+2020-09-27 14:10:15,433 [main] INFO cosac - User is in Stock Allocation Creation Page
+2020-09-27 14:10:25,388 [main] INFO cosac - User Selected OPU250
+2020-09-27 14:10:25,420 [main] INFO cosac - Product Name 0VO2966 OPL BL AZ 2314 48 - ACETATE UNISEX FULL RIM is displayed in the description
+2020-09-27 14:10:25,441 [main] INFO cosac - Quantity Available 0 is displayed
+2020-09-27 14:10:25,530 [main] INFO cosac - The line cost is 625200
+2020-09-27 14:10:25,552 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 14:10:27,350 [main] INFO cosac - Success Message is ×
+Stock allocation saved.
+2020-09-27 14:10:27,350 [main] INFO cosac - User Created Stock Allocation Successfully
+2020-09-27 14:10:27,411 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:10:27,654 [main] INFO cosac - User Clicked on Search
+2020-09-27 14:10:27,721 [main] INFO cosac - User Clicked on StockAllocations
+2020-09-27 14:10:32,012 [main] INFO cosac - 27/9/2020
+2020-09-27 14:10:32,110 [main] INFO cosac - User clicked on Search Button
+2020-09-27 14:10:33,876 [main] INFO cosac - Shipment ID is #3821409
+2020-09-27 14:10:33,876 [main] INFO cosac - Stock Allocation Creation and Search is Successfull
+2020-09-27 14:13:14,758 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:13:14,997 [main] INFO cosac - User Clicked on Create
+2020-09-27 14:13:28,856 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 14:13:29,496 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 14:13:30,129 [main] INFO cosac - Text-->LUCKY DOLLAR MAY PEN
+2020-09-27 14:13:32,208 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 14:15:32,373 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 14:16:04,724 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 14:16:04,918 [main] INFO cosac - SKU number is 407023
+2020-09-27 14:16:04,956 [main] INFO cosac - Description of Product is P62 - SURGEARREST 6 OUTLET 2 FOOT CORD 120V AU160APC23
+2020-09-27 14:16:04,991 [main] INFO cosac - Comments is Testing
+2020-09-27 14:16:05,015 [main] INFO cosac - The line cost is 124000
+2020-09-27 14:16:05,036 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 14:16:05,777 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 14:16:05,777 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 14:16:05,823 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:16:06,060 [main] INFO cosac - User Clicked on Search
+2020-09-27 14:16:06,128 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 14:17:59,400 [main] INFO cosac - Shipment ID is #2080117
+2020-09-27 14:17:59,400 [main] INFO cosac - Create and Search Stock Requisitions is Successfull
+2020-09-27 14:23:08,810 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:23:09,045 [main] INFO cosac - User Clicked on Create
+2020-09-27 14:23:40,014 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 14:23:40,623 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 14:23:42,729 [main] INFO cosac - Text-->LUCKY DOLLAR MAY PEN
+2020-09-27 14:23:44,813 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 14:25:00,140 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 14:27:28,915 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:27:29,149 [main] INFO cosac - User Clicked on Create
+2020-09-27 14:27:55,968 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 14:27:56,602 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 14:28:01,542 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 14:30:29,751 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:30:30,036 [main] INFO cosac - User Clicked on Create
+2020-09-27 14:31:08,132 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 14:31:08,939 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 14:31:12,557 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 14:31:22,584 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 14:31:22,931 [main] INFO cosac - SKU number is SST773
+2020-09-27 14:31:22,974 [main] INFO cosac - Description of Product is 456510168 - RED HYACINTH 95CM 456510168
+2020-09-27 14:31:23,022 [main] INFO cosac - Comments is Testing
+2020-09-27 14:31:23,076 [main] INFO cosac - The line cost is 233500
+2020-09-27 14:31:23,113 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 14:31:23,889 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 14:31:23,890 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 14:31:23,964 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:31:24,229 [main] INFO cosac - User Clicked on Search
+2020-09-27 14:31:24,341 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 14:31:28,186 [main] INFO cosac - Test Failed
+2020-09-27 14:37:31,541 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:37:31,835 [main] INFO cosac - User Clicked on Create
+2020-09-27 14:38:00,187 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 14:38:00,796 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 14:38:04,399 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 14:38:14,403 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 14:38:14,684 [main] INFO cosac - SKU number is SST773
+2020-09-27 14:38:14,725 [main] INFO cosac - Description of Product is 456510168 - RED HYACINTH 95CM 456510168
+2020-09-27 14:38:14,769 [main] INFO cosac - Comments is Testing
+2020-09-27 14:38:14,818 [main] INFO cosac - The line cost is 233500
+2020-09-27 14:38:14,861 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 14:38:15,793 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 14:38:15,794 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 14:38:15,882 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:38:16,137 [main] INFO cosac - User Clicked on Search
+2020-09-27 14:38:16,240 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 14:38:20,055 [main] INFO cosac - Test Failed
+2020-09-27 14:42:54,517 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:42:54,792 [main] INFO cosac - User Clicked on Create
+2020-09-27 14:43:32,719 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 14:43:33,409 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 14:43:37,141 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 14:43:47,221 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 14:43:47,512 [main] INFO cosac - SKU number is SST773
+2020-09-27 14:43:47,552 [main] INFO cosac - Description of Product is 456510168 - RED HYACINTH 95CM 456510168
+2020-09-27 14:43:47,600 [main] INFO cosac - Comments is Testing
+2020-09-27 14:43:47,647 [main] INFO cosac - The line cost is 233500
+2020-09-27 14:43:47,692 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 14:43:48,513 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 14:43:48,513 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 14:43:48,562 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 14:43:48,822 [main] INFO cosac - User Clicked on Search
+2020-09-27 14:43:48,936 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 14:43:52,667 [main] INFO cosac - Test Failed
+2020-09-27 21:18:05,725 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:18:05,995 [main] INFO cosac - User Clicked on Create
+2020-09-27 21:18:13,515 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 21:18:14,207 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 21:18:17,888 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 21:18:25,769 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 21:18:26,116 [main] INFO cosac - SKU number is SST773
+2020-09-27 21:18:26,151 [main] INFO cosac - Description of Product is 456510168 - RED HYACINTH 95CM 456510168
+2020-09-27 21:18:26,198 [main] INFO cosac - Comments is Testing
+2020-09-27 21:18:26,242 [main] INFO cosac - The line cost is 233500
+2020-09-27 21:18:26,287 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 21:18:27,197 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 21:18:27,198 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 21:18:27,283 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:18:27,556 [main] INFO cosac - User Clicked on Search
+2020-09-27 21:18:27,672 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 21:18:31,632 [main] INFO cosac - Test Failed
+2020-09-27 21:20:29,587 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:20:29,867 [main] INFO cosac - User Clicked on Create
+2020-09-27 21:20:34,744 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 21:20:35,279 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 21:20:38,960 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 21:20:46,971 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 21:20:47,298 [main] INFO cosac - SKU number is SST773
+2020-09-27 21:20:47,345 [main] INFO cosac - Description of Product is 456510168 - RED HYACINTH 95CM 456510168
+2020-09-27 21:20:47,394 [main] INFO cosac - Comments is Testing
+2020-09-27 21:20:47,439 [main] INFO cosac - The line cost is 233500
+2020-09-27 21:20:47,486 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 21:20:48,164 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 21:20:48,165 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 21:20:48,249 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:20:48,516 [main] INFO cosac - User Clicked on Search
+2020-09-27 21:20:48,628 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 21:20:49,710 [main] INFO cosac - Test Failed
+2020-09-27 21:22:28,552 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:22:28,843 [main] INFO cosac - User Clicked on Create
+2020-09-27 21:22:36,166 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 21:22:36,882 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 21:22:40,377 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 21:22:48,000 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 21:22:48,342 [main] INFO cosac - SKU number is SST773
+2020-09-27 21:22:48,388 [main] INFO cosac - Description of Product is 456510168 - RED HYACINTH 95CM 456510168
+2020-09-27 21:22:48,439 [main] INFO cosac - Comments is Testing
+2020-09-27 21:22:48,486 [main] INFO cosac - The line cost is 233500
+2020-09-27 21:22:48,530 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 21:22:49,401 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 21:22:49,401 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 21:22:49,489 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:22:49,756 [main] INFO cosac - User Clicked on Search
+2020-09-27 21:22:49,814 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 21:22:50,860 [main] INFO cosac - Test Failed
+2020-09-27 21:26:09,160 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:26:09,447 [main] INFO cosac - User Clicked on Create
+2020-09-27 21:26:17,918 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 21:26:18,508 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 21:26:21,955 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 21:26:29,544 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 21:26:29,913 [main] INFO cosac - SKU number is SST773
+2020-09-27 21:26:29,964 [main] INFO cosac - Description of Product is 456510168 - RED HYACINTH 95CM 456510168
+2020-09-27 21:26:30,013 [main] INFO cosac - Comments is Testing
+2020-09-27 21:26:30,058 [main] INFO cosac - The line cost is 233500
+2020-09-27 21:26:30,102 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 21:26:30,808 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 21:26:30,808 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 21:26:30,893 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:26:31,153 [main] INFO cosac - User Clicked on Search
+2020-09-27 21:26:31,270 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 21:26:37,346 [main] INFO cosac - 27-9-2020
+2020-09-27 21:26:58,370 [main] INFO cosac - Shipment ID is #2075710
+2020-09-27 21:26:58,370 [main] INFO cosac - Create and Search Stock Requisitions is Successfull
+2020-09-27 21:30:57,441 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:30:57,735 [main] INFO cosac - User Clicked on Create
+2020-09-27 21:31:05,600 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 21:31:07,722 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 21:31:13,439 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 21:31:30,746 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 21:31:31,119 [main] INFO cosac - SKU number is SST773
+2020-09-27 21:31:31,166 [main] INFO cosac - Description of Product is 456510168 - RED HYACINTH 95CM 456510168
+2020-09-27 21:31:31,217 [main] INFO cosac - Comments is Testing
+2020-09-27 21:31:31,263 [main] INFO cosac - The line cost is 233500
+2020-09-27 21:31:31,308 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 21:31:33,247 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 21:31:33,247 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 21:31:33,365 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:31:33,622 [main] INFO cosac - User Clicked on Search
+2020-09-27 21:31:33,706 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 21:31:39,804 [main] INFO cosac - 27-9-2020
+2020-09-27 21:31:44,082 [main] INFO cosac - Shipment ID is #3821402
+2020-09-27 21:31:44,083 [main] INFO cosac - Create and Search Stock Requisitions is Successfull
+2020-09-27 21:33:44,128 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:33:44,393 [main] INFO cosac - User Clicked on Create
+2020-09-27 21:33:50,035 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 21:33:50,619 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 21:33:54,327 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 21:34:02,219 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 21:34:02,531 [main] INFO cosac - SKU number is SST773
+2020-09-27 21:34:02,571 [main] INFO cosac - Description of Product is 456510168 - RED HYACINTH 95CM 456510168
+2020-09-27 21:34:02,598 [main] INFO cosac - Comments is Testing
+2020-09-27 21:34:02,642 [main] INFO cosac - The line cost is 233500
+2020-09-27 21:34:02,687 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 21:34:04,796 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 21:34:04,797 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 21:34:04,913 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:34:05,165 [main] INFO cosac - User Clicked on Search
+2020-09-27 21:34:05,270 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 21:34:11,343 [main] INFO cosac - 27-9-2020
+2020-09-27 21:34:28,027 [main] INFO cosac - Shipment ID is #3821402
+2020-09-27 21:34:28,028 [main] INFO cosac - Create and Search Stock Requisitions is Successfull
+2020-09-27 21:36:04,375 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:36:04,661 [main] INFO cosac - User Clicked on Create
+2020-09-27 21:36:09,150 [main] INFO cosac - User Clicked on StockRequisition
+2020-09-27 21:36:09,809 [main] INFO cosac - User is in Stock Requisition Creation Page
+2020-09-27 21:36:13,526 [main] INFO cosac - User clicked LUCKY DOLLAR MAY PEN
+2020-09-27 21:36:21,154 [main] INFO cosac - User clicked  SST773:456510168-RED HYACINTH 95CM 456510168
+2020-09-27 21:36:21,478 [main] INFO cosac - SKU number is SST773
+2020-09-27 21:36:21,526 [main] INFO cosac - Description of Product is 456510168 - RED HYACINTH 95CM 456510168
+2020-09-27 21:36:21,569 [main] INFO cosac - Comments is Testing
+2020-09-27 21:36:21,615 [main] INFO cosac - The line cost is 233500
+2020-09-27 21:36:21,660 [main] INFO cosac - Line cost is displayed as per Quantity
+2020-09-27 21:36:23,477 [main] INFO cosac - Success Message is ×
+Stock requisition saved.
+2020-09-27 21:36:23,478 [main] INFO cosac - User Created Stock Requisition Successfully
+2020-09-27 21:36:23,588 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 21:36:23,841 [main] INFO cosac - User Clicked on Search
+2020-09-27 21:36:23,943 [main] INFO cosac - User Clicked on StockRequisitions
+2020-09-27 21:36:30,018 [main] INFO cosac - 27-9-2020
+2020-09-27 21:36:34,176 [main] INFO cosac - Shipment ID is #3821605
+2020-09-27 21:36:34,177 [main] INFO cosac - Create and Search Stock Requisitions is Successfull
+2020-09-27 21:45:34,238 [main] INFO cosac - User Clicked on Warranty
+2020-09-27 21:45:38,556 [main] INFO cosac - User Clicked on Warranty Product Link
+2020-09-27 21:45:40,885 [main] INFO cosac - User is in Warranty Product Link Page
+2020-09-27 21:47:47,717 [main] INFO cosac - Test Failed
+2020-09-27 21:53:31,535 [main] INFO cosac - User Clicked on Warranty
+2020-09-27 21:53:39,764 [main] INFO cosac - User Clicked on Warranty Product Link
+2020-09-27 21:53:42,135 [main] INFO cosac - User is in Warranty Product Link Page
+2020-09-27 21:53:49,672 [main] INFO cosac - Text-->AFFINITY
+2020-09-27 21:53:51,812 [main] INFO cosac - User clicked AFFINITY under Division
+2020-09-27 21:53:52,018 [main] INFO cosac - Text-->ADMIN CHARGES
+2020-09-27 21:53:54,127 [main] INFO cosac - User clicked ADMIN CHARGES under Department
+2020-09-27 21:53:54,523 [main] INFO cosac - Text-->10 PORC PROCESSING FEE
+2020-09-27 21:53:56,686 [main] INFO cosac - User clicked 10 PORC PROCESSING FEE under Class
+2020-09-27 21:53:56,859 [main] INFO cosac - Text-->Courts Store
+2020-09-27 21:53:58,955 [main] INFO cosac - User clicked Courts Store under Store Type
+2020-09-27 21:54:04,924 [main] INFO cosac - User clicked 191024 : 4YR LCD/PLASMA>20000
+2020-09-27 21:54:25,410 [main] INFO cosac - User Clicked on Associate warranty save button
+2020-09-27 21:54:25,572 [main] INFO cosac - User Clicked on details Save Button
+2020-09-27 21:56:53,202 [main] INFO cosac - User Clicked on Warranty
+2020-09-27 21:56:56,108 [main] INFO cosac - User Clicked on Warranty Product Link
+2020-09-27 21:56:58,251 [main] INFO cosac - User is in Warranty Product Link Page
+2020-09-27 21:57:05,581 [main] INFO cosac - Text-->AFFINITY
+2020-09-27 21:57:07,743 [main] INFO cosac - User clicked AFFINITY under Division
+2020-09-27 21:57:08,037 [main] INFO cosac - Text-->ADMIN CHARGES
+2020-09-27 21:57:10,125 [main] INFO cosac - User clicked ADMIN CHARGES under Department
+2020-09-27 21:57:10,495 [main] INFO cosac - Text-->10 PORC PROCESSING FEE
+2020-09-27 21:57:12,656 [main] INFO cosac - User clicked 10 PORC PROCESSING FEE under Class
+2020-09-27 21:57:12,835 [main] INFO cosac - Text-->Courts Store
+2020-09-27 21:57:14,930 [main] INFO cosac - User clicked Courts Store under Store Type
+2020-09-27 21:57:20,692 [main] INFO cosac - Text-->191024 : 4YR LCD/PLASMA>20000
+2020-09-27 21:57:22,800 [main] INFO cosac - User clicked 191024 : 4YR LCD/PLASMA>20000
+2020-09-27 21:57:25,417 [main] INFO cosac - User Clicked on Associate warranty save button
+2020-09-27 21:57:25,512 [main] INFO cosac - User Clicked on details Save Button
+2020-09-27 22:13:28,991 [main] INFO cosac - The Title is Warranty Simulator
+2020-09-27 22:13:28,999 [main] INFO cosac - User is in Warranty Simulator Page
+2020-09-27 22:15:30,104 [main] INFO cosac - Test Failed
+2020-09-27 22:32:28,512 [main] INFO cosac - User Clicked on warranty
+2020-09-27 22:32:41,255 [main] INFO cosac - User Clicked on Warranty Promotions
+2020-09-27 22:32:41,384 [main] INFO cosac - The Title is Warranty Promotions
+2020-09-27 22:32:41,384 [main] INFO cosac - User is in Warranty Promotions Page
+2020-09-27 22:32:54,453 [main] INFO cosac - User clicked 191203:TVS $1-29999
+2020-09-27 22:32:58,457 [main] INFO cosac - Test Failed
+2020-09-27 22:34:06,441 [main] INFO cosac - User Clicked on warranty
+2020-09-27 22:34:16,538 [main] INFO cosac - User Clicked on Warranty Promotions
+2020-09-27 22:34:16,699 [main] INFO cosac - The Title is Warranty Promotions
+2020-09-27 22:34:16,699 [main] INFO cosac - User is in Warranty Promotions Page
+2020-09-27 22:34:19,856 [main] INFO cosac - User clicked 191203:TVS $1-29999
+2020-09-27 22:34:23,833 [main] INFO cosac - Test Failed
+2020-09-27 22:43:18,965 [main] INFO cosac - User Clicked on warranty
+2020-09-27 22:43:23,878 [main] INFO cosac - User Clicked on Warranty Promotions
+2020-09-27 22:43:24,007 [main] INFO cosac - The Title is Warranty Promotions
+2020-09-27 22:43:24,007 [main] INFO cosac - User is in Warranty Promotions Page
+2020-09-27 22:43:25,009 [main] INFO cosac - Text-->191024
+2020-09-27 22:43:27,074 [main] INFO cosac - User clicked 191203:TVS $1-29999
+2020-09-27 22:45:34,136 [main] INFO cosac - Test Failed
+2020-09-27 22:45:38,617 [main] INFO cosac - User Clicked on warranty
+2020-09-27 22:45:42,530 [main] INFO cosac - User Clicked on Warranty Promotions
+2020-09-27 22:45:42,652 [main] INFO cosac - The Title is Warranty Promotions
+2020-09-27 22:45:42,653 [main] INFO cosac - User is in Warranty Promotions Page
+2020-09-27 22:45:43,719 [main] INFO cosac - Text-->191024
+2020-09-27 22:45:45,784 [main] INFO cosac - User clicked 191203:TVS $1-29999
+2020-09-27 22:45:56,449 [main] INFO cosac - The Success Msg captured is ×
+The time span of this promotion overlaps with an existing one.
+2020-09-27 22:45:56,450 [main] INFO cosac - User Created Warranty Promotions Successfully
+2020-09-27 22:46:00,617 [main] INFO cosac - The Filter column values are Store Type: Courts
+Store Location: All
+Warranty: 191024
+2020-09-27 22:46:00,639 [main] INFO cosac - The Start date is 25 Sep 2020
+2020-09-27 22:46:00,661 [main] INFO cosac - The End Date is 25 Sep 2020
+2020-09-27 22:46:00,683 [main] INFO cosac - The Promotion Price value is 58 % OFF
+2020-09-27 22:48:48,768 [main] INFO cosac - The Title is Warranty Simulator
+2020-09-27 22:48:48,772 [main] INFO cosac - User is in Warranty Simulator Page
+2020-09-27 22:50:49,614 [main] INFO cosac - Test Failed
+2020-09-27 22:51:35,164 [main] INFO cosac - The Title is Warranty Simulator
+2020-09-27 22:51:35,168 [main] INFO cosac - User is in Warranty Simulator Page
+2020-09-27 22:51:37,577 [main] INFO cosac - The Product No is 202013
+2020-09-27 22:51:37,600 [main] INFO cosac - The Product Desccription is PANASONIC SCAKX700PNK 2000 WAT
+2020-09-27 22:51:37,621 [main] INFO cosac - The Product Retail Price is $34,995.00
+2020-09-27 22:51:37,642 [main] INFO cosac - The Warranty Product is is 12.86
+2020-09-27 22:51:37,664 [main] INFO cosac - The Link is Mini Audio
+2020-09-27 22:51:37,685 [main] INFO cosac - The Warranty is 192013 - MINI AUDIO $20K-39999
+2020-09-27 22:51:37,706 [main] INFO cosac - The Warranty Length is 24
+2020-09-27 22:51:37,733 [main] INFO cosac - The Warranty tax is 15
+2020-09-27 22:51:37,756 [main] INFO cosac - The Warranty Price is $4,499.00
+2020-09-27 22:51:37,777 [main] INFO cosac - The Product Free Status is No
+2020-09-27 22:51:37,797 [main] INFO cosac - The Promotion Link is 
+2020-09-27 22:51:37,817 [main] INFO cosac - The Promotion Price is None
+2020-09-27 22:51:37,838 [main] INFO cosac - The Promotion Match Type is 
+2020-09-27 22:54:10,819 [main] INFO cosac - User Clicked on Warranty
+2020-09-27 22:54:16,607 [main] INFO cosac - User Clicked on Warranty Product Link
+2020-09-27 22:54:18,634 [main] INFO cosac - User is in Warranty Product Link Page
+2020-09-27 22:54:25,682 [main] INFO cosac - Text-->AFFINITY
+2020-09-27 22:54:27,837 [main] INFO cosac - User clicked AFFINITY under Division
+2020-09-27 22:54:27,973 [main] INFO cosac - Text-->ADMIN CHARGES
+2020-09-27 22:54:30,077 [main] INFO cosac - User clicked ADMIN CHARGES under Department
+2020-09-27 22:54:30,323 [main] INFO cosac - Text-->10 PORC PROCESSING FEE
+2020-09-27 22:54:32,458 [main] INFO cosac - User clicked 10 PORC PROCESSING FEE under Class
+2020-09-27 22:54:32,577 [main] INFO cosac - Text-->Courts Store
+2020-09-27 22:54:34,671 [main] INFO cosac - User clicked Courts Store under Store Type
+2020-09-27 22:54:39,614 [main] INFO cosac - Text-->191024 : 4YR LCD/PLASMA>20000
+2020-09-27 22:54:41,692 [main] INFO cosac - User clicked 191024 : 4YR LCD/PLASMA>20000
+2020-09-27 22:54:44,122 [main] INFO cosac - User Clicked on Associate warranty save button
+2020-09-27 22:54:44,199 [main] INFO cosac - User Clicked on details Save Button
+2020-09-27 23:01:22,286 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 23:01:22,530 [main] INFO cosac - User Clicked on Create
+2020-09-27 23:04:36,900 [main] INFO cosac - User Clicked on Set
+2020-09-27 23:05:02,889 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 23:05:03,139 [main] INFO cosac - User Clicked on Create
+2020-09-27 23:05:09,619 [main] INFO cosac - User Clicked on Set
+2020-09-27 23:05:10,185 [main] INFO cosac - User is in Set Product Creation Page
+2020-09-27 23:05:14,284 [main] INFO cosac - User Saved Set Product
+2020-09-27 23:05:14,305 [main] INFO cosac - The Set ID is KITJ0066
+2020-09-27 23:05:14,328 [main] INFO cosac - The Status is Non Active
+2020-09-27 23:05:14,452 [main] INFO cosac - User clicked RADIO SHACK
+2020-09-27 23:05:14,467 [main] INFO cosac - Success Message is ×
+Set saved successfully.
+2020-09-27 23:05:14,630 [main] INFO cosac - User clicked WASHING MACHINE AND DRYER
+2020-09-27 23:05:14,646 [main] INFO cosac - Success Message is ×
+Set saved successfully.
+2020-09-27 23:05:17,998 [main] INFO cosac - User clicked 12 MONTHS SERVICE PACKAGE
+2020-09-27 23:05:18,019 [main] INFO cosac - Success Message is ×
+Set hierarchy successfully updated.
+×
+Set hierarchy successfully updated.
+×
+Set saved successfully.
+2020-09-27 23:05:21,264 [main] INFO cosac - User clicked Fact 2000 Deleted
+2020-09-27 23:05:21,328 [main] INFO cosac - User Clicked on Add Button
+2020-09-27 23:05:21,397 [main] INFO cosac - User Clicked on Add Product Button
+2020-09-27 23:05:25,291 [main] INFO cosac - User clicked  OC0219: RA704110365100 - LEOPARD YELLOW
+2020-09-27 23:05:25,312 [main] INFO cosac - Description of Product is 27515 - CLOCK WALL CKI ALEXANDER 25X47H
+2020-09-27 23:05:28,535 [main] INFO cosac - User saved the Product
+2020-09-27 23:05:30,430 [main] INFO cosac - User Clicked on Add Product Button
+2020-09-27 23:05:34,292 [main] INFO cosac - User clicked  OPW1D3:  VO293725355100 - VO2937 ACETATE OPAL PINK FULL RIM
+2020-09-27 23:05:34,313 [main] INFO cosac - Description of Product is 12493206 - PLAZA CAFE 5 PC KITCHEN TOOLS W CERAMIC CROCKS CORAL SILICONE HEAD WOOD HANDLE GBX
+2020-09-27 23:05:37,519 [main] INFO cosac - User saved the Product
+2020-09-27 23:05:44,177 [main] INFO cosac - User Clicked on Add Button
+2020-09-27 23:07:17,935 [main] INFO cosac - Test Failed
+2020-09-27 23:09:47,046 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 23:09:47,284 [main] INFO cosac - User Clicked on Create
+2020-09-27 23:09:58,619 [main] INFO cosac - User Clicked on Set
+2020-09-27 23:09:59,133 [main] INFO cosac - User is in Set Product Creation Page
+2020-09-27 23:10:02,703 [main] INFO cosac - User Saved Set Product
+2020-09-27 23:10:02,724 [main] INFO cosac - The Set ID is KITJ0068
+2020-09-27 23:10:02,750 [main] INFO cosac - The Status is Non Active
+2020-09-27 23:11:53,405 [main] INFO cosac - User Clicked on Merchandising
+2020-09-27 23:11:53,658 [main] INFO cosac - User Clicked on Create
+2020-09-27 23:11:56,771 [main] INFO cosac - User Clicked on Set
+2020-09-27 23:11:57,305 [main] INFO cosac - User is in Set Product Creation Page
+2020-09-27 23:12:00,597 [main] INFO cosac - User Saved Set Product
+2020-09-27 23:12:00,619 [main] INFO cosac - The Set ID is KITJ0069
+2020-09-27 23:12:00,641 [main] INFO cosac - The Status is Non Active
+2020-09-27 23:14:01,336 [main] INFO cosac - Test Failed
+2020-09-28 10:13:25,648 [main] INFO cosac - User Clicked on Merchandising
+2020-09-28 10:13:25,894 [main] INFO cosac - User Clicked on Create
+2020-09-28 10:13:36,018 [main] INFO cosac - User Clicked on Set
+2020-09-28 10:13:36,648 [main] INFO cosac - User is in Set Product Creation Page
+2020-09-28 10:13:41,323 [main] INFO cosac - User Saved Set Product
+2020-09-28 10:13:41,344 [main] INFO cosac - The Set ID is KITJ0070
+2020-09-28 10:13:41,365 [main] INFO cosac - The Status is Non Active
+2020-09-28 10:13:41,493 [main] INFO cosac - User clicked RADIO SHACK
+2020-09-28 10:13:41,507 [main] INFO cosac - Success Message is ×
+Set saved successfully.
+2020-09-28 10:13:41,661 [main] INFO cosac - User clicked WASHING MACHINE AND DRYER
+2020-09-28 10:13:41,677 [main] INFO cosac - Success Message is ×
+Set saved successfully.
+2020-09-28 10:13:45,023 [main] INFO cosac - User clicked 12 MONTHS SERVICE PACKAGE
+2020-09-28 10:13:45,044 [main] INFO cosac - Success Message is ×
+Set hierarchy successfully updated.
+×
+Set hierarchy successfully updated.
+×
+Set saved successfully.
+2020-09-28 10:13:48,302 [main] INFO cosac - User clicked Fact 2000 Deleted
+2020-09-28 10:13:48,360 [main] INFO cosac - User Clicked on Add Button
+2020-09-28 10:13:48,434 [main] INFO cosac - User Clicked on Add Product Button
+2020-09-28 10:13:52,475 [main] INFO cosac - User clicked  OC0219: RA704110365100 - LEOPARD YELLOW
+2020-09-28 10:13:52,499 [main] INFO cosac - Description of Product is 27515 - CLOCK WALL CKI ALEXANDER 25X47H
+2020-09-28 10:13:55,703 [main] INFO cosac - User saved the Product
+2020-09-28 10:13:57,652 [main] INFO cosac - User Clicked on Add Product Button
+2020-09-28 10:14:01,517 [main] INFO cosac - User clicked  OPW1D3:  VO293725355100 - VO2937 ACETATE OPAL PINK FULL RIM
+2020-09-28 10:14:01,540 [main] INFO cosac - Description of Product is 12493206 - PLAZA CAFE 5 PC KITCHEN TOOLS W CERAMIC CROCKS CORAL SILICONE HEAD WOOD HANDLE GBX
+2020-09-28 10:14:04,752 [main] INFO cosac - User saved the Product
+2020-09-28 10:14:11,478 [main] INFO cosac - User Clicked on Add Button
+2020-09-28 10:15:09,528 [main] INFO cosac - The Title is 
+2020-09-28 10:15:09,528 [main] INFO cosac - User is in Service Request Page
+2020-09-28 10:18:10,108 [main] INFO cosac - Test Failed
+2020-09-28 10:19:02,638 [main] INFO cosac - User Clicked on Merchandising
+2020-09-28 10:19:02,892 [main] INFO cosac - User Clicked on Create
+2020-09-28 10:19:10,647 [main] INFO cosac - User Clicked on Set
+2020-09-28 10:19:11,190 [main] INFO cosac - User is in Set Product Creation Page
+2020-09-28 10:19:14,632 [main] INFO cosac - User Saved Set Product
+2020-09-28 10:19:14,654 [main] INFO cosac - The Set ID is KITJ0071
+2020-09-28 10:19:14,678 [main] INFO cosac - The Status is Non Active
+2020-09-28 10:21:40,955 [main] INFO cosac - User Clicked on Merchandising
+2020-09-28 10:21:41,197 [main] INFO cosac - User Clicked on Create
+2020-09-28 10:21:43,955 [main] INFO cosac - User Clicked on Set
+2020-09-28 10:21:45,176 [main] INFO cosac - User is in Set Product Creation Page
+2020-09-28 10:21:48,477 [main] INFO cosac - User Saved Set Product
+2020-09-28 10:21:48,495 [main] INFO cosac - The Set ID is KITJ0072
+2020-09-28 10:21:48,519 [main] INFO cosac - The Status is Non Active
+2020-09-28 10:21:48,643 [main] INFO cosac - User clicked RADIO SHACK
+2020-09-28 10:21:48,659 [main] INFO cosac - Success Message is ×
+Set saved successfully.
+2020-09-28 10:21:48,814 [main] INFO cosac - User clicked WASHING MACHINE AND DRYER
+2020-09-28 10:21:48,831 [main] INFO cosac - Success Message is ×
+Set saved successfully.
+2020-09-28 10:21:52,197 [main] INFO cosac - User clicked 12 MONTHS SERVICE PACKAGE
+2020-09-28 10:21:52,216 [main] INFO cosac - Success Message is ×
+Set hierarchy successfully updated.
+×
+Set hierarchy successfully updated.
+×
+Set saved successfully.
+2020-09-28 10:21:55,450 [main] INFO cosac - User clicked Fact 2000 Deleted
+2020-09-28 10:21:55,505 [main] INFO cosac - User Clicked on Add Button
+2020-09-28 10:21:55,574 [main] INFO cosac - User Clicked on Add Product Button
+2020-09-28 10:21:59,474 [main] INFO cosac - User clicked  OC0219: RA704110365100 - LEOPARD YELLOW
+2020-09-28 10:21:59,496 [main] INFO cosac - Description of Product is 27515 - CLOCK WALL CKI ALEXANDER 25X47H
+2020-09-28 10:22:02,705 [main] INFO cosac - User saved the Product
+2020-09-28 10:22:04,182 [main] INFO cosac - User Clicked on Add Product Button
+2020-09-28 10:22:08,003 [main] INFO cosac - User clicked  OPW1D3:  VO293725355100 - VO2937 ACETATE OPAL PINK FULL RIM
+2020-09-28 10:22:08,024 [main] INFO cosac - Description of Product is 12493206 - PLAZA CAFE 5 PC KITCHEN TOOLS W CERAMIC CROCKS CORAL SILICONE HEAD WOOD HANDLE GBX
+2020-09-28 10:22:11,228 [main] INFO cosac - User saved the Product
+2020-09-28 10:22:17,951 [main] INFO cosac - User Clicked on Add Button
+2020-09-28 10:22:18,036 [main] INFO cosac - User clicked on Edit Icon
+2020-09-28 10:24:18,525 [main] INFO cosac - Test Failed
+2020-09-28 10:24:45,423 [main] INFO cosac - The Title is 
+2020-09-28 10:24:45,423 [main] INFO cosac - User is in Service Request Page
+2020-09-28 10:28:42,481 [main] INFO cosac - Test Failed
+2020-09-28 10:33:42,979 [main] INFO cosac - The Title is Warranty Simulator
+2020-09-28 10:33:42,981 [main] INFO cosac - User is in Warranty Simulator Page
+2020-09-28 10:33:46,817 [main] INFO cosac - The Product No is 202013
+2020-09-28 10:33:46,840 [main] INFO cosac - The Product Desccription is PANASONIC SCAKX700PNK 2000 WAT
+2020-09-28 10:33:46,860 [main] INFO cosac - The Product Retail Price is $34,995.00
+2020-09-28 10:33:46,881 [main] INFO cosac - The Warranty Product is is 12.86
+2020-09-28 10:33:46,890 [main] INFO cosac - The Link is Mini Audio
+2020-09-28 10:33:46,915 [main] INFO cosac - The Warranty is 192013 - MINI AUDIO $20K-39999
+2020-09-28 10:33:46,946 [main] INFO cosac - The Warranty Length is 24
+2020-09-28 10:33:46,993 [main] INFO cosac - The Warranty tax is 15
+2020-09-28 10:33:47,015 [main] INFO cosac - The Warranty Price is $4,499.00
+2020-09-28 10:33:47,062 [main] INFO cosac - The Product Free Status is No
+2020-09-28 10:33:47,093 [main] INFO cosac - The Promotion Link is 
+2020-09-28 10:33:47,132 [main] INFO cosac - The Promotion Price is None
+2020-09-28 10:33:47,163 [main] INFO cosac - The Promotion Match Type is 
+2020-09-28 10:34:32,098 [main] INFO cosac - The Title is Warranty Simulator
+2020-09-28 10:34:32,101 [main] INFO cosac - User is in Warranty Simulator Page
+2020-09-28 10:34:34,270 [main] INFO cosac - The Product No is 202013
+2020-09-28 10:34:34,292 [main] INFO cosac - The Product Desccription is PANASONIC SCAKX700PNK 2000 WAT
+2020-09-28 10:34:34,315 [main] INFO cosac - The Product Retail Price is $34,995.00
+2020-09-28 10:34:34,336 [main] INFO cosac - The Warranty Product is is 12.86
+2020-09-28 10:34:34,355 [main] INFO cosac - The Link is Mini Audio
+2020-09-28 10:34:34,386 [main] INFO cosac - The Warranty is 192013 - MINI AUDIO $20K-39999
+2020-09-28 10:34:34,427 [main] INFO cosac - The Warranty Length is 24
+2020-09-28 10:34:34,458 [main] INFO cosac - The Warranty tax is 15
+2020-09-28 10:34:34,489 [main] INFO cosac - The Warranty Price is $4,499.00
+2020-09-28 10:34:34,527 [main] INFO cosac - The Product Free Status is No
+2020-09-28 10:34:34,563 [main] INFO cosac - The Promotion Link is 
+2020-09-28 10:34:34,572 [main] INFO cosac - The Promotion Price is None
+2020-09-28 10:34:34,596 [main] INFO cosac - The Promotion Match Type is 

@@ -396,10 +396,10 @@ public class Xpath {
 		public static String WarehouseOversupply = "//a[contains(text(),'Warehouse Oversupply')]";
 		public static String WarehouseDropDown = "(//div[@class='form-group']//div[@class='list-arrow'])[1]";
 		public static String WarehouseSearch = "//div[@class='list-search ng-scope']//input[@type='text']";
-		public static String WarehouseList = "//div[@class='list-item-container ng-scope']";
+		public static String WarehouseList = "//div[@class='list-item-container ng-scope']//div[@class='list-item ng-scope ng-binding']";
 		public static String DivisionDropDown = "(//div[@class='form-group']//div[@class='list-arrow'])[4]";
 		public static String DivisionSearch = "//div[@class='list-search ng-scope']//input[@type='text']";
-		public static String DivisionList = "//div[@class='list-item-container ng-scope']";
+		public static String DivisionList = "//div[@class='list-item-container ng-scope']//div[@class='list-item ng-scope ng-binding']";
 		public static String DepartmentDropDown = "(//div[@class='form-group']//div[@class='list-arrow'])[6]";
 		public static String DepartmentSearch = "//div[@class='list-search ng-scope']//input[@type='text']";
 		public static String DepartmentList = "//div[@class='list-item-container ng-scope']//div[@class='list-item ng-scope ng-binding']";
@@ -407,6 +407,7 @@ public class Xpath {
 		public static String ClassSearch = "//div[@class='list-search ng-scope']//input[@type='text']";
 		public static String ClassList = "//div[@class='list-item-container ng-scope']//div[@class='list-item ng-scope ng-binding']";
 		public static String Search = "//button[@id='buttonSearch']";
+		public static String hideShowButton="//button[contains(text(),'Hide/Show Columns')]";
 		public static String Clear = "//button[@id='buttonClear']";
 		public static String Export = "//button[@id='buttonExport']";
 		public static String Print = "//button[@id='buttonPrint']";
@@ -430,7 +431,6 @@ public class Xpath {
 		// Stock Count validation
 		public static String Search1 = "(//a[contains(.,'Search')])[11]";
 		public static String SearchStockCount = "//ul//li[.='Stock Counts']";
-
 		public static String LocationSearchDropDown = "(//div[@class='list-container ng-scope'])[1]//div[@class='list-arrow']";
 		public static String StatusDropDown = "(//div[@class='list-container ng-scope'])[2]//div[@class='list-arrow']";
 		public static String TypeDropDown = "(//div[@class='list-container ng-scope'])[3]//div[@class='list-arrow']";
@@ -543,13 +543,9 @@ public class Xpath {
 		   public static String SaveComment="(//button[@class='btn btn-primary'])[4]";
 	   }
 	 public static class Logistics_DeliveryPerformanceSummary{
-		   /*public static String Service = "(//ul[@id='mainMenu']//a[@class='dropdown-toggle ng-binding'])[7]"; */
 		   public static String Logistics="(//a[@class='dropdown-toggle ng-binding'])[6]";
-		   //do mouse over action on the reports
 		   public static String Reports="(//ul[@class='dropdown-menu']//li[contains(.,'Reports')])[1]";
-		   //click on the delivery report
 		   public static String Delivery_Performance_summary="//a[contains(.,'Delivery Performance Summary')]";
-		   //Pivot drop down
 		   public static String Pivot_DropDown="//div[@id='s2id_pivot']//div";
 		   public static String Search_Report="//div[@id='select2-drop']//input[@type='text']";
 		   public static String List_Report="//ul[@class='select2-results']//div[@class='select2-result-label']";
@@ -557,9 +553,9 @@ public class Xpath {
 		   public static String Data_typeDropDown="//div[@id='s2id_dateType']//div";
 		   public static String DeliveredFrom="//input[@ng-model='filterParameters.dateFrom']";
 		   public static String DeliveredTo="//input[@ng-model='filterParameters.dateTo']";
+		   public static String Pivot="(//table[@class='main table table-striped table-bordered table-hover table-row-number']//th[@class='ng-scope ng-binding'])[1]";
 		   public static String Run1="//button[@id='buttonSearch']";
-		   public static String Export="//button[contains(.,'Export')]";
-		      
+		   public static String Export="//button[contains(.,'Export')]";     
 	   }
 	 public static class WarrentyExtended{
 		   //click on the warrenty
@@ -1492,6 +1488,7 @@ public class Xpath {
 		public static String Search = "//li[@class='dropdown-submenu'][2]//a[contains(text(),'Search')]";
 		public static String SrchStckAllocs = "//a[contains(text(), 'Stock Allocations')]";
 		public static String CreatedForm = "//input[@name='createdFrom']";
+		public static String RecvingArrow = "(//div[@class='list-arrow'])[2]";
 		public static String ProdSrchBtn = "//div[@class='pull-right']//button[@class='btn btn-primary']";
 		
 	}
@@ -1501,11 +1498,11 @@ public class Xpath {
 		public static String stockRequisition ="//a[contains(text(),'Combo')]//../..//a[contains(text(),'Stock Requisition')]";
 		public static String verifyStockRequisition ="//h2[contains(text(),'Create Stock Requisition')]";
 		public static String RecLocDrpDown ="//list[@name='receivingLocations']//div[@class='list-container ng-scope']//div[@class='list-arrow']";
-		public static String RecLocSrch ="//input[@class='ng-pristine ng-valid']";
+		public static String RecLocSrch ="//div[@class='list-search ng-scope']//input";
 		public static String RecLocName ="//div[@class='list-item-container ng-scope']//div[@class='list-item ng-scope ng-binding']";
 		public static String WarehouseDro = "//list[@name='warehouses']//div[@class='list-container ng-scope']//div[@class='list-arrow']";
 		public static String WarehouseSearch = "//div[@class='list-search ng-scope']//input[@class='ng-pristine ng-valid']";
-		public static String WarehouseName = "//div[contains(text(),'LUCKY DOLLAR MAY PEN')]";
+		public static String WarehouseName = "//div[@class='list-item-container ng-scope']//div[@class='list-item ng-scope ng-binding']";
 		public static String DescSRP = "//tr[@class='ng-scope']//td[3][@class='ng-binding']";
 		public static String ProductDrp = "//div[@class='select2-container ng-pristine ng-valid']//b";
 		public static String CommentsSRP = "//div[@class='form-control-static']//span[@class='ng-binding']";
@@ -1519,6 +1516,7 @@ public class Xpath {
 		public static String ProductCmnts = "//input[@id='productComments']";
 		public static String AddButton = "//span[@class='glyphicons btn-icon plus']";
 		public static String SKUnumb = "//tr[@class='ng-scope']//td[2]//a[@class='ng-binding']";
+		public static String RecvingArrow = "(//div[@class='list-container ng-scope']//div[@class='list-arrow'])[2]";
 		public static String SaveBtn = "//div[@class='pull-right']//button[@class='btn btn-primary']";
 		public static String SrchStockRequisitions = "//a[contains(text(), 'Stock Requisitions')]";
 		public static String StockReqCreatedForm = "//input[@name='createdFrom']";
@@ -1607,8 +1605,7 @@ public class Xpath {
 		public static String SetProdName2 = "//ul[@class='select2-results']//div[@class='select2-result-label']/table/tbody/tr/td/b";
 		public static String ProdEditIcon = "(//span[@class='glyphicons glyph-btn pencil'])[3]";
 		public static String ProdsAddBtn = "//span[@class='glyphicons glyph-btn ok_2']";
-		
-		
+			
 	}
 	
 	public static class ServiceRepairs
@@ -1628,11 +1625,13 @@ public class Xpath {
 		public static String SaveBtn = "//button[@class='btn btn-primary save']";
 		public static String StrSecCol = "(//span[@class='ng-binding'])[1]";
 		public static String Date = "(//div[@class='col-lg-6'])[45]";
-		public static String DateReceiPic = "//table[@class='ui-datepicker-calendar']//tbody/tr[4]/td/a[contains(text(),'26')]";
+		public static String DateReceiPic = "//table[@class='ui-datepicker-calendar']//tbody/tr/td/a[contains(text(),'28')]";
 		public static String DatePart = "//input[@id='AllocationPartExpectOn']";
+		public static String DatePartPic = "//table[@class='ui-datepicker-calendar']//tbody/tr/td/a[contains(text(),'29')]";
 		public static String DateRecSchd = "//input[@id='dp1584449484146']";
 		public static String Category = "//div[@id='s2id_autogen14']//div/b";
 		public static String TechDrpDwn = "//div[@id='s2id_techy']//div/b";
+		public static String TechVal = "//div[contains(text(),'AYON  WARREN (3804)')]";
 		public static String TimeSlot1 = "(//td[@class='text-center ng-scope']//td[@class='fixed click'])[1]";
 		public static String TimeSlot2 = "(//td[@class='text-center ng-scope']//td[@class='fixed click'])[2]";
 		public static String SerialNumb = "//input[@id='ItemSerialNumber']";
@@ -1640,7 +1639,8 @@ public class Xpath {
 		public static String Resolution = "//div[@id='s2id_Resolution']//div/b";
 		public static String AddPart = "//a[@id='addPart']";
 		public static String APitemTxt = "//input[@id='itemNo']";
-		public static String APitemSrchIcon = "//div[@class='halflings search click']";
+		public static String APitemSrchIcon = "//span[@class='input-group-addon halflings search click']";
+		public static String SearchIcon = "//div[@class='halflings search click']";
 		public static String APMatchStck = "//div[@class='glyphicons check click']";
 		public static String APQuantity = "//input[@id='part-quantity']";
 		public static String AddPartButton = "(//button[@class='btn btn-primary'])[3]";
@@ -1650,35 +1650,37 @@ public class Xpath {
 		public static String ReasonForFailure = "(//div[@id='s2id_FinalisedFailure'])//div/b";
 		public static String ReasonForFailureVal = "//div[contains(text(),'Damage On Delivery')]";
 		public static String ReturnDate = "(//input[@id='FinaliseReturnDate'])";
-		public static String ReturnDatePick = "//table[@class='ui-datepicker-calendar']/tbody/tr[4]/td/a[contains(text(),'26')]";
+		public static String ReturnDatePick = "//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(text(),'29')]";
 		public static String CommentsServRepairs = "//textarea[@id='Comment']";
 		public static String SaveCmntBtn = "(//button[@class='btn btn-primary'])[4]";
 		
 	}
-	public static class WarrantySimulator
-	{
-		public static String WarrantyLink = "(//a[contains(text(),'Warranty')])[1]";
-		public static String WarrantySimulator = "//a[contains(text(),'Warranty Simulator')]";
-		public static String WarntySimulatorTitle = "//h2[contains(text(),'Warranty Simulator')]";
-		public static String WrntyItem = "//input[@id='product']";
-		public static String WrntyLocation = "(//div[@class='list-container ng-scope'])[3]/div[@class='list-arrow']";
-		public static String WarrantyLocName = "//div[contains(text(),'202 LUCKY DOLLAR RED')]";
-		public static String WarrantySrchButton = "//button[@class='btn btn-primary']";
-		public static String ProdNum1 = "(//tr[@class='ng-scope'])[1]/td[1]";
-		public static String ProdDesc1 = "(//tr[@class='ng-scope'])[1]/td[2]";
-		public static String ProdRetailPrice1 = "(//tr[@class='ng-scope'])[1]/td[3]";
-		public static String WarrantyProdPrice1 = "(//tr[@class='ng-scope'])[1]/td[4]";
-		public static String Link1 = "(//tr[@class='ng-scope'])[1]/td[5]/a[@class='ng-binding']";
-		public static String Warranty1 = "(//tr[@class='ng-scope'])[1]/td[6]";
-		public static String WarrantyLength1 = "(//tr[@class='ng-scope'])[1]/td[7]";
-		public static String WarrantyTax1 =	"(//tr[@class='ng-scope'])[1]/td[8]";
-		public static String WarrantyPrice = "(//tr[@class='ng-scope'])[1]/td[9]";
-		public static String Free1 = "(//tr[@class='ng-scope'])[1]/td[10]";
-		public static String ProotionLink1 = "(//tr[@class='ng-scope'])[1]/td[11]";
-		public static String PromotionPrice = "(//tr[@class='ng-scope'])[1]/td[12]";
-		public static String PromotionMatchType = "(//tr[@class='ng-scope'])[1]/td[13]";
-				
-	}
+
+	public static class WarrantySimulator 
+
+	{ 
+	public static String WarrantyLink = "(//a[contains(text(),'Warranty')])[1]"; 
+	public static String WarrantySimulator = "//a[contains(text(),'Warranty Simulator')]"; 
+	public static String WarntySimulatorTitle = "//h2[contains(text(),'Warranty Simulator')]"; 
+	public static String WrntyItem = "//input[@id='product']"; 
+	public static String WrntyLocation = "(//div[@class='list-container ng-scope'])[3]/div[@class='list-arrow']"; 
+	public static String WarrantyLocName = "//div[contains(text(),'171 LUCKY DOLLAR MAY PEN')]"; 
+	public static String WarrantySrchButton = "//button[@class='btn btn-primary']"; 
+	public static String ProdNum1 = "(//tr[@class='ng-scope'])[1]/td[1]"; 
+	public static String ProdDesc1 = "(//tr[@class='ng-scope'])[1]/td[2]"; 
+	public static String ProdRetailPrice1 = "(//tr[@class='ng-scope'])[1]/td[3]"; 
+	public static String WarrantyProdPrice1 = "(//tr[@class='ng-scope'])[1]/td[4]"; 
+	public static String Link1 = "(//tr[@class='ng-scope'])[1]/td[5]/a[@class='ng-binding']"; 
+	public static String Warranty1 = "(//tr[@class='ng-scope'])[1]/td[6]"; 
+	public static String WarrantyLength1 = "(//tr[@class='ng-scope'])[1]/td[7]"; 
+	public static String WarrantyTax1 ="(//tr[@class='ng-scope'])[1]/td[8]"; 
+	public static String WarrantyPrice = "(//tr[@class='ng-scope'])[1]/td[9]"; 
+	public static String Free1 = "(//tr[@class='ng-scope'])[1]/td[10]"; 
+	public static String ProotionLink1 = "(//tr[@class='ng-scope'])[1]/td[11]"; 
+	public static String PromotionPrice = "(//tr[@class='ng-scope'])[1]/td[12]"; 
+	public static String PromotionMatchType = "(//tr[@class='ng-scope'])[1]/td[13]"; 
+
+	} 
 	
 	public static class WarrantyPromotions
 	{
@@ -1690,9 +1692,9 @@ public class Xpath {
 		public static String StoreLocation = "(//div[@class='select2-container ng-valid ng-dirty'])[2]//div/b";
 		public static String LocationVal = "//div[contains(text(),'121 TROPIGAS BZE')]";
 		public static String FromEffDate = "//input[@id='filterEffectiveDateStart']";
-		public static String FromEffDateVal = "//table[@class='ui-datepicker-calendar']/tbody/tr[3]/td/a[contains(text(),'14')]";
+		public static String FromEffDateVal = "//table[@class='ui-datepicker-calendar']/tbody/tr[3]/td/a[contains(text(),'28')]";
 		public static String ToEffDate = "//input[@id='filterEffectiveDateEnd']";
-		public static String ToEffDateVal = "//table[@class='ui-datepicker-calendar']/tbody/tr[3]/td/a[contains(text(),'14')]";
+		public static String ToEffDateVal = "//table[@class='ui-datepicker-calendar']/tbody/tr[3]/td/a[contains(text(),'28')]";
 		public static String SearchButton = "//button[@class='btn btn-primary']";
 		public static String AddButton = "//a[@class='glyphicons glyph-btn action-new plus']";
 		public static String WarrantyDrpDwn = "//div[@class='select2-container ng-pristine ng-valid']//div/b";
@@ -1701,9 +1703,9 @@ public class Xpath {
 		public static String CourtsStore = "(//div[@class='select2-container ng-valid ng-dirty'])[3]//div/b";
 		public static String CourtsStoreVal = "//div[contains(text(),'Courts Store')]";
 		public static String StartDate = "//input[@id='promotionStartDate']";
-		public static String StartDatePick = "//div[@id='ui-datepicker-div']//tbody/tr/td/a[contains(text(),'14')]";
+		public static String StartDatePick = "//div[@id='ui-datepicker-div']//tbody/tr/td/a[contains(text(),'28')]";
 		public static String EndDate = "//input[@id='promotionEndDate']";
-		public static String EndDatePick = "//div[@id='ui-datepicker-div']//tbody/tr/td/a[contains(text(),'14')]";
+		public static String EndDatePick = "//div[@id='ui-datepicker-div']//tbody/tr/td/a[contains(text(),'29')]";
 		public static String PromotionDrpDwn = "//div[@class='select2-container ng-invalid ng-invalid-required ng-dirty']//div/b";
 		public static String Promotionval = "//div[contains(text(),'Percentage Discount')]";
 		public static String DiscountTextBox = "//input[@class='form-control ng-pristine ng-invalid ng-invalid-required ng-valid-number percentage']";
@@ -1712,10 +1714,7 @@ public class Xpath {
 		public static String Filters = "(//td[@class='filters'])[1]";
 		public static String StartDatePromo = "(//td[@class='date ng-binding'])[1]";
 		public static String EndDatePromo = "(//td[@class='date ng-binding'])[2]";
-		public static String PromotionPriceValue = "(//td[@class='price ng-binding'])[1]";
-		
-		
-		
+		public static String PromotionPriceValue = "(//td[@class='price ng-binding'])[1]";	
 	}
 	
 	
@@ -1727,7 +1726,7 @@ public class Xpath {
 		public static String AddNewBtn = "//button[@id='new']";
 		public static String NameTextBox = "//div[@class='col-lg-3 has-error']/input[@type='text']";
 		public static String Effdate = "//div[@class='col-lg-3 has-error']";
-		public static String EffDatePic = "//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(text(),'14')]";
+		public static String EffDatePic = "//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(text(),'28')]";
 		public static String ProdAddBtn = "(//span[@class='ui-widget click glyphicons action-new plus'])[1]";
 		public static String Division = "(//div[@class='list-container ng-scope']//div[@class='list-arrow'])[1]";
 		public static String DivName = "//div[contains(text(),'AFFINITY')]";
@@ -1749,6 +1748,7 @@ public class Xpath {
 		public static String AssocSaveBtn = "(//span[@class='action click save glyph-btn glyphicons floppy_save text-danger'])[2]";
 		public static String DetailSaveBtn = "(//div[@class='form-horizontal']//span[@title='Save Details'])[1]";
 	}
+	
 	public static class WarrantyCodeInstantReplacement
 	{
 		public static String Warranty = "(//a[contains(text(),'Warranty')])[1]";
@@ -1811,42 +1811,42 @@ public class Xpath {
 		public static String AddPartBtn = "//a[@id='addPart']";
 		public static String SrchIcon = "//span[@class='input-group-addon halflings search click']";
 		public static String MatchStockItemVal = "//input[@id='itemNo']";
-		public static String MatchStckSrchIcon = "//div[@class='halflings search click']";
-			
+		public static String MatchStckSrchIcon = "//div[@class='halflings search click']";		
 	}
 	
 	//************************VENKAT******
-	
-
-
-	public static class SalesComparison
+	public static class SalesComparisonReport
 	{
 		public static String merchandising="//a[text()='Merchandising']";
-		public static String Reports="//*[@id=\"mainMenu\"]/li[10]/ul/li[4]/a";
+		public static String Reports="(//a[text()='Reports'])[5]";
 		public static String SalesComparison="//a[text()='Sales Comparison']";
-		public static String PeriodEnd="//list[@name='periodId']//div[@class='list-arrow']";
-		public static String PeriodSearch="//list[@name='periodId']//input[@class='ng-pristine ng-valid']";
-		public static String PeriodData="//div[contains(text(),'Period 10, 31 Jan 2020')]";
-		public static String Location="//list[@name='locationId']//div[@class='list-arrow']";
-		public static String LocationSearch="//list[@name='locationId']//input[@class='ng-pristine ng-valid']";
-		public static String LocationData="//div[text()='LUCKY DOLLAR MAY PEN']";
-
-		public static String Brand="//list[@name='brand']//div[@class='list-arrow']";
-		public static String BrandSearch="//list[@name='brand']//input[@class='ng-pristine ng-valid']";
-		public static String BrandData="//div[text()='Absolute Distributors']";
-
-		public static String Divison="list[@name='hierarchy']//div[@class='list-arrow']";
-		public static String DivisonSearch="list[@name='hierarchy']//div[@class='ng-pristine ng-valid']";
-		public static String DivisonData="//div[text()='AFFINITY']";
-		public static String FinancialYear="//input[@name='financialYear']";
-		public static String ProductTags="//input[@name='tag_']";
-
+		public static String VerifySalesComparisonpage="//h2[text()='Sales Comparison Report']";
+		public static String Period="//span[text()='Select a period']";
+		public static String PeriodSearch="(//input[@type='text'])[3]";
+		public static String PeriodData="//div[contains(text(),'Period 12, 31 Mar 2020')]";
+		public static String Brand="//span[text()='Select a brand']";
+		public static String BrandSearch="(//input[@type='text'])[3]";
+		public static String BranchData="//div[contains(text(),'CANON')]";
+		public static String Fascia="//span[text()='Select a fascia']";
+		public static String FasciaSearch="(//input[@type='text'])[3]";
+		public static String FasciaData="//div[text()='Courts']";
+		public static String Divison="(//span[text()='Any'])[2]";
+		public static String DivisonSearch="(//input[@type='text'])[4]";
+		public static String DivisonData="//div[text()='COMPUTER AND OFFICE']";
+		public static String Department="(//span[text()='Any'])[4]";
+		public static String DepartmentSearch="(//input[@type='text'])[4]";
+		public static String DepartmentData="//div[contains(text(),'COMPUTER AND ACCESSORIES')]";
+		public static String Class="(//span[text()='Any'])[6]";
+		public static String ClassSearch="(//input[@type='text'])[4]";
+		public static String ClassData="//div[text()='PRINTER']";
 		public static String Search="//button[text()='Search']";
+		public static String hideShowButton="//button[contains(text(),'Hide/Show Columns')]";
 		public static String Print="//button[text()='Print']";
 		public static String Export="//button[text()='Export']";
+		public static String Clear="//button[text()='Clear']";
 	}
-
-
+	
+	
 	public static class NewNonStockCreation
 	{
 		public static String NonStocks="//a[contains(text(),'Non Stocks')]";
@@ -1870,14 +1870,14 @@ public class Xpath {
 		public static String ClassSearch="//*[@id=\"hierarchyLevel_2\"]/div[3]/div[1]/input";
 		public static String ClassData="//div[contains(text(),'PRINTER')]";
 		public static String SaveButton="(//button[contains(text(),'Save')])[1]";
-		//public static String SaveandContinueButton="//button[text()='Save and Continue']";
 		public static String Logoutbutton="//a[@id='logoff']";
-		
+
 	}
 	public static class SearchNonStocks
 	{
 		public static String NonStocks="//a[contains(text(),'Non Stocks')]";
 		public static String SearchNonStocks="//a[contains(text(),'Search Non-Stocks')]";
+		public static String VerifyNonStockSearchPage="//h1[text()='Search Non-Stocks']";
 		public static String SearchBox="//input[@id='searchString']";
 		public static String ThreeDots="//*[@id=\"resultsContainer\"]/div/div/div[3]/span";
 		public static String Plusbutton="(//div[@class='ui-widget glyphicons plus'])[1]";
@@ -1891,7 +1891,7 @@ public class Xpath {
 		public static String RetailPrice="(//input[@type='number'])[2]";
 		public static String SaveButton="(//span[@title='Save'])[1]";
 		public static String Logoutbutton="//a[@id='logoff']";
-		
+
 
 	}
 
@@ -1899,9 +1899,9 @@ public class Xpath {
 	{
 		public static String NonStock="//a[text()='Non Stocks']";
 		public static String NonStockProductLinks="//a[text()='Non-Stocks/Product Link']";
+		public static String VerifyNonStockProductLinkPage="//h1[text()='Non-Stocks/Product Link']";
 		public static String AddNewButton="//button[contains(text(),'Add New')]";
 		public static String Name="//div[@class='col-lg-3 has-error']//input[@type='text']";
-
 		public static String Plusbutton1="(//span[@class='glyph-btn glyphicons plus'])[1]";
 		public static String Divison="(//list[@name='newHierarchyLevel']//div[@class='list-arrow'])[1]";
 		public static String DivisonSearch="//list[@name='newHierarchyLevel']//input[@type='text']";
@@ -1913,13 +1913,11 @@ public class Xpath {
 		public static String ClassSearch="//list[@name='newHierarchyLevel']//input[@type='text']";
 		public static String ClassData="//div[text()='PRINTER']";
 		public static String SaveButton1="(//span[@class='glyph-btn glyphicons floppy_save'])[1]";
-
 		public static String plusbutton2="(//span[@class='glyph-btn glyphicons plus'])[2]";
 		public static String NonStockDropDown="(//list[@name='newNonStock']//div[@class='list-arrow'])[1]";
 		public static String NonStockDropDownSearch="//*[@id=\"newNonStock\"]/div[3]/div[1]/input";
-		public static String NonStockDropDownData="//div[text()='40209 - OPTIPLUS OP-225 SPORT COR PIXMA 3010 - CANON PIXMA 3010 AIO PRINTE']";
+		public static String NonStockDropDownData="//div[text()='402217 - OPTIPLUS OP-225 SPORT COR PIXMA 3010 - CANON PIXMA 3010 AIO PRINTE']";
 		public static String SaveButton2="(//span[@class='glyph-btn glyphicons floppy_save'])[2]";
-
 		public static String SaveButtonDisble="(//span[@title='Save Details'])[1]";
 		public static String Logoutbutton="//a[@id='logoff']";
 	}
@@ -1930,10 +1928,12 @@ public class Xpath {
 	{
 		public static String NonStocks="//a[text()='Non Stocks']";
 		public static String NonStockProomotions="//a[contains(text(),'Non-Stock Promotions')]";
+
+		public static String VerifyNonStockPromotionsPage="//h1[text()='Non-Stock Promotions']";
 		public static String PlusButton="//a[@class='glyphicons glyph-btn plus']";
 		public static String NonStock="//span[contains(text(),'Non Stock')]"; 
 		public static String NonStockSearch="//*[@id=\"body\"]/div/article/div/div/section/ng-include/table/tfoot/tr[2]/td[2]/section[1]/div/div[2]/list/div[3]/div[1]/input";
-		public static String NonStockData="//div[contains(text(),'40209 - OPTIPLUS OP-225 SPORT COR PIXMA 3010 - CANON PIXMA 3010 AIO PRINTE')]";
+		public static String NonStockData="//div[contains(text(),'402217 - OPTIPLUS OP-225 SPORT COR PIXMA 3010 - CANON PIXMA 3010 AIO PRINTE')]";
 		public static String Fascia="(//span[contains(text(),'Fascia')])[2]"; 
 		public static String FasciaSearch="//*[@id=\"body\"]/div/article/div/div/section/ng-include/table/tfoot/tr[2]/td[2]/section[2]/div[1]/list/div[3]/div[1]/input";
 		public static String FasciaData="//div[contains(text(),'Courts Store')]";
@@ -1949,14 +1949,13 @@ public class Xpath {
 
 	}
 
-
-
-
 	public static class NonStocksExports
 	{
 		public static String NonStock="//a[text()='Non Stocks']";
 		public static String NonStocksExportLink="//a[contains(text(),'Non-Stocks Export')]";
 		public static String VerifyNonStockExport="//h1[contains(text(),'Non-Stocks Export')]";
+		public static String DownloadProductsFile ="//a[text()='Download Products File']";
+		public static String DownloadPromotionsFile ="//a[text()='Download Promotions File']";
 		public static String DownloadProductAssociationFile="//a[contains(text(),'Download Product Associations File')]";
 		public static String Logoutbutton="//a[@id='logoff']";
 	}
@@ -1972,13 +1971,19 @@ public class Xpath {
 		public static String ToDate="//input[@id='TechAllocatedDateSearchTo']";
 		public static String StatusValue="//li[contains(text(),'Awaiting repair')]";
 		public static String TypeValue="//li[contains(text(),'Service Request Internal')]";
-		public static String SearchTextBox="//input[@id='searchString']";      
-		public static String RequestValue="//a[contains(text(),'2082203')]";
+		public static String SearchTextBox="//input[@id='searchString']";
+		public static String RequestValue="//a[contains(text(),'2125396')]";
+		public static String ExportButton="//button[text()='Export']";
+        public static String BatchPrint="//button[text()='Batch Print']";
+        public static String Ok="//button[text()='OK']";
+		public static String SummaryPrint="//button[text()='Summary Print']";
+		public static String Clear="//button[text()='Clear']";
+	    public static String VerifySummaryPrintPage="//h2[text()='Summary Print']";
+	    public static String VerifyBatchPrintPage="(//h2[contains(text(),'Service Request Internal Report')])[1]";
 		public static String VerifyServiceRequest="//h2[contains(text(),'Service Request')]//span[text()='2082203']";
 		public static String VerifyBranch="//p[contains(text(),'650 COURTS PORT ANTONIO')]";
 		public static String VerifyRequestType="//p[contains(text(),'Internal Customer')]";
 		public static String VerifyAccountNumber="//p[contains(text(),'650088363171')]";
-		public static String Logoutbutton="//a[@id='logoff']";
 
 	}
 
@@ -1988,7 +1993,6 @@ public class Xpath {
 		public static String TechnicianPaymentslink="//a[contains(text(),'Technician Payments')]";
 		public static String VerifyTechnicianPayments="//h2[contains(text(),'Technician Payments')]";
 		public static String SelectButton="//a[contains(text(),'AUTOMATIC EXCHANGE')]//parent::td//preceding-sibling::td//button[text()='Select']";
-		//public static String PaymentsFor="//input[@id='paymentsFrom']";
 		public static String PaymentsTo="//input[@id='paymentsTo']";
 		public static String StatusFilter="//span[contains(text(),'All')]";
 		public static String StatusFilterSearch="(//div[@class='select2-search']//parent::div//input[@type='text'])[1]";
@@ -1996,14 +2000,12 @@ public class Xpath {
 		public static String SearchButton="//button[contains(text(),'Search')]";
 		public static String Checkbox="(//input[@type='checkbox'])[3]";
 		public static String PayButton="//button[contains(text(),'Pay')]";
-
 		public static String ClearButton="//button[contains(text(),'Clear')]";
 		public static String PaymentsTo2="//input[@id='paymentsTo']";
 		public static String StatusFilter2="//span[contains(text(),'All')]";
 		public static String StatusFilterSearch2="(//div[@class='select2-search']//parent::div//input[@type='text'])[1]";
 		public static String StatusFilterData2="//span[contains(text(),'Paid')]";
 		public static String SearchButton2="//button[contains(text(),'Search')]";
-
 		public static String ClearButton3="//button[contains(text(),'Clear')]";
 		public static String PaymentsTo3="//input[@id='paymentsTo']";
 		public static String StatusFilter3="//span[contains(text(),'All')]";
@@ -2014,7 +2016,6 @@ public class Xpath {
 
 	}
 
-
 	public static class ServiceIncomeAnalysis
 	{
 		public static String Service="//a[text()='Service']";
@@ -2023,9 +2024,29 @@ public class Xpath {
         public static String VerifyServiceIncomeAnalysis="//h2[text()='Technical Service Income and Margin Analysis Report']";
         public static String Run="//button[text()='Run']";
         public static String Export="//button[text()='Export']";
-
-        
+        public static String Clear="//button[@id='buttonClear']";
+      
 	}
+	
+	public static class AllocatedStockReport
+	{
+		public static String merchandising="//a[text()='Merchandising']";
+		public static String Reports="(//a[text()='Reports'])[5]";
+	    public static String AllocatedStock="//a[text()='Allocated Stock']";
+		public static String VerifyAllocatedStockReportPage="//h2[text()='Allocated Stock Report']";
+		public static String Location="//span[text()='Select a Location']";
+		public static String LocationSearch="(//input[@type='text'])[3]";
+		public static String LocationData="//div[contains(text(),'COURTS CROSS ROADS')]";
+	    public static String Search="//button[text()='Search']";
+	    public static String hideShowButton="//button[contains(text(),'Hide/Show Columns')]";
+		public static String Print="//button[text()='Print']";
+		public static String Export="//button[text()='Export']";
+		public static String Clear="//button[text()='Clear']";
+
+	}
+	
+	
+
 	
 	public static class CustomerPickUp
 	{

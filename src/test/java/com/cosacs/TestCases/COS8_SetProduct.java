@@ -14,22 +14,22 @@ import com.cosacs.PageObject.Library;
 
 public class COS8_SetProduct extends BaseClass{
 	
-	String ExpecSetProdTitle = "Create Set";
-	String SetProdDesc = "Set Product Creation";
-	String HierDivValue = "RADIO SHACK";
-	String HierDeptValue = "WASHING MACHINE AND DRYER";
-	String HierClassValue = "RS RADIOS";
-	String AddTagsVal = "Fact";
-	String TagsVal = "Fact2000 Deleted";
-	String SetProdSrch = "MLT00055";
-	String ProdValue = "MLT00055";
-	String QuantitySetProd = "1";
-	String SetProdSrch2 = "840246";
-	String ProdValue2 = "840246";
-	String QuantitySetProd2 = "1";
-	String EffectiveDate = "09/25/2020";
-	String FasciaName = "Courts";
-	String FasciaValue = "Courts";
+	String ExpecSetProdTitle = "Create Set"; 
+	String SetProdDesc = "Set Product Creation"; 
+	String HierDivValue = "RADIO SHACK"; 
+	String HierDeptValue = "WASHING MACHINE AND DRYER"; 
+	String HierClassValue = "RS RADIOS"; 
+	String AddTagsVal = "Fact"; 
+	String TagsVal = "Fact2000 Deleted"; 
+	String SetProdSrch = "MLT00055"; 
+	String ProdValue = "MLT00055"; 
+	String QuantitySetProd = "1"; 
+	String SetProdSrch2 = "840246"; 
+	String ProdValue2 = "840246"; 
+	String QuantitySetProd2 = "1"; 
+	String EffectiveDate = "28/09/2020"; 
+	String FasciaName = "Courts"; 
+	String FasciaValue = "Courts"; 
 
 	@Test
 	public void SetProduct() throws Throwable {
@@ -62,32 +62,20 @@ public class COS8_SetProduct extends BaseClass{
 	
 	public void createSetProduct() throws IOException {
 		try {
-			
-			/*Entering Text to the Description field */
 			Library.Interaction.setTextBoxByXpath(Xpath.SetProduct.SetProdDesc, SetProdDesc);
-			
-			/* Clicking on the check box */
 			Library.Interaction.click(Xpath.SetProduct.CheckBox);
 			Library.Interaction.userWait();
-			
-			/* Clicking on the Save Button */
 			Library.Interaction.click(Xpath.SetProduct.SaveBtn);
-			
-			/* Verifying the Success Message */
 			WebElement SuccMsg = driver.findElement(By.xpath("//div[@id='growlcontainer']"));
 			String Success = SuccMsg.getText();
 			Library.Interaction.print("Success Message is "+Success);
 			Library.Interaction.userWait();
 			log.info("User Saved Set Product");
-			
-			/*Verifying the SKU number */
 			WebElement SetID = driver.findElement(By.xpath("//h2[@id='page-heading']"));
 			String SetProdID = SetID.getText();
 			String[] Str3 = SetProdID.split(" ");
 			log.info("The Set ID is "+Str3[1]);
 			Library.Interaction.userWait();
-			
-			/*verifying the status */
 			WebElement StatusNA = driver.findElement(By.xpath("//select[@name='status']"));
 			String StatusNonActive = StatusNA.getText();
 			log.info("The Status is "+StatusNonActive);

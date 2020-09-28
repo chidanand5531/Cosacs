@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="COSACS" duration-ms="50825" started-at="2020-09-26T08:19:23Z" finished-at="2020-09-26T08:20:14Z">
+  <suite name="COSACS" duration-ms="30376" started-at="2020-09-28T05:04:04Z" finished-at="2020-09-28T05:04:35Z">
     <groups>
     </groups>
-    <test name="COS_86_Exchangerate Test" duration-ms="50825" started-at="2020-09-26T08:19:23Z" finished-at="2020-09-26T08:20:14Z">
-      <class name="com.cosacs.TestCases.COS_86_Exchangerate">
-        <test-method status="PASS" signature="launchChrome(java.lang.String)[pri:0, instance:com.cosacs.TestCases.COS_86_Exchangerate@5f71c76a]" name="launchChrome" is-config="true" duration-ms="11683" started-at="2020-09-26T08:19:23Z" finished-at="2020-09-26T08:19:35Z">
+    <test name="COS49_WarrantySimulator Test" duration-ms="30376" started-at="2020-09-28T05:04:04Z" finished-at="2020-09-28T05:04:35Z">
+      <class name="com.cosacs.TestCases.COS49_WarrantySimulator">
+        <test-method status="PASS" signature="launchChrome(java.lang.String)[pri:0, instance:com.cosacs.TestCases.COS49_WarrantySimulator@60438a68]" name="launchChrome" is-config="true" duration-ms="11976" started-at="2020-09-28T05:04:04Z" finished-at="2020-09-28T05:04:16Z">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChrome -->
-        <test-method status="PASS" signature="verifyexchangerate_Test()[pri:0, instance:com.cosacs.TestCases.COS_86_Exchangerate@5f71c76a]" name="verifyexchangerate_Test" duration-ms="25655" started-at="2020-09-26T08:19:35Z" finished-at="2020-09-26T08:20:01Z">
+        <test-method status="PASS" signature="WarrantySimulator()[pri:0, instance:com.cosacs.TestCases.COS49_WarrantySimulator@60438a68]" name="WarrantySimulator" duration-ms="15249" started-at="2020-09-28T05:04:16Z" finished-at="2020-09-28T05:04:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyexchangerate_Test -->
-        <test-method status="PASS" signature="Validate_ExchangeRtae_Test()[pri:0, instance:com.cosacs.TestCases.COS_86_Exchangerate@5f71c76a]" name="Validate_ExchangeRtae_Test" duration-ms="12586" started-at="2020-09-26T08:20:01Z" depends-on-methods="com.cosacs.TestCases.COS_86_Exchangerate.verifyexchangerate_Test" finished-at="2020-09-26T08:20:13Z">
+        </test-method> <!-- WarrantySimulator -->
+        <test-method status="PASS" signature="WarrantySimulatorServices()[pri:0, instance:com.cosacs.TestCases.COS49_WarrantySimulator@60438a68]" name="WarrantySimulatorServices" duration-ms="2485" started-at="2020-09-28T05:04:32Z" depends-on-methods="com.cosacs.TestCases.COS49_WarrantySimulator.WarrantySimulator" finished-at="2020-09-28T05:04:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_ExchangeRtae_Test -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.cosacs.TestCases.COS_86_Exchangerate@5f71c76a]" name="close" is-config="true" duration-ms="819" started-at="2020-09-26T08:20:13Z" finished-at="2020-09-26T08:20:14Z">
+        </test-method> <!-- WarrantySimulatorServices -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.cosacs.TestCases.COS49_WarrantySimulator@60438a68]" name="close" is-config="true" duration-ms="636" started-at="2020-09-28T05:04:34Z" finished-at="2020-09-28T05:04:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.cosacs.TestCases.COS_86_Exchangerate -->
-    </test> <!-- COS_86_Exchangerate Test -->
+      </class> <!-- com.cosacs.TestCases.COS49_WarrantySimulator -->
+    </test> <!-- COS49_WarrantySimulator Test -->
   </suite> <!-- COSACS -->
 </testng-results>
